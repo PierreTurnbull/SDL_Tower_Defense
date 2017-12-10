@@ -11,16 +11,17 @@
 
 
 ### V2
-# CC="D:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-gcc.exe"
+# IF USING MINGW
+# CC="D:/Program Files (x86)/CodeBlocks/MinGW/bin/gcc.exe"
 FLAGS=-Wall -g
-I=-I"D:/Program Files (x86)/CodeBlocks/SDL2/x32/include"
-L1=-L/d/Program\ Files\ \(x86\)/CodeBlocks/SDL2/x32/lib
-L2=-L/d/Program\ Files\ \(x86\)/CodeBlocks/MinGW/lib
-l=-lmingw32 -lSDL2main -lSDL2 -lSDL2_image
-l1="D:\Program Files (x86)\CodeBlocks\MinGW\lib\libmingw32.a"
-l2="D:\Program Files (x86)\CodeBlocks\SDL2\x32\lib\libSDL2main.a"
-l3="D:\Program Files (x86)\CodeBlocks\SDL2\x32\lib\libSDL2.dll.a"
-l4="D:\Program Files (x86)\CodeBlocks\SDL2\x32\lib\libSDL2_image.dll.a"
+I=-I"D:\SDL2\x32\include"
+L1=-L/d/SDL2/x32/lib
+L2=-LD:/MinGW/lib
+l=-lmingw32 -lSDL2 -lSDL2main -lSDL2_image
+l1="D:\MinGW\lib\libmingw32.a"
+l2="D:\SDL2\x32\lib\libSDL2main.a"
+l3="D:\SDL2\x32\lib\libSDL2.dll.a"
+l4="D:\SDL2\x32\lib\libSDL2_image.dll.a"
 CFROM="C:\Users\nounoursnoir\Desktop\dev\C\exercices\SDL Tower Defense\main.c"
 OBJTO="obj\Debug\main.o"
 EXETO="SDL Tower Defense.exe"
