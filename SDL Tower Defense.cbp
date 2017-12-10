@@ -30,7 +30,19 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="C:/Users/nounoursnoir/Desktop/dev/C/exercices/SDL2.0/SDL2/include" />
 		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image" />
+			<Add library="D:/Program Files (x86)/CodeBlocks/MinGW/lib/libmingw32.a" />
+			<Add library="C:/Users/nounoursnoir/Desktop/dev/C/exercices/SDL2.0/SDL2/lib/libSDL2main.a" />
+			<Add library="C:/Users/nounoursnoir/Desktop/dev/C/exercices/SDL2.0/SDL2/lib/libSDL2.dll.a" />
+			<Add library="C:/Users/nounoursnoir/Desktop/dev/C/exercices/SDL2.0/SDL2/lib/libSDL2_image.dll.a" />
+			<Add directory="C:/Users/nounoursnoir/Desktop/dev/C/exercices/SDL2.0/SDL2/lib" />
+		</Linker>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
