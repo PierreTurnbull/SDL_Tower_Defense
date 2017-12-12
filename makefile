@@ -13,6 +13,7 @@
 ### V2
 # IF USING MINGW
 # CC="D:/Program Files (x86)/CodeBlocks/MinGW/bin/gcc.exe"
+CC=/usr/bin/gcc.exe
 FLAGS=-Wall -g
 I=-I"D:\SDL2\x32\include"
 L1=-L/d/SDL2/x32/lib
@@ -27,7 +28,7 @@ OBJTO="obj\Debug\main.o"
 EXETO="SDL Tower Defense.exe"
 
 main: main.o
-	gcc $(L1) $(L2) -o $(EXETO) $(OBJTO) $(l) $(l1) $(l2) $(l3) $(l4)
+	$(CC) $(L1) $(L2) -o $(EXETO) $(OBJTO) $(l) $(l1) $(l2) $(l3) $(l4); echo ""; echo "      - BUILD DONE -"; echo ""
 
 main.o: main.c
-	gcc $(FLAGS) $(I) -c $(CFROM) -o $(OBJTO)
+	$(CC) $(FLAGS) $(I) -c $(CFROM) -o $(OBJTO)

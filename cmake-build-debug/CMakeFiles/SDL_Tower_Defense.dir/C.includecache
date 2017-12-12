@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/nounoursnoir/Desktop/dev/C/exercices/SDL Tower Defense/main.c
+stdio.h
+-
+stdlib.h
+-
+SDL.h
+-
+SDL_image.h
+-
+

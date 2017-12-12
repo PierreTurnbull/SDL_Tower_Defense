@@ -1,0 +1,1 @@
+D:/Cygwin/bin/gcc.exe -g  -Wl,--enable-auto-import CMakeFiles/SDL_Tower_Defense.dir/main.c.o  -o SDL_Tower_Defense.exe -Wl,--out-implib,libSDL_Tower_Defense.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
