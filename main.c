@@ -1,16 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <SDL2/SDL.h>
+#include "includes.h"
 
-int main(int argc, char** argv)
+int main(int argc, char *argv[])
 {
-    SDL_Window      *window;
-    SDL_Renderer    *renderer;
-    if (SDL_Init(SDL_INIT_VIDEO) != 0 )
-    {
-        fprintf(stdout,"Failed SDL initialization: \"%s\"\n",SDL_GetError());
-        return -1;
-    }
-    SDL_Quit();
-    return 0;
+  struct s_game game;
+
+  load_game(&game);
+  SDL_Delay(1000);
+  close_game(&game);
+  return 0;
 }
