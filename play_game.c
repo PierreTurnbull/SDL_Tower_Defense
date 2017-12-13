@@ -26,5 +26,6 @@ void  play_game(struct s_game *game)
       default:
         break;
     }
+    SDL_Delay(15);
   }
 }
