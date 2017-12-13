@@ -32,7 +32,7 @@ void  load_sdl()
   fprintf(stderr, "Loading SDL and SDL_Image\n");
   if (SDL_Init(SDL_INIT_VIDEO) != 0 || (IMG_Init(IMG_INIT_JPG) & IMG_INIT_JPG) != IMG_INIT_JPG)
   {
-    fprintf(stdout,"MAIN\nFailed SDL initialization: \"%s\"\n", SDL_GetError());
+    fprintf(stdout,"Failed SDL initialization: \"%s\"\n", SDL_GetError());
     exit(EXIT_FAILURE);
   }
 }

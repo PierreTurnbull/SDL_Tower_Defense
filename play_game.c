@@ -14,7 +14,6 @@ void  play_game(struct s_game *game)
         switch (event.key.keysym.sym)
         {
           case SDLK_ESCAPE:
-          fprintf(stderr, "END TIME IS %s\n", get_game_time());
             game_on = 0;
             break;
           default:
@@ -31,6 +30,5 @@ void  play_game(struct s_game *game)
     }
     render(game, RENDER_GAME_MENU);
     SDL_Delay(15);
-    fprintf(stderr, "TIME IS %s\n", get_game_time());
   }
 }
