@@ -1,1 +1,8 @@
-1.030 CLOSE_GAME
+0.000 LOAD_GAME
+Loading SDL and SDL_Image
+Game loaded correctly
+
+0.287 CLOSE_GAME
+Closing SDL and SDL_Image
+Game closed correctly
+

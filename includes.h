@@ -10,3 +10,4 @@
 #include "close_game.c"
 #include "game_time.c"
 #include "load_game.c"
+#include "play_game.c"
