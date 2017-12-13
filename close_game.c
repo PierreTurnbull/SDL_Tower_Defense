@@ -4,6 +4,7 @@ void  close_game_menu(struct s_game *game)
   SDL_DestroyTexture(game->game_menu->choice_btn[0]);
   SDL_DestroyTexture(game->game_menu->choice_btn[1]);
   SDL_DestroyTexture(game->game_menu->choice_btn[2]);
+  SDL_DestroyTexture(game->game_menu->render);
   free(game->game_menu);
 }
 

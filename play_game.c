@@ -3,6 +3,8 @@ void  play_game(struct s_game *game)
   SDL_Event event;
   int game_on = 1;
 
+  // Empty event queue
+  while (SDL_PollEvent(&event) == 1);
   while (game_on == 1)
   {
     SDL_PollEvent(&event);
@@ -12,6 +14,7 @@ void  play_game(struct s_game *game)
         switch (event.key.keysym.sym)
         {
           case SDLK_ESCAPE:
+          fprintf(stderr, "END TIME IS %s\n", get_game_time());
             game_on = 0;
             break;
           default:
@@ -26,6 +29,8 @@ void  play_game(struct s_game *game)
       default:
         break;
     }
+    render(game, RENDER_GAME_MENU);
     SDL_Delay(15);
+    fprintf(stderr, "TIME IS %s\n", get_game_time());
   }
 }
