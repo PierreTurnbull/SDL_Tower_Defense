@@ -5,3 +5,4 @@ void  load_game(struct s_game *game);
 void  close_game(struct s_game *game);
   void  close_sdl();
 void  play_game(struct s_game *game);
+  void  render(struct s_game *game, int which);
