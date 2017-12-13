@@ -7,5 +7,6 @@ int main(int argc, char *argv[])
   load_game(&game);
   play_game(&game);
   close_game(&game);
+  fprintf(stderr, "MAIN\nReturning status 0\n");
   return 0;
 }

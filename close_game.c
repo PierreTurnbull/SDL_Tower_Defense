@@ -1,9 +1,10 @@
 void  close_game_menu(struct s_game *game)
 {
-  //TODO SDL_DestroyTexture(game->game_menu->background)
-  //TODO SDL_DestroyTexture(game->game_menu->choice_btn[0])
-  //TODO SDL_DestroyTexture(game->game_menu->choice_btn[1])
-  //TODO SDL_DestroyTexture(game->game_menu->choice_btn[2])
+  SDL_DestroyTexture(game->game_menu->background);
+  SDL_DestroyTexture(game->game_menu->choice_btn[0]);
+  SDL_DestroyTexture(game->game_menu->choice_btn[1]);
+  SDL_DestroyTexture(game->game_menu->choice_btn[2]);
+  free(game->game_menu);
 }
 
 void  close_sdl()

@@ -1,7 +1,7 @@
 struct s_game_menu
 {
   SDL_Texture *background;
-  SDL_Texture *choice_btn[3];
+  SDL_Texture *(choice_btn[3]);
 
   SDL_Rect    choice_btn_r[3];
 };

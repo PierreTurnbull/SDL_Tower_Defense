@@ -1,9 +1,10 @@
 void  load_game_menu(struct s_game *game)
 {
-  //TODO game->game_menu->background = IMG_Load();
-  //TODO game->game_menu->choice_btn[0] = IMG_Load();
-  //TODO game->game_menu->choice_btn[1] = IMG_Load();
-  //TODO game->game_menu->choice_btn[2] = IMG_Load();
+  game->game_menu = malloc(sizeof(*game->game_menu));
+  game->game_menu->background = IMG_LoadTexture(game->rend, "img/game_menu/background.jpg");
+  game->game_menu->choice_btn[0] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn1.png");
+  game->game_menu->choice_btn[1] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn2.png");
+  game->game_menu->choice_btn[2] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn3.png");
 }
 
 void  load_sdl()
