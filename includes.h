@@ -12,3 +12,4 @@
 #include "load_game.c"
 #include "play_game.c"
 #include "render.c"
+#include "render_game_menu.c"

@@ -2,10 +2,11 @@ void  load_game_menu(struct s_game *game)
 {
   game->game_menu = malloc(sizeof(*game->game_menu));
   game->game_menu->render = SDL_CreateTexture(game->rend, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 1920, 1080);
-  game->game_menu->background = IMG_LoadTexture(game->rend, "img/game_menu/background.jpg");
-  game->game_menu->choice_btn[0] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn1.jpg");
-  game->game_menu->choice_btn[1] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn2.jpg");
-  game->game_menu->choice_btn[2] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn3.jpg");
+  game->game_menu->background = IMG_LoadTexture(game->rend, "img/game_menu/background.png");
+  fprintf(stderr, "Last SDL error: \"%s\"\n\n", SDL_GetError());
+  game->game_menu->choice_btn[0] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn1.png");
+  game->game_menu->choice_btn[1] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn2.png");
+  game->game_menu->choice_btn[2] = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn3.png");
   game->game_menu->render_r.x = 0;
   game->game_menu->render_r.y = 0;
   game->game_menu->render_r.w = 1920;
