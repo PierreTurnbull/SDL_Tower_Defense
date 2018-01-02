@@ -45,5 +45,6 @@ void  load_game(struct s_game *game)
   game->wind    = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
   game->rend    = SDL_CreateRenderer(game->wind, -1, 0);
   load_game_menu(game);
+  game->screen = SCREEN_GAME_MENU;
   fprintf(stderr, "Game loaded correctly\n\n");
 }
