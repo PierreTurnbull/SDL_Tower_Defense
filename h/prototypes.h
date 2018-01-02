@@ -7,3 +7,8 @@ void  close_game(struct s_game *game);
 void  play_game(struct s_game *game);
   void  render(struct s_game *game, int which);
     void  render_game_menu(struct s_game *game);
+void  event_handling(struct s_game *game, int which);
+  void  event_game_menu(struct s_game *game);
+    void  event_game_menu_mousemotion(struct s_game *game);
+    void  event_game_menu_mousebuttondown(struct s_game *game);
+    void  event_game_menu_keydown(struct s_game *game);

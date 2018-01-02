@@ -12,6 +12,8 @@ struct s_game
 {
   SDL_Window    *wind;
   SDL_Renderer  *rend;
+  SDL_Event     event;
+  int           screen;
 
   struct s_game_menu  *game_menu;
 };
