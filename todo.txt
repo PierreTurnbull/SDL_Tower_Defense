@@ -7,3 +7,6 @@ ALLOCATED MEMORY TO FREE:
 - game.game_menu
 - game.wind
 - game.rend
+
+TODO:
+- SCANCODE structure

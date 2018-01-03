@@ -2,9 +2,11 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.721 CLOSE_GAME
+0004.719 CLOSE_GAME
 Closing SDL and SDL_Image
 Game closed correctly
 
 MAIN
 Returning status 0
+Last SDL error: ""
+
