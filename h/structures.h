@@ -13,8 +13,13 @@ struct s_game_menu
 
 struct s_input
 {
-  SDL_bool  key[SDL_NUM_SCANCODES];
   SDL_bool  quit;
+
+  SDL_bool  key[SDL_NUM_SCANCODES];
+
+  SDL_bool  mouse_btn[3];
+  SDL_Rect  mouse_pos;
+
   int       timer[SDL_NUM_SCANCODES];
 };
 

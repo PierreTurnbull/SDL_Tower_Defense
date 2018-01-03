@@ -3,10 +3,13 @@ void  load_game_input(struct s_game *game)
   int i;
 
   for (i = 0; i < SDL_NUM_SCANCODES; i++)
-    game->input.key[i]    = SDL_FALSE;
+    game->input.key[i]        = SDL_FALSE;
   for (i = 0; i < SDL_NUM_SCANCODES; i++)
-    game->input.timer[i]  = 0;
-  game->input.quit        = SDL_FALSE;
+    game->input.timer[i]      = 0;
+  for (i = 0; i < 3; i++)
+    game->input.mouse_btn[i]  = SDL_FALSE;
+  SDL_GetMouseState(&game->input.mouse_pos.x, &game->input.mouse_pos.y);
+  game->input.quit            = SDL_FALSE;
 }
 
 void  load_game_menu(struct s_game *game)

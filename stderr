@@ -2,37 +2,7 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.906 INPUT_HANDLING
-key pressed: 81
-
-0001.276 INPUT_HANDLING
-key pressed: 81
-
-0001.399 INPUT_HANDLING
-key pressed: 81
-
-0001.521 INPUT_HANDLING
-key pressed: 81
-
-0001.645 INPUT_HANDLING
-key pressed: 81
-
-0001.737 INPUT_HANDLING
-key pressed: 81
-
-0001.860 INPUT_HANDLING
-key pressed: 81
-
-0001.984 INPUT_HANDLING
-key pressed: 81
-
-0002.108 INPUT_HANDLING
-key pressed: 81
-
-0002.444 INPUT_HANDLING
-key pressed: 41
-
-0002.475 CLOSE_GAME
+0000.628 CLOSE_GAME
 Closing SDL and SDL_Image
 Game closed correctly
 
