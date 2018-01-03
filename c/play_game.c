@@ -5,6 +5,7 @@ void  play_game(struct s_game *game)
   while (game->event.type != SDL_QUIT)
   {
     SDL_PollEvent(&game->event);
+    input_handling(game);
     event_handling(game, game->screen);
     render(game, RENDER_GAME_MENU);
     SDL_Delay(15);
