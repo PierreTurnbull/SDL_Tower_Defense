@@ -2,63 +2,7 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-SDL_Bool: 4
-
-0000.630 CLOSE_GAME
+0004.719 CLOSE_GAME
 Closing SDL and SDL_Image
 Game closed correctly
 
