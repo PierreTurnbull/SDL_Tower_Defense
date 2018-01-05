@@ -1,4 +1,12 @@
+/* GENERIC FUNCTIONS */
+
 char  *get_game_time(void);
+
+void  MENU_change_choice(int *index, int direction, int size);
+  void  MENU_next_choice(int *index, int size);
+  void  MENU_previous_choice(int *index, int size);
+
+/* GAME BODY */
 
 void  load_game(struct s_game *game);
   void  load_sdl();

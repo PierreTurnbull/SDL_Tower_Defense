@@ -2,6 +2,8 @@ char  *get_game_time(void)
 {
   static char str[9];
 
+  if (SDL_GetTicks() > 9999999)
+    return "9999.999+";
   str[0] = SDL_GetTicks() % 10000000 / 1000000 + 48;
   str[1] = SDL_GetTicks() % 1000000 / 100000 + 48;
   str[2] = SDL_GetTicks() % 100000 / 10000 + 48;
