@@ -1,21 +1,7 @@
 void  event_game_menu_keydown(struct s_game *game)
 {
-  if      (game->event.key.keysym.sym == SDLK_ESCAPE)
-    game->event.type = SDL_QUIT;
-  else if (game->event.key.keysym.sym == SDLK_DOWN)
-  {
-    if (game->game_menu->choice_selected == 2)
-      game->game_menu->choice_selected = 0;
-    else
-      game->game_menu->choice_selected++;
-  }
-  else if (game->event.key.keysym.sym == SDLK_UP)
-  {
-    if (game->game_menu->choice_selected == 0)
-      game->game_menu->choice_selected = 2;
-    else
-      game->game_menu->choice_selected--;
-  }
+  if (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE)
+    game->input.quit = SDL_TRUE;
 }
 
 void  event_game_menu_mousebuttondown(struct s_game *game)
