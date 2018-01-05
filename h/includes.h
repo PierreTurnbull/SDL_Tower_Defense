@@ -10,6 +10,7 @@
 #include "../c/close_game.c"
 #include "../c/event_handling.c"
 #include "../c/event_game_menu.c"
+#include "../c/event_game_menu_keydown.c"
 #include "../c/game_time.c"
 #include "../c/input_handling.c"
 #include "../c/load_game.c"
