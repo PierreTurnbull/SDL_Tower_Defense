@@ -6,6 +6,8 @@ void  MENU_change_choice(int *index, int direction, int size);
   void  MENU_next_choice(int *index, int size);
   void  MENU_previous_choice(int *index, int size);
 
+int   POSCHECK_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse);
+
 /* GAME BODY */
 
 void  load_game(struct s_game *game);
