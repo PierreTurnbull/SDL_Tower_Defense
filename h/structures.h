@@ -29,8 +29,10 @@ struct s_game
   SDL_Renderer        *rend;
   SDL_Event           event;
   SDL_Window          *wind;
+  SDL_Texture         *cursor[3];
 
   struct s_game_menu  game_menu;
   struct s_input      input;
   int                 screen;
+  int                 current_cursor;
 };
