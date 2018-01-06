@@ -1,3 +1,4 @@
 # SDL2 Tower Defense
 
-This will be nice...
+### Run program with error output:
+``./*.exe 2>stderr``

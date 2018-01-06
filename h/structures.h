@@ -9,6 +9,7 @@ struct s_game_menu
   SDL_Rect            choice_btn_r[3];
 
   int                 choice_selected;
+  int                 size;
 };
 
 struct s_input
@@ -29,7 +30,7 @@ struct s_game
   SDL_Event           event;
   SDL_Window          *wind;
 
-  struct s_game_menu  *game_menu;
+  struct s_game_menu  game_menu;
   struct s_input      input;
   int                 screen;
 };
