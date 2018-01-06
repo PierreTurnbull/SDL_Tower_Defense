@@ -1,12 +1,16 @@
 ALLOCATED MEMORY TO FREE:
+- game.cursor[0]
+- game.cursor[1]
+- game.cursor[2]
 - game.game_menu->background
 - game.game_menu->choice_btn[0]
 - game.game_menu->choice_btn[1]
 - game.game_menu->choice_btn[2]
 - game.game_menu->render
-- game.game_menu
-- game.wind
 - game.rend
+- game.wind
+- SDL_Image
+- SDL
 
 TODO:
-- SCANCODE structure
+- SCANCODE structure OK

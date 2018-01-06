@@ -46,7 +46,19 @@ void  load_game_menu(struct s_game *game)
   game->game_menu.size                  = 3;
 }
 
-void  load_sdl()
+void  load_cursor(struct s_game *game)
+{
+  SDL_ShowCursor(0);
+  game->cursor[0]                       = IMG_LoadTexture(game->rend, "img/cursor/normal.png");
+  game->cursor[1]                       = IMG_LoadTexture(game->rend, "img/cursor/pointer.png");
+  game->cursor[2]                       = IMG_LoadTexture(game->rend, "img/cursor/pointer_drag.png");
+  game->current_cursor                  = 0;
+  SDL_GetMouseState(&game->input.mouse_pos.x, &game->input.mouse_pos.y);
+  game->input.mouse_pos.h               = 22;
+  game->input.mouse_pos.w               = 16;
+}
+
+void  load_sdl(void)
 {
   fprintf(stderr, "Loading SDL and SDL_Image\n");
   if (SDL_Init(SDL_INIT_VIDEO) != 0 || (IMG_Init(IMG_INIT_JPG) & IMG_INIT_JPG) != IMG_INIT_JPG)
@@ -62,6 +74,7 @@ void  load_game(struct s_game *game)
   load_sdl();
   game->wind    = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
   game->rend    = SDL_CreateRenderer(game->wind, -1, 0);
+  load_cursor(game);
   load_game_menu(game);
   load_game_input(game);
   game->screen = SCREEN_GAME_MENU;
