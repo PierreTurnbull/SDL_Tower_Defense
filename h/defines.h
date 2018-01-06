@@ -8,4 +8,9 @@
 #define RENDER_GAME_MENU  0
 
 #define SCREEN_GAME_MENU  0
-#define SCREEN_GAME_PLAY  1
+#define SCREEN_GAME_MENU_OPTIONS  1
+#define SCREEN_GAME_PLAY  100
+
+#define GAME_MENU_PLAY    0
+#define GAME_MENU_OPTIONS 1
+#define GAME_MENU_QUIT    2

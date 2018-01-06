@@ -1,6 +1,6 @@
-void  render(struct s_game *game, int which)
+void  render(struct s_game *game)
 {
-  if (which == 0)
+  if (game->screen == SCREEN_GAME_MENU)
     render_game_menu(game);
   SDL_RenderPresent(game->rend);
 }

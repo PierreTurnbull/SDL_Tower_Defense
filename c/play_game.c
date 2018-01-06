@@ -7,7 +7,7 @@ void  play_game(struct s_game *game)
     SDL_PollEvent(&game->event);
     input_handling(game);
     event_handling(game);
-    render(game, RENDER_GAME_MENU);
+    render(game);
     SDL_Delay(15);
   }
 }
