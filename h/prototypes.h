@@ -2,6 +2,8 @@
 
 char  *get_game_time(void);
 
+void  LOAD_rect(SDL_Rect *rect, int x, int y, int w, int h);
+
 void  MENU_change_choice(int *index, int direction, int size);
   void  MENU_next_choice(int *index, int size);
   void  MENU_previous_choice(int *index, int size);

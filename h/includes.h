@@ -22,6 +22,8 @@
 #include "../c/render.c"
 #include "../c/render_game_menu.c"
 
+#include "../c/LOAD/LOAD_rect.c"
+
 #include "../c/MENU/MENU_change_choice.c"
 
 #include "../c/POSCHECK/POSCHECK.c"

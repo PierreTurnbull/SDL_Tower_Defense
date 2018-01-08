@@ -3,7 +3,7 @@
 int main(int argc, char *argv[])
 {
   struct s_game game;
-
+stderr = freopen("stderr", "w+", stderr);
   load_game(&game);
   play_game(&game);
   close_game(&game);

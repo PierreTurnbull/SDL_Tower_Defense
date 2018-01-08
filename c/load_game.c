@@ -22,25 +22,11 @@ void  load_game_menu(struct s_game *game)
   game->game_menu.choice_btn_hover[0]   = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn1_hover.png");
   game->game_menu.choice_btn_hover[1]   = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn2_hover.png");
   game->game_menu.choice_btn_hover[2]   = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn3_hover.png");
-  game->game_menu.render_r.x            = 0;
-  game->game_menu.render_r.y            = 0;
-  game->game_menu.render_r.w            = 1920;
-  game->game_menu.render_r.h            = 1080;
-
-  game->game_menu.choice_btn_r[0].x     = 100;
-  game->game_menu.choice_btn_r[0].y     = 200;
-  game->game_menu.choice_btn_r[0].w     = 500;
-  game->game_menu.choice_btn_r[0].h     = 100;
-
-  game->game_menu.choice_btn_r[1].x     = 100;
-  game->game_menu.choice_btn_r[1].y     = 350;
-  game->game_menu.choice_btn_r[1].w     = 500;
-  game->game_menu.choice_btn_r[1].h     = 100;
-
-  game->game_menu.choice_btn_r[2].x     = 100;
-  game->game_menu.choice_btn_r[2].y     = 500;
-  game->game_menu.choice_btn_r[2].w     = 500;
-  game->game_menu.choice_btn_r[2].h     = 100;
+  
+  LOAD_rect(&game->game_menu.render_r, 0, 0, 1920, 1080);
+  LOAD_rect(&game->game_menu.choice_btn_r[0], 100, 200, 500, 100);
+  LOAD_rect(&game->game_menu.choice_btn_r[1], 100, 350, 500, 100);
+  LOAD_rect(&game->game_menu.choice_btn_r[2], 100, 500, 500, 100);
 
   game->game_menu.choice_selected       = 0;
   game->game_menu.size                  = 3;
