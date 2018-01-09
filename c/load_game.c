@@ -22,7 +22,7 @@ void  load_game_menu(struct s_game *game)
   game->game_menu.choice_btn_hover[0]   = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn1_hover.png");
   game->game_menu.choice_btn_hover[1]   = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn2_hover.png");
   game->game_menu.choice_btn_hover[2]   = IMG_LoadTexture(game->rend, "img/game_menu/choice_btn3_hover.png");
-  
+
   LOAD_rect(&game->game_menu.render_r, 0, 0, 1920, 1080);
   LOAD_rect(&game->game_menu.choice_btn_r[0], 100, 200, 500, 100);
   LOAD_rect(&game->game_menu.choice_btn_r[1], 100, 350, 500, 100);
@@ -56,6 +56,7 @@ void  load_sdl(void)
 
 void  load_game(struct s_game *game)
 {
+  stderr = freopen("stderr", "w+", stderr);
   fprintf(stderr, "%s LOAD_GAME\n", get_game_time());
   load_sdl();
   game->wind    = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
