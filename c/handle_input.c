@@ -1,4 +1,4 @@
-void  input_handling(struct s_game *game)
+void  handle_input(struct s_game *game)
 {
   if      (game->event.type == SDL_KEYDOWN)
     game->input.key[game->event.key.keysym.scancode] = SDL_TRUE;

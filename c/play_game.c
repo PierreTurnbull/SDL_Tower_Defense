@@ -5,8 +5,8 @@ void  play_game(struct s_game *game)
   while (game->input.quit == SDL_FALSE)
   {
     SDL_PollEvent(&game->event);
-    input_handling(game);
-    event_handling(game);
+    handle_input(game);
+    handle_event(game);
     render(game);
     wait(game, 15);
   }

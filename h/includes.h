@@ -7,24 +7,29 @@
 #include "../h/prototypes.h"
 #include "../h/defines.h"
 
-#include "../c/close_game.c"
-#include "../c/event_handling.c"
-#include "../c/event_game_menu.c"
-#include "../c/event_game_menu_key.c"
-#include "../c/event_game_menu_mousebutton.c"
-#include "../c/event_game_menu_mousemotion.c"
-#include "../c/event_game_menuopt.c"
-#include "../c/event_game_play.c"
-#include "../c/game_time.c"
-#include "../c/input_handling.c"
-#include "../c/load_game.c"
-#include "../c/play_game.c"
-#include "../c/render.c"
-#include "../c/render_game_menu.c"
-#include "../c/wait.c"
+/* GENERIC FUNCTIONS */
+
+#include "../c/GAME_TIME/get_game_time.c"
+#include "../c/GAME_TIME/wait.c"
 
 #include "../c/LOAD/LOAD_rect.c"
 
 #include "../c/MENU/MENU_change_choice.c"
 
-#include "../c/POSCHECK/POSCHECK.c"
+#include "../c/POS/POS_check_position.c"
+
+/* GAME BODY */
+
+#include "../c/close_game.c"
+#include "../c/handle_event/handle_event.c"
+#include "../c/handle_event/handle_event_main_menu/handle_event_main_menu.c"
+#include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_key.c"
+#include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_mousebutton.c"
+#include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_mousemotion.c"
+#include "../c/handle_event/handle_event_main_options/handle_event_main_options.c"
+#include "../c/handle_event/handle_event_play/handle_event_play.c"
+#include "../c/handle_input.c"
+#include "../c/load_game.c"
+#include "../c/play_game.c"
+#include "../c/render/render.c"
+#include "../c/render/render_game_menu/render_game_menu.c"

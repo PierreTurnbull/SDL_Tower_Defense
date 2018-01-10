@@ -1,4 +1,4 @@
-int   POSCHECK_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse)
+int   POS_check_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse)
 {
   return \
     mouse.x > rect.x && \
