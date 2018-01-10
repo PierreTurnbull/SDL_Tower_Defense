@@ -35,4 +35,5 @@ struct s_game
   struct s_input      input;
   int                 screen;
   int                 current_cursor;
+  int                 game_time;
 };

@@ -35,3 +35,4 @@ void  play_game(struct s_game *game);
   void  render(struct s_game *game);
     void  render_game_menu(struct s_game *game);
       void  render_game_menu_choice(struct s_game *game);
+  void  wait(struct s_game *game, int ms);

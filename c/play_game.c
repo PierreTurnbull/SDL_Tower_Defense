@@ -8,6 +8,6 @@ void  play_game(struct s_game *game)
     input_handling(game);
     event_handling(game);
     render(game);
-    SDL_Delay(15);
+    wait(game, 15);
   }
 }

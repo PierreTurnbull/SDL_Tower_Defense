@@ -21,6 +21,7 @@
 #include "../c/play_game.c"
 #include "../c/render.c"
 #include "../c/render_game_menu.c"
+#include "../c/wait.c"
 
 #include "../c/LOAD/LOAD_rect.c"
 
