@@ -59,11 +59,12 @@ void  load_game(struct s_game *game)
   stderr = freopen("stderr", "w+", stderr);
   fprintf(stderr, "%s LOAD_GAME\n", get_game_time());
   load_sdl();
-  game->wind    = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
-  game->rend    = SDL_CreateRenderer(game->wind, -1, 0);
+  game->wind      = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
+  game->rend      = SDL_CreateRenderer(game->wind, -1, 0);
   load_cursor(game);
   load_game_menu(game);
   load_game_input(game);
-  game->screen = SCREEN_GAME_MENU;
+  game->screen    = SCREEN_GAME_MENU;
+  game->game_time = SDL_GetTicks();
   fprintf(stderr, "Game loaded correctly\n\n");
 }
