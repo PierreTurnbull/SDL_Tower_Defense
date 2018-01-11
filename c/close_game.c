@@ -5,6 +5,12 @@ void  close_sdl(void)
   SDL_Quit();
 }
 
+void  close_play(struct s_game *game)
+{
+  SDL_DestroyTexture(game->play.background);
+  SDL_DestroyTexture(game->play.render);
+}
+
 void  close_main_menu(struct s_game *game)
 {
   fprintf(stderr, "Closing game menu\n");
@@ -28,6 +34,7 @@ void  close_game(struct s_game *game)
   fprintf(stderr, "%s CLOSE_GAME\n", get_game_time());
   close_cursor(game);
   close_main_menu(game);
+  close_play(game);
   SDL_DestroyRenderer(game->rend);
   SDL_DestroyWindow(game->wind);
   close_sdl();

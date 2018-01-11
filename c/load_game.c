@@ -1,15 +1,9 @@
-void  load_game_input(struct s_game *game)
+void  load_play(struct s_game *game)
 {
-  int i;
+  game->play.render                     = SDL_CreateTexture(game->rend, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 1920, 1080);
+  game->play.background                 = IMG_LoadTexture(game->rend, "img/play/background.png");
 
-  for (i = 0; i < SDL_NUM_SCANCODES; i++)
-    game->input.key[i]        = SDL_FALSE;
-  for (i = 0; i < SDL_NUM_SCANCODES; i++)
-    game->input.timer[i]      = 0;
-  for (i = 0; i < 3; i++)
-    game->input.mouse_btn[i]  = SDL_FALSE;
-  SDL_GetMouseState(&game->input.mouse_pos.x, &game->input.mouse_pos.y);
-  game->input.quit            = SDL_FALSE;
+  LOAD_rect(&game->play.render_r, 0, 0, 1920, 1080);
 }
 
 void  load_main_menu(struct s_game *game)
@@ -30,6 +24,20 @@ void  load_main_menu(struct s_game *game)
 
   game->main_menu.choice_selected       = 0;
   game->main_menu.size                  = 3;
+}
+
+void  load_input(struct s_game *game)
+{
+  int i;
+
+  for (i = 0; i < SDL_NUM_SCANCODES; i++)
+    game->input.key[i]        = SDL_FALSE;
+  for (i = 0; i < SDL_NUM_SCANCODES; i++)
+    game->input.timer[i]      = 0;
+  for (i = 0; i < 3; i++)
+    game->input.mouse_btn[i]  = SDL_FALSE;
+  SDL_GetMouseState(&game->input.mouse_pos.x, &game->input.mouse_pos.y);
+  game->input.quit            = SDL_FALSE;
 }
 
 void  load_cursor(struct s_game *game)
@@ -62,8 +70,9 @@ void  load_game(struct s_game *game)
   game->wind      = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
   game->rend      = SDL_CreateRenderer(game->wind, -1, 0);
   load_cursor(game);
+  load_input(game);
   load_main_menu(game);
-  load_game_input(game);
+  load_play(game);
   game->screen    = SCREEN_MAIN_MENU;
   game->game_time = SDL_GetTicks();
   fprintf(stderr, "Game loaded correctly\n\n");
