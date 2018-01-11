@@ -15,7 +15,7 @@ void  handle_event_main_menu(struct s_game *game)
       handle_event_main_menu_mousebutton(game);
       break;
     default:
-      fprintf(stderr, "%s HANDLE_EVENT_MAIN_MENU\nCouldn't resolve event of type %d\n\n", get_game_time(), game->event.type);
+      //fprintf(stderr, "%s HANDLE_EVENT_MAIN_MENU\nCouldn't resolve event of type %d\n\n", get_game_time(), game->event.type);
       break;
   }
 }

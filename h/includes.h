@@ -33,3 +33,4 @@
 #include "../c/play_game.c"
 #include "../c/render/render.c"
 #include "../c/render/render_game_menu/render_game_menu.c"
+#include "../c/render/render_play/render_play.c"

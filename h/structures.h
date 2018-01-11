@@ -1,3 +1,23 @@
+struct s_input
+{
+  SDL_bool            quit;
+
+  SDL_bool            key[SDL_NUM_SCANCODES];
+
+  SDL_bool            mouse_btn[3];
+  SDL_Rect            mouse_pos;
+
+  int                 timer[SDL_NUM_SCANCODES];
+};
+
+struct s_play
+{
+  SDL_Texture         *render;
+  SDL_Texture         *background;
+
+  SDL_Rect            render_r;
+};
+
 struct s_main_menu
 {
   SDL_Texture         *render;
@@ -12,18 +32,6 @@ struct s_main_menu
   int                 size;
 };
 
-struct s_input
-{
-  SDL_bool            quit;
-
-  SDL_bool            key[SDL_NUM_SCANCODES];
-
-  SDL_bool            mouse_btn[3];
-  SDL_Rect            mouse_pos;
-
-  int                 timer[SDL_NUM_SCANCODES];
-};
-
 struct s_game
 {
   SDL_Renderer        *rend;
@@ -32,6 +40,7 @@ struct s_game
   SDL_Texture         *cursor[3];
 
   struct s_main_menu  main_menu;
+  struct s_play       play;
   struct s_input      input;
   int                 screen;
   int                 current_cursor;

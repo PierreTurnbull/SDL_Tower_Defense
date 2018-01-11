@@ -9,7 +9,7 @@
 
 #define SCREEN_MAIN_MENU          0
 #define SCREEN_MAIN_OPTIONS       1
-#define SCREEN_PLAY               100
+#define SCREEN_PLAY               101
 
 #define NAV_MAIN_MENU_PLAY        0
 #define NAV_MAIN_MENU_OPTIONS     1
