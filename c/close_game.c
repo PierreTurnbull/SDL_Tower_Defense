@@ -7,6 +7,7 @@ void  close_sdl(void)
 
 void  close_play(struct s_game *game)
 {
+  SDL_DestroyTexture(game->play.gui.background);
   SDL_DestroyTexture(game->play.background);
   SDL_DestroyTexture(game->play.render);
 }
