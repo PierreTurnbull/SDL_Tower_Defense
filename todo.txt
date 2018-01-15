@@ -15,4 +15,4 @@ ALLOCATED MEMORY TO FREE:
 - SDL
 
 TODO:
-- SCANCODE structure OK
+- remove useless backgrounds
