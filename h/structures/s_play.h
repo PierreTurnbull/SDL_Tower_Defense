@@ -7,9 +7,9 @@ struct s_warzone
 
 struct s_gui
 {
-  SDL_Texture         *background; // TODO load free
+  SDL_Texture         *background;
 
-  SDL_Rect            background_pos; // TODO load
+  SDL_Rect            background_pos;
 };
 
 struct s_play
