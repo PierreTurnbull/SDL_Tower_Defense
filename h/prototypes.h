@@ -18,6 +18,7 @@ void  load_game(struct s_game *game);
   void  load_input(struct s_game *game);
   void  load_main_menu(struct s_game *game);
   void  load_play(struct s_game *game);
+    void  load_play_gui(struct s_game *game);
 void  play_game(struct s_game *game);
   void  handle_input(struct s_game *game);
   void  handle_event(struct s_game *game);
