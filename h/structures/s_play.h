@@ -19,10 +19,9 @@ struct s_gui
 
   SDL_Rect            background_pos; // TODO load
   SDL_Rect            items_background_pos; // TODO load
-  SDL_Rect            items_category[3]_pos; // TODO load
-  SDL_Rect            items_category_hover[3]_pos; // TODO load
+  SDL_Rect            items_category_pos[3]; // TODO load
   SDL_Rect            gold_background_pos; // TODO load
-  SDL_Rect            next_wave_background[2]_pos; // TODO load
+  SDL_Rect            next_wave_background_pos; // TODO load
   SDL_Rect            pause_pos; // TODO load
   SDL_Rect            options_pos; // TODO load
   SDL_Rect            menu_pos; // TODO load
