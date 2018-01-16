@@ -18,6 +18,8 @@
 
 #include "../c/_POS/POS_check_position.c"
 
+#include "../c/_RENDER/RENDER_btwn_2_tex.c"
+
 /* GAME BODY */
 
 #include "../c/close/close_game.c"

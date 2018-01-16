@@ -29,6 +29,8 @@ struct s_gui
   SDL_Rect            pause_pos;
   SDL_Rect            options_pos;
   SDL_Rect            menu_pos;
+
+  int btn_selected;
 };
 
 struct s_play

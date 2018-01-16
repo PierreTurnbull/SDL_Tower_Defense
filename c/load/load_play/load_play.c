@@ -21,21 +21,23 @@ void  load_play_gui(struct s_game *game)
   gui->menu_hover                 = IMG_LoadTexture(game->rend, "img/play/menu_hover.png");
 
   LOAD_rect(&gui->background_pos, 0, 0, 1920, 1080);
-  LOAD_rect(&gui->items_background_pos, 1595, 75, 300, 860);
+  LOAD_rect(&gui->items_background_pos, 1595, 75, 300, 835);
   LOAD_rect(&gui->items_category_pos[0], 1595, 25, 100, 50);
   LOAD_rect(&gui->items_category_pos[1], 1695, 25, 100, 50);
   LOAD_rect(&gui->items_category_pos[2], 1795, 25, 100, 50);
   LOAD_rect(&gui->gold_background_pos, 1595, 925, 300, 25);
-  LOAD_rect(&gui->next_wave_background_pos, 1595, 975, 300, 50);
-  LOAD_rect(&gui->pause_pos, 1595, 1030, 100, 100);
-  LOAD_rect(&gui->options_pos, 1700, 1030, 100, 100);
-  LOAD_rect(&gui->menu_pos, 1805, 1030, 100, 100);
+  LOAD_rect(&gui->next_wave_background_pos, 1595, 965, 300, 50);
+  LOAD_rect(&gui->pause_pos, 1595, 1030, 90, 25);
+  LOAD_rect(&gui->options_pos, 1700, 1030, 90, 25);
+  LOAD_rect(&gui->menu_pos, 1805, 1030, 90, 25);
+
+  gui->btn_selected = BTN_SELECTED_NONE;
 }
 
 void  load_play(struct s_game *game)
 {
-  game->play.render         = SDL_CreateTexture(game->rend, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 1920, 1080);
-  game->play.background     = IMG_LoadTexture(game->rend, "img/play/background.png");
+  game->play.render     = SDL_CreateTexture(game->rend, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 1920, 1080);
+  game->play.background = IMG_LoadTexture(game->rend, "img/play/background.png");
 
   LOAD_rect(&game->play.render_r, 0, 0, 1920, 1080);
 
