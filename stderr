@@ -72,7 +72,8 @@ play
 play
 play
 play
-0002.615 CLOSE_GAME
+play
+0002.421 CLOSE_GAME
 Closing cursor
 Closing game menu
 Closing SDL and SDL_Image
