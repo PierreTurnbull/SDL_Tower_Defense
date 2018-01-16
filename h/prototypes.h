@@ -38,4 +38,6 @@ void  play_game(struct s_game *game);
 void  close_game(struct s_game *game);
   void  close_cursor(struct s_game *game);
   void  close_main_menu(struct s_game *game);
+  void  close_play(struct s_game *game);
+    void close_play_gui(struct s_game *game);
   void  close_sdl(void);

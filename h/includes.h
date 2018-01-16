@@ -20,7 +20,9 @@
 
 /* GAME BODY */
 
-#include "../c/close_game.c"
+#include "../c/close/close_game.c"
+#include "../c/close/close_main_menu/close_main_menu.c"
+#include "../c/close/close_play/close_play.c"
 #include "../c/handle_event/handle_event.c"
 #include "../c/handle_event/handle_event_main_menu/handle_event_main_menu.c"
 #include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_key.c"
