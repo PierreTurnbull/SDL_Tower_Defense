@@ -1,7 +1,12 @@
 void  handle_input(struct s_game *game)
 {
-  if      (game->event.type == SDL_KEYDOWN)
-    game->input.key[game->event.key.keysym.scancode] = SDL_TRUE;
+  if (game->event.type == SDL_KEYDOWN)
+  {
+    if (game->event.key.keysym.sym != SDLK_ESCAPE)
+      game->input.key[game->event.key.keysym.scancode] = SDL_TRUE;
+    else if (game->event.key.keysym.sym == SDLK_ESCAPE && game->event.key.repeat == 0)
+      game->input.key[game->event.key.keysym.scancode] = SDL_TRUE;
+  }
   else if (game->event.type == SDL_KEYUP)
   {
     game->input.key[game->event.key.keysym.scancode] = SDL_FALSE;
