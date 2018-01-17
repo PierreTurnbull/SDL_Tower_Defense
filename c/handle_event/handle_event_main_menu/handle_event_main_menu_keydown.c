@@ -1,5 +1,14 @@
-void  handle_event_main_menu_key_return(struct s_game *game)
+void  handle_event_main_menu_keydown_escape(struct s_game *game)
 {
+  if (game->input.repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE)
+    game->input.quit = SDL_TRUE;
+  fprintf(stderr, "%s screen: %d key: %d repeat: %d\n\n", get_game_time(), game->screen, game->input.key[SDL_SCANCODE_ESCAPE], game->input.repeat[SDL_SCANCODE_ESCAPE]);
+}
+
+void  handle_event_main_menu_keydown_return(struct s_game *game)
+{
+  if (game->input.repeat[SDL_SCANCODE_RETURN] == SDL_TRUE)
+    return;
   if (game->main_menu.choice_selected == NAV_MAIN_MENU_PLAY)
     game->screen = SCREEN_PLAY;
   if (game->main_menu.choice_selected == NAV_MAIN_MENU_OPTIONS)
@@ -8,7 +17,7 @@ void  handle_event_main_menu_key_return(struct s_game *game)
     game->input.quit = SDL_TRUE;
 }
 
-void  handle_event_main_menu_key_up(struct s_game *game)
+void  handle_event_main_menu_keydown_up(struct s_game *game)
 {
   if (game->input.key[SDL_SCANCODE_DOWN] == SDL_TRUE)
     return;
@@ -24,7 +33,7 @@ void  handle_event_main_menu_key_up(struct s_game *game)
   }
 }
 
-void  handle_event_main_menu_key_down(struct s_game *game)
+void  handle_event_main_menu_keydown_down(struct s_game *game)
 {
   if (game->input.key[SDL_SCANCODE_UP] == SDL_TRUE)
     return;
@@ -40,14 +49,14 @@ void  handle_event_main_menu_key_down(struct s_game *game)
   }
 }
 
-void  handle_event_main_menu_key(struct s_game *game)
+void  handle_event_main_menu_keydown(struct s_game *game)
 {
-  if      (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE)
-    game->input.quit = SDL_TRUE;
-  else if (game->input.key[SDL_SCANCODE_DOWN] == SDL_TRUE)
-    handle_event_main_menu_key_down(game);
+  if      (game->input.key[SDL_SCANCODE_DOWN] == SDL_TRUE)
+    handle_event_main_menu_keydown_down(game);
   else if (game->input.key[SDL_SCANCODE_UP] == SDL_TRUE)
-    handle_event_main_menu_key_up(game);
+    handle_event_main_menu_keydown_up(game);
   else if (game->input.key[SDL_SCANCODE_RETURN] == SDL_TRUE)
-    handle_event_main_menu_key_return(game);
+    handle_event_main_menu_keydown_return(game);
+  else if (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE)
+    handle_event_main_menu_keydown_escape(game);
 }
