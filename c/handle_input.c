@@ -2,15 +2,15 @@ void  handle_input(struct s_game *game)
 {
   if (game->event.type == SDL_KEYDOWN)
   {
-    if (game->event.key.keysym.sym != SDLK_ESCAPE)
-      game->input.key[game->event.key.keysym.scancode] = SDL_TRUE;
-    else if (game->event.key.keysym.sym == SDLK_ESCAPE && game->event.key.repeat == 0)
-      game->input.key[game->event.key.keysym.scancode] = SDL_TRUE;
+    if (game->input.key[game->event.key.keysym.scancode] == SDL_TRUE)
+      game->input.repeat[game->event.key.keysym.scancode] = SDL_TRUE;
+    game->input.key[game->event.key.keysym.scancode] = SDL_TRUE;
   }
   else if (game->event.type == SDL_KEYUP)
   {
     game->input.key[game->event.key.keysym.scancode] = SDL_FALSE;
     game->input.timer[game->event.key.keysym.scancode] = 0;
+    game->input.repeat[game->event.key.keysym.scancode] = SDL_FALSE;
   }
   else if (game->event.type == SDL_MOUSEMOTION)
     SDL_GetMouseState(&game->input.mouse_pos.x, &game->input.mouse_pos.y);

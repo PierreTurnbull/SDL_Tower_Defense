@@ -5,6 +5,8 @@ void  load_input(struct s_game *game)
   for (i = 0; i < SDL_NUM_SCANCODES; i++)
     game->input.key[i]        = SDL_FALSE;
   for (i = 0; i < SDL_NUM_SCANCODES; i++)
+    game->input.repeat[i]     = SDL_FALSE;
+  for (i = 0; i < SDL_NUM_SCANCODES; i++)
     game->input.timer[i]      = 0;
   for (i = 0; i < 3; i++)
     game->input.mouse_btn[i]  = SDL_FALSE;

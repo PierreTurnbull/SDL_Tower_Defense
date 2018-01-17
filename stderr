@@ -2,8 +2,123 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.290: (512)1080 (repeat: 33)
-0000.725 CLOSE_GAME
+0001.699 screen: 0 key: 1 repeat: 1
+
+0001.715 screen: 0 key: 1 repeat: 1
+
+0001.730 screen: 0 key: 1 repeat: 1
+
+0001.746 screen: 0 key: 1 repeat: 1
+
+0001.762 screen: 0 key: 1 repeat: 1
+
+0001.777 screen: 0 key: 1 repeat: 1
+
+0001.793 screen: 0 key: 1 repeat: 1
+
+0001.809 screen: 0 key: 1 repeat: 1
+
+0001.824 screen: 0 key: 1 repeat: 1
+
+0001.840 screen: 0 key: 1 repeat: 1
+
+0001.855 screen: 0 key: 1 repeat: 1
+
+0001.871 screen: 0 key: 1 repeat: 1
+
+0001.887 screen: 0 key: 1 repeat: 1
+
+0001.903 screen: 0 key: 1 repeat: 1
+
+0001.918 screen: 0 key: 1 repeat: 1
+
+0001.934 screen: 0 key: 1 repeat: 1
+
+0001.951 screen: 0 key: 1 repeat: 1
+
+0001.967 screen: 0 key: 1 repeat: 1
+
+0001.981 screen: 0 key: 1 repeat: 1
+
+0001.997 screen: 0 key: 1 repeat: 1
+
+0002.013 screen: 0 key: 1 repeat: 1
+
+0002.029 screen: 0 key: 1 repeat: 1
+
+0002.045 screen: 0 key: 1 repeat: 1
+
+0002.060 screen: 0 key: 1 repeat: 1
+
+0002.078 screen: 0 key: 1 repeat: 1
+
+0002.090 screen: 0 key: 1 repeat: 1
+
+0002.105 screen: 0 key: 1 repeat: 1
+
+0002.120 screen: 0 key: 1 repeat: 1
+
+0002.136 screen: 0 key: 1 repeat: 1
+
+0002.152 screen: 0 key: 1 repeat: 1
+
+0002.167 screen: 0 key: 1 repeat: 1
+
+0002.183 screen: 0 key: 1 repeat: 1
+
+0002.199 screen: 0 key: 1 repeat: 1
+
+0002.215 screen: 0 key: 1 repeat: 1
+
+0002.231 screen: 0 key: 1 repeat: 1
+
+0002.246 screen: 0 key: 1 repeat: 1
+
+0002.263 screen: 0 key: 1 repeat: 1
+
+0002.277 screen: 0 key: 1 repeat: 1
+
+0002.294 screen: 0 key: 1 repeat: 1
+
+0002.309 screen: 0 key: 1 repeat: 1
+
+0002.325 screen: 0 key: 1 repeat: 1
+
+0002.341 screen: 0 key: 1 repeat: 1
+
+0002.356 screen: 0 key: 1 repeat: 1
+
+0002.372 screen: 0 key: 1 repeat: 1
+
+0002.387 screen: 0 key: 1 repeat: 1
+
+0002.403 screen: 0 key: 1 repeat: 1
+
+0002.418 screen: 0 key: 1 repeat: 1
+
+0002.435 screen: 0 key: 1 repeat: 1
+
+0002.449 screen: 0 key: 1 repeat: 1
+
+0002.464 screen: 0 key: 1 repeat: 1
+
+0002.480 screen: 0 key: 1 repeat: 1
+
+0002.496 screen: 0 key: 1 repeat: 1
+
+0002.512 screen: 0 key: 1 repeat: 1
+
+0002.529 screen: 0 key: 1 repeat: 1
+
+0002.544 screen: 0 key: 1 repeat: 1
+
+0002.561 screen: 0 key: 1 repeat: 1
+
+0002.576 screen: 0 key: 1 repeat: 1
+
+0003.508 screen: 0 key: 1 repeat: 0
+
+0003.524 CLOSE_GAME
 Closing cursor
 Closing game menu
 Closing SDL and SDL_Image

@@ -1,20 +1,3 @@
-void  handle_event_play_mousemotion(struct s_game *game)
-{}
-
-void  handle_event_play_mousebutton(struct s_game *game)
-{}
-
-void  handle_event_play_key(struct s_game *game)
-{
-  if (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE && game->input.timer[SDL_SCANCODE_ESCAPE] != -1)
-  {
-    fprintf(stderr, "%s HANDLE_EVENT_PLAY_KEY\nSwitching screen from play to main_menu\n\n", get_game_time());
-    game->screen = SCREEN_MAIN_MENU;
-    game->input.key[SDL_SCANCODE_ESCAPE] = SDL_FALSE;
-    game->input.timer[SDL_SCANCODE_ESCAPE] = -1;
-  }
-}
-
 void  handle_event_play(struct s_game *game)
 {
   // if (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE)
@@ -25,7 +8,10 @@ void  handle_event_play(struct s_game *game)
       game->event.type = SDL_QUIT;
       break;
     case SDL_KEYDOWN:
-      handle_event_play_key(game);
+      handle_event_play_keydown(game);
+      break;
+    case SDL_KEYUP:
+      handle_event_play_keyup(game);
       break;
     case SDL_MOUSEMOTION:
       handle_event_play_mousemotion(game);
