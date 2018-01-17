@@ -1,35 +1,61 @@
+/*****************************************************/
+/* Included files are sorted by types, then by names */
+/*****************************************************/
+
+/* STANDARD LIBRARIES */
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <SDL.h>
-#include <SDL_image.h>
 
+/* OTHER LIBRARIES */
+
+#include "SDL.h"
+#include "SDL_image.h"
+
+/* STRUCTURE FILES */
+
+#include "../h/structures/s_play.h"
+#include "../h/structures/s_main_menu.h"
 #include "../h/structures/s_main.h"
-#include "../h/prototypes.h"
+
+/* MACRO DEFINITIONS */
+
 #include "../h/defines.h"
 
-/* GENERIC FUNCTIONS */
+/* PROTOTYPES */
 
-#include "../c/GAME_TIME/get_game_time.c"
-#include "../c/GAME_TIME/wait.c"
+#include "../h/prototypes.h"
 
-#include "../c/LOAD/LOAD_rect.c"
+/* GENERIC C FILES */
 
-#include "../c/MENU/MENU_change_choice.c"
+#include "../c/_GAME_TIME/get_game_time.c"
+#include "../c/_GAME_TIME/wait.c"
+#include "../c/_LOAD/LOAD_rect.c"
+#include "../c/_MENU/MENU_change_choice.c"
+#include "../c/_POS/POS_check_position.c"
+#include "../c/_RENDER/RENDER_btwn_2_tex.c"
 
-#include "../c/POS/POS_check_position.c"
+/* C FILES */
 
-/* GAME BODY */
-
-#include "../c/close_game.c"
+#include "../c/close/close_game.c"
+#include "../c/close/close_main_menu/close_main_menu.c"
+#include "../c/close/close_play/close_play.c"
 #include "../c/handle_event/handle_event.c"
 #include "../c/handle_event/handle_event_main_menu/handle_event_main_menu.c"
-#include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_key.c"
+#include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_keydown.c"
+#include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_keyup.c"
 #include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_mousebutton.c"
 #include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_mousemotion.c"
 #include "../c/handle_event/handle_event_main_options/handle_event_main_options.c"
 #include "../c/handle_event/handle_event_play/handle_event_play.c"
+#include "../c/handle_event/handle_event_play/handle_event_play_keydown.c"
+#include "../c/handle_event/handle_event_play/handle_event_play_keyup.c"
+#include "../c/handle_event/handle_event_play/handle_event_play_mousebutton.c"
+#include "../c/handle_event/handle_event_play/handle_event_play_mousemotion.c"
 #include "../c/handle_input.c"
-#include "../c/load_game.c"
+#include "../c/load/load_game.c"
+#include "../c/load/load_main_menu/load_main_menu.c"
+#include "../c/load/load_play/load_play.c"
 #include "../c/play_game.c"
 #include "../c/render/render.c"
 #include "../c/render/render_main_menu/render_main_menu.c"
