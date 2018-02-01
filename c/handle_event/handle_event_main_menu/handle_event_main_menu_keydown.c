@@ -2,7 +2,6 @@ void  handle_event_main_menu_keydown_escape(struct s_game *game)
 {
   if (game->input.repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE)
     game->input.quit = SDL_TRUE;
-  fprintf(stderr, "%s screen: %d key: %d repeat: %d\n\n", get_game_time(), game->screen, game->input.key[SDL_SCANCODE_ESCAPE], game->input.repeat[SDL_SCANCODE_ESCAPE]);
 }
 
 void  handle_event_main_menu_keydown_return(struct s_game *game)

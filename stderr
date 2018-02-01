@@ -2,29 +2,7 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.644 screen: 0 key: 1 repeat: 1
-
-0000.658 screen: 0 key: 1 repeat: 1
-
-0000.674 screen: 0 key: 1 repeat: 1
-
-0000.689 screen: 0 key: 1 repeat: 1
-
-0000.705 screen: 0 key: 1 repeat: 1
-
-0000.721 screen: 0 key: 1 repeat: 1
-
-0000.736 screen: 0 key: 1 repeat: 1
-
-0000.752 screen: 0 key: 1 repeat: 1
-
-0000.767 screen: 0 key: 1 repeat: 1
-
-0000.782 screen: 0 key: 1 repeat: 1
-
-0000.798 screen: 0 key: 1 repeat: 1
-
-0001.418 CLOSE_GAME
+0002.523 CLOSE_GAME
 Closing cursor
 Closing game menu
 Closing SDL and SDL_Image
