@@ -15,7 +15,7 @@ void  close_cursor(struct s_game *game)
 
 void  close_game(struct s_game *game)
 {
-  fprintf(stderr, "%s CLOSE_GAME\n", get_game_time());
+  fprintf(stderr, "%s CLOSE_GAME\n", TIME_get_time());
   close_cursor(game);
   close_main_menu(game);
   close_play(game);

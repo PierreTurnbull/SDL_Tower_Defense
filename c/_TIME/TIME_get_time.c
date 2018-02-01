@@ -1,4 +1,4 @@
-char  *get_game_time(void)
+char  *TIME_get_time(void)
 {
   static char str[9];
 

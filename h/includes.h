@@ -28,12 +28,12 @@
 
 /* GENERIC C FILES */
 
-#include "../c/_GAME_TIME/get_game_time.c"
-#include "../c/_GAME_TIME/wait.c"
 #include "../c/_LOAD/LOAD_rect.c"
 #include "../c/_MENU/MENU_change_choice.c"
 #include "../c/_POS/POS_check_position.c"
 #include "../c/_RENDER/RENDER_btwn_2_tex.c"
+#include "../c/_TIME/TIME_get_time.c"
+#include "../c/_TIME/TIME_wait.c"
 
 /* C FILES */
 
