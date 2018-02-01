@@ -14,9 +14,11 @@ Error outputs in ``stderr``
 
 ## File organisation
 
-**Generic functions** are stored in a directory which name is written in uppercase with a leading underscore. Their name starts with the category name in uppercase
-Example: `./c/_LOAD/LOAD_rect.c`
-**Specific themed functions** are stored in a directory which name corresponds to a category.
-Example: `./c/render/render.c`.
-**Specific unique functions** are stored in the directory `c`
+**Unique files** are stored in the directory `c`
 Example: `./c/main.c`
+
+**Category-specific files** are stored in a directory which name corresponds to a category.
+Example: `./c/render/render.c`.
+
+**Generic files** are stored in a directory which name is written in uppercase with a leading underscore. Their name starts with the category name in uppercase
+Example: `./c/_LOAD/LOAD_rect.c`

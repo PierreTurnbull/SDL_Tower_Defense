@@ -1,3 +1,10 @@
+void  close_play_warzone(struct s_game *game)
+{
+  struct s_warzone *warzone = &game->play.warzone;
+
+  SDL_DestroyTexture(warzone->background);
+}
+
 void  close_play_gui(struct s_game *game)
 {
   struct s_gui *gui = &game->play.gui;
@@ -23,6 +30,7 @@ void  close_play_gui(struct s_game *game)
 
 void  close_play(struct s_game *game)
 {
+  close_play_warzone(game);
   close_play_gui(game);
   SDL_DestroyTexture(game->play.background);
   SDL_DestroyTexture(game->play.render);

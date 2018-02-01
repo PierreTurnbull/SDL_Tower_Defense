@@ -1,6 +1,14 @@
+void  render_play_warzone(struct s_game *game)
+{
+  struct s_warzone *warzone = &game->play.warzone;
+
+  SDL_RenderCopy(game->rend, warzone->background, NULL, &warzone->background_pos);
+}
+
 void  render_play_gui(struct s_game *game)
 {
   struct s_gui *gui = &game->play.gui;
+
   SDL_RenderCopy(game->rend, gui->background, NULL, &gui->background_pos);
   SDL_RenderCopy(game->rend, gui->items_background, NULL, &gui->items_background_pos);
   SDL_RenderCopy(game->rend, gui->gold_background, NULL, &gui->gold_background_pos);
@@ -12,9 +20,6 @@ void  render_play_gui(struct s_game *game)
   RENDER_btwn_2_tex(game, gui->options,               gui->options_hover,               &gui->options_pos,              gui->btn_selected == BTN_SELECTED_OPTIONS);
   RENDER_btwn_2_tex(game, gui->menu,                  gui->menu_hover,                  &gui->menu_pos,                 gui->btn_selected == BTN_SELECTED_MENU);
 }
-
-void  render_play_warzone(struct s_game *game)
-{}
 
 void  render_play(struct s_game *game)
 {

@@ -1,3 +1,12 @@
+void  load_play_warzone(struct s_game *game)
+{
+  struct s_warzone *warzone = &game->play.warzone;
+
+  warzone->background = IMG_LoadTexture(game->rend, "img/play/warzone_background.jpg");
+
+  LOAD_rect(&warzone->background_pos, 25, 25, 1545, 1030);
+}
+
 void  load_play_gui(struct s_game *game)
 {
   struct s_gui *gui = &game->play.gui;
@@ -26,7 +35,7 @@ void  load_play_gui(struct s_game *game)
   LOAD_rect(&gui->items_category_pos[1], 1695, 25, 100, 50);
   LOAD_rect(&gui->items_category_pos[2], 1795, 25, 100, 50);
   LOAD_rect(&gui->gold_background_pos, 1595, 925, 300, 25);
-  LOAD_rect(&gui->next_wave_background_pos, 1595, 965, 300, 50);
+  LOAD_rect(&gui->next_wave_background_pos, 1595, 965, 300, 55);
   LOAD_rect(&gui->pause_pos, 1595, 1030, 90, 25);
   LOAD_rect(&gui->options_pos, 1700, 1030, 90, 25);
   LOAD_rect(&gui->menu_pos, 1805, 1030, 90, 25);
@@ -42,4 +51,5 @@ void  load_play(struct s_game *game)
   LOAD_rect(&game->play.render_r, 0, 0, 1920, 1080);
 
   load_play_gui(game);
+  load_play_warzone(game);
 }
