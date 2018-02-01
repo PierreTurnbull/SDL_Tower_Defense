@@ -39,7 +39,7 @@ void  load_sdl(void)
 void  load_game(struct s_game *game)
 {
   stderr = freopen("stderr", "w+", stderr);
-  fprintf(stderr, "%s LOAD_GAME\n", get_game_time());
+  fprintf(stderr, "%s LOAD_GAME\n", TIME_get_time());
   load_sdl();
   game->wind      = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
   game->rend      = SDL_CreateRenderer(game->wind, -1, 0);

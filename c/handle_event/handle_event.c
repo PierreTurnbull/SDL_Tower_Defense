@@ -8,7 +8,7 @@ void  handle_event(struct s_game *game)
     handle_event_play(game);
   else
   {
-    fprintf(stderr, "%s HANDLE_EVENT\nFATAL ERROR: screen of value %d not found.\n\n", get_game_time(), game->screen);
+    fprintf(stderr, "%s HANDLE_EVENT\nFATAL ERROR: screen of value %d not found.\n\n", TIME_get_time(), game->screen);
     game->input.quit = SDL_TRUE;
   }
 }

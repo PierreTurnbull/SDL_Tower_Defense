@@ -9,6 +9,6 @@ void  play_game(struct s_game *game)
     handle_input(game);
     handle_event(game);
     render(game);
-    wait(game, 15);
+    TIME_wait(&game->game_time, 15);
   }
 }
