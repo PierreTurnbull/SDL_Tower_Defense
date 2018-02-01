@@ -8,7 +8,7 @@ void  play_game(struct s_game *game)
     SDL_PollEvent(&game->event);
     handle_input(game);
     handle_event(game);
-    render(game);
+    render_game(game);
     TIME_wait(&game->game_time, 15);
   }
 }

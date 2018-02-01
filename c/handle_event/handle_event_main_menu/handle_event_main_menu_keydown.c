@@ -8,8 +8,10 @@ void  handle_event_main_menu_keydown_return(struct s_game *game)
 {
   if (game->input.repeat[SDL_SCANCODE_RETURN] == SDL_TRUE)
     return;
-  if (game->main_menu.choice_selected == NAV_MAIN_MENU_PLAY)
+  if (game->main_menu.choice_selected == NAV_MAIN_MENU_PLAY) {
     game->screen = SCREEN_PLAY;
+    load_path(game);
+  }
   if (game->main_menu.choice_selected == NAV_MAIN_MENU_OPTIONS)
     game->screen = SCREEN_MAIN_OPTIONS;
   if (game->main_menu.choice_selected == NAV_MAIN_MENU_QUIT)

@@ -1,7 +1,9 @@
 void  handle_event_play_keydown_escape(struct s_game *game)
 {
-  if (game->input.repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE)
+  if (game->input.repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE) {
     game->screen = SCREEN_MAIN_MENU;
+    close_path(game);
+  }
 }
 
 void  handle_event_play_keydown_return(struct s_game *game)

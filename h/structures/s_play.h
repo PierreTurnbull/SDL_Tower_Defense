@@ -1,8 +1,8 @@
 struct s_warzone
 {
-  SDL_Texture         *background; // TODO load free
+  SDL_Texture         *background;
 
-  SDL_Rect            background_pos; // TODO load
+  SDL_Rect            background_pos;
 };
 
 struct s_gui
@@ -39,6 +39,7 @@ struct s_play
   SDL_Texture         *background;
   struct s_warzone    warzone;
   struct s_gui        gui;
+  struct s_path       path;
 
   SDL_Rect            render_r;
 };

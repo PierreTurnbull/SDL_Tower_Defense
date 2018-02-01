@@ -36,18 +36,23 @@ void  load_sdl(void)
   }
 }
 
+void  load_window(struct s_game *game)
+{
+  game->wind      = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
+  game->rend      = SDL_CreateRenderer(game->wind, -1, 0);
+  game->screen    = SCREEN_MAIN_MENU;
+  game->game_time = SDL_GetTicks();
+}
+
 void  load_game(struct s_game *game)
 {
   stderr = freopen("stderr", "w+", stderr);
   fprintf(stderr, "%s LOAD_GAME\n", TIME_get_time());
   load_sdl();
-  game->wind      = SDL_CreateWindow("COOL WINDOW", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 480, SDL_WINDOW_FULLSCREEN);
-  game->rend      = SDL_CreateRenderer(game->wind, -1, 0);
+  load_window(game);
   load_cursor(game);
   load_input(game);
   load_main_menu(game);
   load_play(game);
-  game->screen    = SCREEN_MAIN_MENU;
-  game->game_time = SDL_GetTicks();
   fprintf(stderr, "Game loaded correctly\n\n");
 }

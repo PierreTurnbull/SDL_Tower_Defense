@@ -27,7 +27,11 @@ ALLOCATED MEMORY TO FREE:
 - game.play.gui.menu
 - game.play.gui.menu_hover
 - game.play.gui.background
+
 - game.play.warzone.background
+
+- game.play.path.path_block
+
 - game.play.background
 - game.play.render
 
