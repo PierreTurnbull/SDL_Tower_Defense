@@ -2,7 +2,10 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0005.197 CLOSE_GAME
+NEW BLOCK: 25, 25: index: 0. FIRST = 0x20038370
+NEW BLOCK: 334, 849: index: 1. FIRST = 0x20038370
+NEW BLOCK: 1570, 1055: index: 2. FIRST = 0x20038370
+0001.239 CLOSE_GAME
 Closing cursor
 Closing game menu
 Closing SDL and SDL_Image

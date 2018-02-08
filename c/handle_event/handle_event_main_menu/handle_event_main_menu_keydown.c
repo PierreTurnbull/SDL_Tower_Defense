@@ -10,7 +10,7 @@ void  handle_event_main_menu_keydown_return(struct s_game *game)
     return;
   if (game->main_menu.choice_selected == NAV_MAIN_MENU_PLAY) {
     game->screen = SCREEN_PLAY;
-    load_path(game);
+    load_path(game, "1");
   }
   if (game->main_menu.choice_selected == NAV_MAIN_MENU_OPTIONS)
     game->screen = SCREEN_MAIN_OPTIONS;
