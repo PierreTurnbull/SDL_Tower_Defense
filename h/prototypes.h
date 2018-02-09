@@ -72,4 +72,5 @@ void  close_game(struct s_game *game);
     void close_play_gui(struct s_game *game);
     void close_play_warzone(struct s_game *game);
       void  close_path(struct s_game *game);
+        void  close_path_blocks(struct s_game *game);
   void  close_sdl(void);

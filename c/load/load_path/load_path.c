@@ -82,8 +82,14 @@ void  load_path(struct s_game *game, char *which)
     return;
   }
   load_path_coordinates(game, stream, coordinates);
-  load_path_blocks(game, stream, coordinates);
   fclose(stream);
+  load_path_blocks(game, stream, coordinates);
   game->play.path.path_block_tex = IMG_LoadTexture(game->rend, "img/play/path_block.png");
-  // TODO: create chained list
+  fprintf(stderr, "ROOT: first = %p\n", game->play.path.first);
+  struct s_path_block *ptr;
+  ptr = game->play.path.first;
+  while (ptr != NULL) {
+    fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
+    ptr = ptr->next;
+  }
 }

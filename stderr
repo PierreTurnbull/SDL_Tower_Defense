@@ -2,10 +2,13 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-NEW BLOCK: 25, 25: index: 0. FIRST = 0x20038370
-NEW BLOCK: 334, 849: index: 1. FIRST = 0x20038370
-NEW BLOCK: 1570, 1055: index: 2. FIRST = 0x20038370
-0001.239 CLOSE_GAME
+ROOT: first = 0x20038340
+0:    0x20038340, x = 25, y = 25, prev = 0x0, next = 0x20038360
+1:    0x20038360, x = 334, y = 849, prev = 0x20038340, next = 0x20038380
+2:    0x20038380, x = 1106, y = 437, prev = 0x20038360, next = 0x200383a0
+3:    0x200383a0, x = 1570, y = 1055, prev = 0x20038380, next = 0x0
+ROOT: first = 0x0
+0001.769 CLOSE_GAME
 Closing cursor
 Closing game menu
 Closing SDL and SDL_Image
