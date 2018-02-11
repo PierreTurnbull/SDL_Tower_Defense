@@ -21,8 +21,24 @@ void  create_target(struct s_game *game)
     new_target->prev = ptr;
     ptr->next = new_target;
   }
-  new_target->index = i;
-  new_target->pos.x = game->play.path.first->pos.x;
-  new_target->pos.y = game->play.path.first->pos.y;
-  new_target->next  = NULL;
+  new_target->index           = i;
+  new_target->move_speed      = TARGET_MOVE_SPEED;
+  new_target->pos.x           = game->play.path.first->pos.x - TARGET_SIZE / 2;
+  new_target->pos.y           = game->play.path.first->pos.y - TARGET_SIZE / 2;
+  new_target->pos_float_x     = new_target->pos.x;
+  new_target->pos_float_y     = new_target->pos.y;
+  new_target->pos.w           = TARGET_SIZE;
+  new_target->pos.h           = TARGET_SIZE;
+  new_target->next_path_block = game->play.path.first->next;
+  new_target->velx            = (new_target->next_path_block->pos.x - game->play.path.first->pos.x) * new_target->move_speed / sqrt(
+                                (new_target->next_path_block->pos.x - game->play.path.first->pos.x) *
+                                (new_target->next_path_block->pos.x - game->play.path.first->pos.x) +
+                                (new_target->next_path_block->pos.y - game->play.path.first->pos.y) *
+                                (new_target->next_path_block->pos.y - game->play.path.first->pos.y));
+  new_target->vely            = (new_target->next_path_block->pos.y - game->play.path.first->pos.y) * new_target->move_speed / sqrt(
+                                (new_target->next_path_block->pos.x - game->play.path.first->pos.x) *
+                                (new_target->next_path_block->pos.x - game->play.path.first->pos.x) +
+                                (new_target->next_path_block->pos.y - game->play.path.first->pos.y) *
+                                (new_target->next_path_block->pos.y - game->play.path.first->pos.y));
+  new_target->next            = NULL;
 }

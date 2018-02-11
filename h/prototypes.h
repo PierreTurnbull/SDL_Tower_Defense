@@ -1,3 +1,7 @@
+/************************************************************/
+/* Prototypes are sorted by order of appearance in the code */
+/************************************************************/
+
 /* GENERIC FUNCTIONS */
 
 void  LOAD_rect(SDL_Rect *rect, int x, int y, int w, int h);
@@ -61,6 +65,11 @@ void  play_game(struct s_game *game);
         void  handle_event_play_keyup_escape(struct s_game *game);
     void  handle_event_main_options(struct s_game *game);
     void  create_target(struct s_game *game);
+  void  move_items(struct s_game *game);
+  void  move_targets(struct s_game *game);
+    void  update_target_vel(struct s_game *game, struct s_target *ptr);
+      int   compare_sign(float f1, float f2);
+    void  move_target(struct s_target *ptr);
   void  render_game(struct s_game *game);
     void  render_main_menu(struct s_game *game);
       void  render_main_menu_choice(struct s_game *game);

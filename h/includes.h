@@ -5,6 +5,7 @@
 
 /* STANDARD LIBRARIES */
 
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -65,7 +66,11 @@
 #include "../c/load/load_path/load_path.c"
 #include "../c/load/load_play/load_play.c"
 #include "../c/load/load_target/load_target.c"
+#include "../c/move_items/move_items.c"
+#include "../c/move_items/move_targets/move_targets.c"
 #include "../c/play_game.c"
 #include "../c/render/render_game.c"
 #include "../c/render/render_main_menu/render_main_menu.c"
 #include "../c/render/render_play/render_play.c"
+#include "../c/render/render_play/render_play_gui/render_play_gui.c"
+#include "../c/render/render_play/render_play_warzone/render_play_warzone.c"
