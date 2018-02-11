@@ -73,6 +73,7 @@ int   load_path_file(FILE **stream, char *which)
 
 void  load_path(struct s_game *game, char *which)
 {
+  struct s_path_block *ptr;
   FILE *stream = NULL;
   float coordinates[256];
 
@@ -85,4 +86,11 @@ void  load_path(struct s_game *game, char *which)
   fclose(stream);
   load_path_blocks(game, stream, coordinates);
   game->play.path.path_block_tex = IMG_LoadTexture(game->rend, "img/play/path_block.png");
+  ptr = game->play.path.first;
+  fprintf(stderr, "%s LOAD_PATH\nROOT: %p\n", TIME_get_time(), game->play.path.first);
+  while (ptr != NULL) {
+    fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
+    ptr = ptr->next;
+  }
+  fprintf(stderr, "\n");
 }
