@@ -54,5 +54,6 @@ void  load_game(struct s_game *game)
   load_input(game);
   load_main_menu(game);
   load_play(game);
+  load_target(game);
   fprintf(stderr, "Game loaded correctly\n\n");
 }

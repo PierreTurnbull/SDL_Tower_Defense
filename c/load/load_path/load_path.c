@@ -1,7 +1,7 @@
 void  load_path_block(struct s_game *game, int x, int y)
 {
   int i;
-  struct s_path_block *new_element = malloc(sizeof(*new_element));
+  struct s_path_block *new_path_block = malloc(sizeof(*new_path_block));
   struct s_path_block *ptr;
 
   i = 0;
@@ -11,20 +11,20 @@ void  load_path_block(struct s_game *game, int x, int y)
     i++;
   }
   if (i == 0) {
-    game->play.path.first = new_element;
-    new_element->prev = NULL;
+    game->play.path.first = new_path_block;
+    new_path_block->prev = NULL;
   } else {
     ptr = game->play.path.first;
     while (ptr->next != NULL) {
       ptr = ptr->next;
     }
-    new_element->prev = ptr;
-    ptr->next = new_element;
+    new_path_block->prev = ptr;
+    ptr->next = new_path_block;
   }
-  new_element->index = i;
-  new_element->pos.x = x;
-  new_element->pos.y = y;
-  new_element->next  = NULL;
+  new_path_block->index = i;
+  new_path_block->pos.x = x;
+  new_path_block->pos.y = y;
+  new_path_block->next  = NULL;
 }
 
 void  load_path_blocks(struct s_game *game, FILE *stream, float coordinates[256])

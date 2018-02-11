@@ -2,7 +2,6 @@ struct s_path_block
 {
   int                 index;
   SDL_Rect            pos;
-
   struct s_path_block *prev;
   struct s_path_block *next;
 };
