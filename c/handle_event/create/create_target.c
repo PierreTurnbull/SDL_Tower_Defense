@@ -41,4 +41,5 @@ void  create_target(struct s_game *game)
                                 (new_target->next_path_block->pos.y - game->play.path.first->pos.y) *
                                 (new_target->next_path_block->pos.y - game->play.path.first->pos.y));
   new_target->next            = NULL;
+  fprintf(stderr, "%s CREATE_TARGET\n%p\nindex           = %d\nmove_speed      = %f\npos             = x%d y%d\nvel             = x%f y%f\nnext_path_block = %p\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_target, new_target->index, new_target->move_speed, new_target->pos.x, new_target->pos.y, new_target->velx, new_target->vely, new_target->next_path_block, new_target->prev, new_target->next);
 }

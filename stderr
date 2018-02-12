@@ -2,27 +2,52 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.624 LOAD_PATH
+0000.616 LOAD_PATH
 ROOT: 0x20038340
 0:    0x20038340, x = 25, y = 25, prev = 0x0, next = 0x20038360
 1:    0x20038360, x = 334, y = 849, prev = 0x20038340, next = 0x20038380
 2:    0x20038380, x = 1106, y = 437, prev = 0x20038360, next = 0x200383a0
 3:    0x200383a0, x = 1570, y = 1055, prev = 0x20038380, next = 0x0
 
-0010.492 CLOSE_PATH
-ROOT: 0x0
+0000.774 CREATE_TARGET
+0x200383c0
+index           = 0
+move_speed      = 3.500000
+pos             = x-13 y-13
+vel             = x1.228932 y3.277152
+next_path_block = 0x20038360
+prev            = 0x0
+next            = 0x0
 
-0010.976 LOAD_PATH
+0000.947 CREATE_TARGET
+0x200384a0
+index           = 1
+move_speed      = 3.500000
+pos             = x-13 y-13
+vel             = x1.228932 y3.277152
+next_path_block = 0x20038360
+prev            = 0x200383c0
+next            = 0x0
+
+0001.637 CLOSE_PATH
 ROOT: 0x20038340
 0:    0x20038340, x = 25, y = 25, prev = 0x0, next = 0x20038360
 1:    0x20038360, x = 334, y = 849, prev = 0x20038340, next = 0x20038380
 2:    0x20038380, x = 1106, y = 437, prev = 0x20038360, next = 0x200383a0
 3:    0x200383a0, x = 1570, y = 1055, prev = 0x20038380, next = 0x0
 
-0017.524 CLOSE_PATH
-ROOT: 0x0
+0001.637 CLOSE_PATH
+DONE ROOT: 0x0
 
-0018.093 CLOSE_GAME
+0001.637 CLOSE_TARGET_ALL
+ROOT: 0x200383c0
+0:    0x200383c0, x = 55, y = 167, prev = 0x0, next = 0x200384a0
+1:    0x200384a0, x = 41, y = 131, prev = 0x200383c0, next = 0x0
+
+0001.637 CLOSE_TARGET_ALL
+DONE ROOT: 0x0
+
+0001.960 CLOSE_GAME
 Closing cursor
 Closing game menu
 Closing SDL and SDL_Image

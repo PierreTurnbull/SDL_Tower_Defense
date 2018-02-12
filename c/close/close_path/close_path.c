@@ -18,7 +18,16 @@ void  close_path_blocks(struct s_game *game)
 
 void  close_path(struct s_game *game)
 {
+  struct s_path_block *ptr;
+
+  ptr = game->play.path.first;
+  fprintf(stderr, "%s CLOSE_PATH\nROOT: %p\n", TIME_get_time(), game->play.path.first);
+  while (ptr != NULL) {
+    fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
+    ptr = ptr->next;
+  }
+  fprintf(stderr, "\n");
   SDL_DestroyTexture(game->play.path.path_block_tex);
   close_path_blocks(game);
-  fprintf(stderr, "%s CLOSE_PATH\nROOT: %p\n\n", TIME_get_time(), game->play.path.first);
+  fprintf(stderr, "%s CLOSE_PATH\nDONE ROOT: %p\n\n", TIME_get_time(), game->play.path.first);
 }
