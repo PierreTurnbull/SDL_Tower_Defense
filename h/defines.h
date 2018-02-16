@@ -2,7 +2,7 @@
 #define WARZONE_H                 1030
 
 #define TARGET_SIZE               76
-#define TARGET_MOVE_SPEED         10
+#define TARGET_MOVE_SPEED         3.5
 
 #define MENU_DOWN                 0
 #define MENU_UP                   1
