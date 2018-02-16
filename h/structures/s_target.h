@@ -1,5 +1,6 @@
 struct s_target {
   int                 index;
+  int                 type;
   float               move_speed;
   float               velx;
   float               vely;
@@ -13,6 +14,8 @@ struct s_target {
 };
 
 struct s_target_list {
-  SDL_Texture         *target_tex;
+  SDL_Texture         *target_tex[3];
   struct s_target     *first;
+  int                 target_move_speed[TARGET_TYPES];
+  int                 target_size[TARGET_TYPES];
 };

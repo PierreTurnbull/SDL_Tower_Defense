@@ -6,7 +6,7 @@ void  close_target_all(struct s_game *game)
   ptr = game->play.target_list.first;
   fprintf(stderr, "%s CLOSE_TARGET_ALL\nROOT: %p\n", TIME_get_time(), game->play.target_list.first);
   while (ptr != NULL) {
-    fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
+    fprintf(stderr, "%d:    %p, type = %d, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->type, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
     ptr = ptr->next;
   }
   fprintf(stderr, "\n");

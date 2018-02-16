@@ -10,10 +10,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* OTHER LIBRARIES */
+/* SDL LIBRARIES */
 
 #include "SDL.h"
 #include "SDL_image.h"
+
+/* MACRO DEFINITIONS */
+
+#include "../h/defines.h"
 
 /* STRUCTURE FILES */
 
@@ -22,10 +26,6 @@
 #include "../h/structures/s_play.h"
 #include "../h/structures/s_main_menu.h"
 #include "../h/structures/s_main.h"
-
-/* MACRO DEFINITIONS */
-
-#include "../h/defines.h"
 
 /* PROTOTYPES */
 
@@ -65,7 +65,7 @@
 #include "../c/load/load_main_menu/load_main_menu.c"
 #include "../c/load/load_path/load_path.c"
 #include "../c/load/load_play/load_play.c"
-#include "../c/load/load_target/load_target.c"
+#include "../c/load/load_target_list/load_target_list.c"
 #include "../c/move_items/move_items.c"
 #include "../c/move_items/move_targets/move_targets.c"
 #include "../c/play_game.c"

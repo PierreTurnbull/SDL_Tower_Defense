@@ -8,13 +8,13 @@ void  handle_event_main_menu_keydown_return(struct s_game *game)
 {
   if (game->input.repeat[SDL_SCANCODE_RETURN] == SDL_TRUE)
     return;
-  if (game->main_menu.choice_selected == NAV_MAIN_MENU_PLAY) {
+  if (game->main_menu.choice_selected == MAIN_MENU_BTN_PLAY) {
     game->screen = SCREEN_PLAY;
     load_path(game, "1");
   }
-  if (game->main_menu.choice_selected == NAV_MAIN_MENU_OPTIONS)
+  if (game->main_menu.choice_selected == MAIN_MENU_BTN_OPTIONS)
     game->screen = SCREEN_MAIN_OPTIONS;
-  if (game->main_menu.choice_selected == NAV_MAIN_MENU_QUIT)
+  if (game->main_menu.choice_selected == MAIN_MENU_BTN_QUIT)
     game->input.quit = SDL_TRUE;
 }
 
