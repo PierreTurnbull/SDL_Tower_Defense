@@ -30,7 +30,7 @@ ALLOCATED MEMORY TO FREE:
 
 - game.play.warzone.background
 
-- game.play.path.path_block
+- game.play.warzone.path.path_block
 
 - game.play.background
 - game.play.render
@@ -42,4 +42,6 @@ ALLOCATED MEMORY TO FREE:
 
 
 TODO:
-- remove useless backgrounds
+- transfer path from play to play->warzone
+- make a unique fill_target function for paths, or change fill_target to have
+  only 1 function call to fill the path block simulation

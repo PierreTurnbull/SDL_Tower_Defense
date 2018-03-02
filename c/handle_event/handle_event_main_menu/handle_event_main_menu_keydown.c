@@ -52,12 +52,12 @@ void  handle_event_main_menu_keydown_down(struct s_game *game)
 
 void  handle_event_main_menu_keydown(struct s_game *game)
 {
-  if      (game->input.key[SDL_SCANCODE_DOWN] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_DOWN] == SDL_TRUE)
     handle_event_main_menu_keydown_down(game);
-  else if (game->input.key[SDL_SCANCODE_UP] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_UP] == SDL_TRUE)
     handle_event_main_menu_keydown_up(game);
-  else if (game->input.key[SDL_SCANCODE_RETURN] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_RETURN] == SDL_TRUE)
     handle_event_main_menu_keydown_return(game);
-  else if (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE)
     handle_event_main_menu_keydown_escape(game);
 }

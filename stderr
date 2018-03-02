@@ -2,14 +2,14 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.699 LOAD_PATH
+0000.687 LOAD_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
 2:    0x20038370, x = 1106, y = 437, prev = 0x20038350, next = 0x20038390
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 
-0001.329 CREATE_TARGET
+0001.214 CREATE_TARGET
 0x200383b0
 index           = 0
 type            = 0
@@ -20,7 +20,7 @@ next_path_block = 0x20038350
 prev            = 0x0
 next            = 0x0
 
-0001.659 CREATE_TARGET
+0001.572 CREATE_TARGET
 0x20038498
 index           = 1
 type            = 1
@@ -31,18 +31,18 @@ next_path_block = 0x20038350
 prev            = 0x200383b0
 next            = 0x0
 
-0001.783 CREATE_TARGET
+0001.744 CREATE_TARGET
 0x20048778
 index           = 2
-type            = 1
-move_speed      = 6.000000
+type            = 2
+move_speed      = 8.000000
 pos             = x-13 y-13
-vel             = x2.106741 y5.617975
+vel             = x2.808988 y7.490633
 next_path_block = 0x20038350
 prev            = 0x20038498
 next            = 0x0
 
-0002.129 CREATE_TARGET
+0002.194 CREATE_TARGET
 0x200487b8
 index           = 3
 type            = 2
@@ -53,29 +53,29 @@ next_path_block = 0x20038350
 prev            = 0x20048778
 next            = 0x0
 
-0002.318 CREATE_TARGET
+0002.348 CREATE_TARGET
 0x200487f8
 index           = 4
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200487b8
+next            = 0x0
+
+0002.395 CREATE_TARGET
+0x20048838
+index           = 5
 type            = 1
 move_speed      = 6.000000
 pos             = x-13 y-13
 vel             = x2.106741 y5.617975
 next_path_block = 0x20038350
-prev            = 0x200487b8
-next            = 0x0
-
-0002.522 CREATE_TARGET
-0x20048838
-index           = 5
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x20038350
 prev            = 0x200487f8
 next            = 0x0
 
-0002.727 CREATE_TARGET
+0002.395 CREATE_TARGET
 0x20048878
 index           = 6
 type            = 2
@@ -86,51 +86,51 @@ next_path_block = 0x20038350
 prev            = 0x20048838
 next            = 0x0
 
-0002.882 CREATE_TARGET
+0002.550 CREATE_TARGET
 0x200488b8
 index           = 7
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x20038350
-prev            = 0x20048878
-next            = 0x0
-
-0002.975 CREATE_TARGET
-0x200488f8
-index           = 8
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x20038350
-prev            = 0x200488b8
-next            = 0x0
-
-0003.131 CREATE_TARGET
-0x20048938
-index           = 9
 type            = 1
 move_speed      = 6.000000
 pos             = x-13 y-13
 vel             = x2.106741 y5.617975
 next_path_block = 0x20038350
-prev            = 0x200488f8
+prev            = 0x20048878
 next            = 0x0
 
-0003.289 CREATE_TARGET
-0x20048978
-index           = 10
+0002.550 CREATE_TARGET
+0x200488f8
+index           = 8
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200488b8
+next            = 0x0
+
+0002.770 CREATE_TARGET
+0x20048938
+index           = 9
 type            = 0
 move_speed      = 3.000000
 pos             = x-13 y-13
 vel             = x1.053370 y2.808988
 next_path_block = 0x20038350
+prev            = 0x200488f8
+next            = 0x0
+
+0003.050 CREATE_TARGET
+0x20048978
+index           = 10
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
 prev            = 0x20048938
 next            = 0x0
 
-0003.557 CREATE_TARGET
+0003.143 CREATE_TARGET
 0x200489b8
 index           = 11
 type            = 1
@@ -141,214 +141,2501 @@ next_path_block = 0x20038350
 prev            = 0x20048978
 next            = 0x0
 
-0003.817 CLOSE_PATH
+0003.143 CREATE_TARGET
+0x200489f8
+index           = 12
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200489b8
+next            = 0x0
+
+0003.191 CREATE_TARGET
+0x20048a38
+index           = 13
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200489f8
+next            = 0x0
+
+0003.191 CREATE_TARGET
+0x20048a78
+index           = 14
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048a38
+next            = 0x0
+
+0003.191 CREATE_TARGET
+0x20048ab8
+index           = 15
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048a78
+next            = 0x0
+
+0003.299 CREATE_TARGET
+0x20048af8
+index           = 16
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048ab8
+next            = 0x0
+
+0003.299 CREATE_TARGET
+0x20048b38
+index           = 17
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048af8
+next            = 0x0
+
+0003.329 CREATE_TARGET
+0x20048b78
+index           = 18
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048b38
+next            = 0x0
+
+0003.329 CREATE_TARGET
+0x20048bb8
+index           = 19
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048b78
+next            = 0x0
+
+0003.329 CREATE_TARGET
+0x20048bf8
+index           = 20
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048bb8
+next            = 0x0
+
+0003.451 CREATE_TARGET
+0x20048c38
+index           = 21
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048bf8
+next            = 0x0
+
+0003.483 CREATE_TARGET
+0x20048c78
+index           = 22
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048c38
+next            = 0x0
+
+0003.483 CREATE_TARGET
+0x20048cb8
+index           = 23
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048c78
+next            = 0x0
+
+0003.547 CREATE_TARGET
+0x20048cf8
+index           = 24
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048cb8
+next            = 0x0
+
+0003.547 CREATE_TARGET
+0x20048d38
+index           = 25
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048cf8
+next            = 0x0
+
+0003.547 CREATE_TARGET
+0x20048d78
+index           = 26
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048d38
+next            = 0x0
+
+0003.654 CREATE_TARGET
+0x20048db8
+index           = 27
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048d78
+next            = 0x0
+
+0003.654 CREATE_TARGET
+0x20048df8
+index           = 28
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048db8
+next            = 0x0
+
+0003.715 CREATE_TARGET
+0x20048e38
+index           = 29
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048df8
+next            = 0x0
+
+0003.715 CREATE_TARGET
+0x20048e78
+index           = 30
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048e38
+next            = 0x0
+
+0003.776 CREATE_TARGET
+0x20048eb8
+index           = 31
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048e78
+next            = 0x0
+
+0003.776 CREATE_TARGET
+0x20048ef8
+index           = 32
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048eb8
+next            = 0x0
+
+0003.776 CREATE_TARGET
+0x20048f38
+index           = 33
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048ef8
+next            = 0x0
+
+0003.867 CREATE_TARGET
+0x20048f78
+index           = 34
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048f38
+next            = 0x0
+
+0003.868 CREATE_TARGET
+0x20048fb8
+index           = 35
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048f78
+next            = 0x0
+
+0003.899 CREATE_TARGET
+0x20048ff8
+index           = 36
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048fb8
+next            = 0x0
+
+0003.899 CREATE_TARGET
+0x20049038
+index           = 37
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048ff8
+next            = 0x0
+
+0003.899 CREATE_TARGET
+0x20049078
+index           = 38
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049038
+next            = 0x0
+
+0003.976 CREATE_TARGET
+0x200490b8
+index           = 39
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049078
+next            = 0x0
+
+0003.976 CREATE_TARGET
+0x200490f8
+index           = 40
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200490b8
+next            = 0x0
+
+0003.976 CREATE_TARGET
+0x20049138
+index           = 41
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200490f8
+next            = 0x0
+
+0004.083 CREATE_TARGET
+0x20049178
+index           = 42
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049138
+next            = 0x0
+
+0004.083 CREATE_TARGET
+0x200491b8
+index           = 43
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049178
+next            = 0x0
+
+0004.115 CREATE_TARGET
+0x200491f8
+index           = 44
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200491b8
+next            = 0x0
+
+0004.115 CREATE_TARGET
+0x20049238
+index           = 45
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200491f8
+next            = 0x0
+
+0004.115 CREATE_TARGET
+0x20049278
+index           = 46
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049238
+next            = 0x0
+
+0004.192 CREATE_TARGET
+0x200492b8
+index           = 47
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049278
+next            = 0x0
+
+0004.192 CREATE_TARGET
+0x200492f8
+index           = 48
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200492b8
+next            = 0x0
+
+0004.192 CREATE_TARGET
+0x20049338
+index           = 49
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200492f8
+next            = 0x0
+
+0004.285 CREATE_TARGET
+0x20049378
+index           = 50
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049338
+next            = 0x0
+
+0004.285 CREATE_TARGET
+0x200493b8
+index           = 51
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049378
+next            = 0x0
+
+0004.317 CREATE_TARGET
+0x200493f8
+index           = 52
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200493b8
+next            = 0x0
+
+0004.317 CREATE_TARGET
+0x20049438
+index           = 53
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200493f8
+next            = 0x0
+
+0004.317 CREATE_TARGET
+0x20049478
+index           = 54
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049438
+next            = 0x0
+
+0004.380 CREATE_TARGET
+0x200494b8
+index           = 55
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049478
+next            = 0x0
+
+0004.380 CREATE_TARGET
+0x200494f8
+index           = 56
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200494b8
+next            = 0x0
+
+0004.380 CREATE_TARGET
+0x20049538
+index           = 57
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200494f8
+next            = 0x0
+
+0004.473 CREATE_TARGET
+0x20049578
+index           = 58
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049538
+next            = 0x0
+
+0004.474 CREATE_TARGET
+0x200495b8
+index           = 59
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049578
+next            = 0x0
+
+0004.535 CREATE_TARGET
+0x200495f8
+index           = 60
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200495b8
+next            = 0x0
+
+0004.535 CREATE_TARGET
+0x20049638
+index           = 61
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200495f8
+next            = 0x0
+
+0004.643 CREATE_TARGET
+0x20049678
+index           = 62
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049638
+next            = 0x0
+
+0004.673 CREATE_TARGET
+0x200496b8
+index           = 63
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049678
+next            = 0x0
+
+0004.674 CREATE_TARGET
+0x200496f8
+index           = 64
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200496b8
+next            = 0x0
+
+0004.721 CREATE_TARGET
+0x20049738
+index           = 65
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200496f8
+next            = 0x0
+
+0004.721 CREATE_TARGET
+0x20049778
+index           = 66
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049738
+next            = 0x0
+
+0004.765 CREATE_TARGET
+0x200497b8
+index           = 67
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049778
+next            = 0x0
+
+0004.765 CREATE_TARGET
+0x200497f8
+index           = 68
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200497b8
+next            = 0x0
+
+0004.765 CREATE_TARGET
+0x20049838
+index           = 69
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200497f8
+next            = 0x0
+
+0004.844 CREATE_TARGET
+0x20049878
+index           = 70
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049838
+next            = 0x0
+
+0004.874 CREATE_TARGET
+0x200498b8
+index           = 71
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049878
+next            = 0x0
+
+0004.874 CREATE_TARGET
+0x200498f8
+index           = 72
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200498b8
+next            = 0x0
+
+0004.905 CREATE_TARGET
+0x20049938
+index           = 73
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200498f8
+next            = 0x0
+
+0004.905 CREATE_TARGET
+0x20049978
+index           = 74
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049938
+next            = 0x0
+
+0004.905 CREATE_TARGET
+0x200499b8
+index           = 75
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049978
+next            = 0x0
+
+0004.999 CREATE_TARGET
+0x200499f8
+index           = 76
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200499b8
+next            = 0x0
+
+0005.091 CREATE_TARGET
+0x20049a38
+index           = 77
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200499f8
+next            = 0x0
+
+0005.091 CREATE_TARGET
+0x20049a78
+index           = 78
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049a38
+next            = 0x0
+
+0005.121 CREATE_TARGET
+0x20049ab8
+index           = 79
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049a78
+next            = 0x0
+
+0005.121 CREATE_TARGET
+0x20049af8
+index           = 80
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049ab8
+next            = 0x0
+
+0005.121 CREATE_TARGET
+0x20049b38
+index           = 81
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049af8
+next            = 0x0
+
+0005.184 CREATE_TARGET
+0x20049b78
+index           = 82
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049b38
+next            = 0x0
+
+0005.184 CREATE_TARGET
+0x20049bb8
+index           = 83
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049b78
+next            = 0x0
+
+0005.247 CREATE_TARGET
+0x20049bf8
+index           = 84
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049bb8
+next            = 0x0
+
+0005.247 CREATE_TARGET
+0x20049c38
+index           = 85
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049bf8
+next            = 0x0
+
+0005.292 CREATE_TARGET
+0x20049c78
+index           = 86
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049c38
+next            = 0x0
+
+0005.293 CREATE_TARGET
+0x20049cb8
+index           = 87
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049c78
+next            = 0x0
+
+0005.370 CREATE_TARGET
+0x20049cf8
+index           = 88
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049cb8
+next            = 0x0
+
+0005.401 CREATE_TARGET
+0x20049d38
+index           = 89
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049cf8
+next            = 0x0
+
+0005.401 CREATE_TARGET
+0x20049d78
+index           = 90
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049d38
+next            = 0x0
+
+0005.449 CREATE_TARGET
+0x20049db8
+index           = 91
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049d78
+next            = 0x0
+
+0005.449 CREATE_TARGET
+0x20049df8
+index           = 92
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049db8
+next            = 0x0
+
+0005.449 CREATE_TARGET
+0x20049e38
+index           = 93
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049df8
+next            = 0x0
+
+0005.559 CREATE_TARGET
+0x20049e78
+index           = 94
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049e38
+next            = 0x0
+
+0005.590 CREATE_TARGET
+0x20049eb8
+index           = 95
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049e78
+next            = 0x0
+
+0005.591 CREATE_TARGET
+0x20049ef8
+index           = 96
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049eb8
+next            = 0x0
+
+0005.635 CREATE_TARGET
+0x20049f38
+index           = 97
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20049ef8
+next            = 0x0
+
+0005.635 CREATE_TARGET
+0x20049f78
+index           = 98
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049f38
+next            = 0x0
+
+0005.635 CREATE_TARGET
+0x20049fb8
+index           = 99
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049f78
+next            = 0x0
+
+0005.728 CREATE_TARGET
+0x20049ff8
+index           = 100
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20049fb8
+next            = 0x0
+
+0005.728 CREATE_TARGET
+0x2004a038
+index           = 101
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20049ff8
+next            = 0x0
+
+0005.757 CREATE_TARGET
+0x2004a078
+index           = 102
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a038
+next            = 0x0
+
+0005.757 CREATE_TARGET
+0x2004a0b8
+index           = 103
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a078
+next            = 0x0
+
+0005.758 CREATE_TARGET
+0x2004a0f8
+index           = 104
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a0b8
+next            = 0x0
+
+0005.836 CREATE_TARGET
+0x2004a138
+index           = 105
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a0f8
+next            = 0x0
+
+0005.836 CREATE_TARGET
+0x2004a178
+index           = 106
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a138
+next            = 0x0
+
+0005.883 CREATE_TARGET
+0x2004a1b8
+index           = 107
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a178
+next            = 0x0
+
+0005.883 CREATE_TARGET
+0x2004a1f8
+index           = 108
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a1b8
+next            = 0x0
+
+0005.929 CREATE_TARGET
+0x2004a238
+index           = 109
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a1f8
+next            = 0x0
+
+0005.929 CREATE_TARGET
+0x2004a278
+index           = 110
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a238
+next            = 0x0
+
+0005.929 CREATE_TARGET
+0x2004a2b8
+index           = 111
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a278
+next            = 0x0
+
+0006.511 CREATE_TARGET
+0x2004a2f8
+index           = 112
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a2b8
+next            = 0x0
+
+0006.572 CREATE_TARGET
+0x2004a338
+index           = 113
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a2f8
+next            = 0x0
+
+0006.572 CREATE_TARGET
+0x2004a378
+index           = 114
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a338
+next            = 0x0
+
+0006.650 CREATE_TARGET
+0x2004a3b8
+index           = 115
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a378
+next            = 0x0
+
+0006.650 CREATE_TARGET
+0x2004a3f8
+index           = 116
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a3b8
+next            = 0x0
+
+0006.650 CREATE_TARGET
+0x2004a438
+index           = 117
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a3f8
+next            = 0x0
+
+0006.755 CREATE_TARGET
+0x2004a478
+index           = 118
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a438
+next            = 0x0
+
+0006.785 CREATE_TARGET
+0x2004a4b8
+index           = 119
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a478
+next            = 0x0
+
+0006.785 CREATE_TARGET
+0x2004a4f8
+index           = 120
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a4b8
+next            = 0x0
+
+0006.863 CREATE_TARGET
+0x2004a538
+index           = 121
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a4f8
+next            = 0x0
+
+0006.863 CREATE_TARGET
+0x2004a578
+index           = 122
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a538
+next            = 0x0
+
+0006.863 CREATE_TARGET
+0x2004a5b8
+index           = 123
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a578
+next            = 0x0
+
+0007.001 CREATE_TARGET
+0x2004a5f8
+index           = 124
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a5b8
+next            = 0x0
+
+0007.063 CREATE_TARGET
+0x2004a638
+index           = 125
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a5f8
+next            = 0x0
+
+0007.063 CREATE_TARGET
+0x2004a678
+index           = 126
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a638
+next            = 0x0
+
+0007.125 CREATE_TARGET
+0x2004a6b8
+index           = 127
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a678
+next            = 0x0
+
+0007.125 CREATE_TARGET
+0x2004a6f8
+index           = 128
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a6b8
+next            = 0x0
+
+0007.125 CREATE_TARGET
+0x2004a738
+index           = 129
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a6f8
+next            = 0x0
+
+0007.268 CREATE_TARGET
+0x2004a778
+index           = 130
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a738
+next            = 0x0
+
+0007.298 CREATE_TARGET
+0x2004a7b8
+index           = 131
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a778
+next            = 0x0
+
+0007.299 CREATE_TARGET
+0x2004a7f8
+index           = 132
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a7b8
+next            = 0x0
+
+0007.376 CREATE_TARGET
+0x2004a838
+index           = 133
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a7f8
+next            = 0x0
+
+0007.376 CREATE_TARGET
+0x2004a878
+index           = 134
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a838
+next            = 0x0
+
+0007.376 CREATE_TARGET
+0x2004a8b8
+index           = 135
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a878
+next            = 0x0
+
+0007.498 CREATE_TARGET
+0x2004a8f8
+index           = 136
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a8b8
+next            = 0x0
+
+0007.499 CREATE_TARGET
+0x2004a938
+index           = 137
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a8f8
+next            = 0x0
+
+0007.544 CREATE_TARGET
+0x2004a978
+index           = 138
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a938
+next            = 0x0
+
+0007.544 CREATE_TARGET
+0x2004a9b8
+index           = 139
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004a978
+next            = 0x0
+
+0007.622 CREATE_TARGET
+0x2004a9f8
+index           = 140
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004a9b8
+next            = 0x0
+
+0007.622 CREATE_TARGET
+0x2004aa38
+index           = 141
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004a9f8
+next            = 0x0
+
+0007.623 CREATE_TARGET
+0x2004aa78
+index           = 142
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004aa38
+next            = 0x0
+
+0007.750 CREATE_TARGET
+0x2004aab8
+index           = 143
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004aa78
+next            = 0x0
+
+0007.750 CREATE_TARGET
+0x2004aaf8
+index           = 144
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004aab8
+next            = 0x0
+
+0007.794 CREATE_TARGET
+0x2004ab38
+index           = 145
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004aaf8
+next            = 0x0
+
+0007.794 CREATE_TARGET
+0x2004ab78
+index           = 146
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004ab38
+next            = 0x0
+
+0007.872 CREATE_TARGET
+0x2004abb8
+index           = 147
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004ab78
+next            = 0x0
+
+0007.872 CREATE_TARGET
+0x2004abf8
+index           = 148
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004abb8
+next            = 0x0
+
+0007.872 CREATE_TARGET
+0x2004ac38
+index           = 149
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004abf8
+next            = 0x0
+
+0007.981 CREATE_TARGET
+0x2004ac78
+index           = 150
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004ac38
+next            = 0x0
+
+0007.982 CREATE_TARGET
+0x2004acb8
+index           = 151
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004ac78
+next            = 0x0
+
+0008.013 CREATE_TARGET
+0x2004acf8
+index           = 152
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004acb8
+next            = 0x0
+
+0008.013 CREATE_TARGET
+0x2004ad38
+index           = 153
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004acf8
+next            = 0x0
+
+0008.013 CREATE_TARGET
+0x2004ad78
+index           = 154
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004ad38
+next            = 0x0
+
+0008.090 CREATE_TARGET
+0x2004adb8
+index           = 155
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004ad78
+next            = 0x0
+
+0008.090 CREATE_TARGET
+0x2004adf8
+index           = 156
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004adb8
+next            = 0x0
+
+0008.090 CREATE_TARGET
+0x2004ae38
+index           = 157
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004adf8
+next            = 0x0
+
+0008.184 CREATE_TARGET
+0x2004ae78
+index           = 158
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004ae38
+next            = 0x0
+
+0008.184 CREATE_TARGET
+0x2004aeb8
+index           = 159
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004ae78
+next            = 0x0
+
+0008.296 CREATE_TARGET
+0x2004aef8
+index           = 160
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004aeb8
+next            = 0x0
+
+0008.296 CREATE_TARGET
+0x2004af38
+index           = 161
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004aef8
+next            = 0x0
+
+0008.421 CREATE_TARGET
+0x2004af78
+index           = 162
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004af38
+next            = 0x0
+
+0008.421 CREATE_TARGET
+0x2004afb8
+index           = 163
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004af78
+next            = 0x0
+
+0008.468 CREATE_TARGET
+0x2004aff8
+index           = 164
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004afb8
+next            = 0x0
+
+0008.468 CREATE_TARGET
+0x2004b038
+index           = 165
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004aff8
+next            = 0x0
+
+0008.468 CREATE_TARGET
+0x2004b078
+index           = 166
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b038
+next            = 0x0
+
+0008.579 CREATE_TARGET
+0x2004b0b8
+index           = 167
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b078
+next            = 0x0
+
+0008.579 CREATE_TARGET
+0x2004b0f8
+index           = 168
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b0b8
+next            = 0x0
+
+0008.687 CREATE_TARGET
+0x2004b138
+index           = 169
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b0f8
+next            = 0x0
+
+0008.687 CREATE_TARGET
+0x2004b178
+index           = 170
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b138
+next            = 0x0
+
+0008.733 CREATE_TARGET
+0x2004b1b8
+index           = 171
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b178
+next            = 0x0
+
+0008.733 CREATE_TARGET
+0x2004b1f8
+index           = 172
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b1b8
+next            = 0x0
+
+0008.733 CREATE_TARGET
+0x2004b238
+index           = 173
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b1f8
+next            = 0x0
+
+0008.841 CREATE_TARGET
+0x2004b278
+index           = 174
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b238
+next            = 0x0
+
+0008.841 CREATE_TARGET
+0x2004b2b8
+index           = 175
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b278
+next            = 0x0
+
+0008.886 CREATE_TARGET
+0x2004b2f8
+index           = 176
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b2b8
+next            = 0x0
+
+0008.886 CREATE_TARGET
+0x2004b338
+index           = 177
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b2f8
+next            = 0x0
+
+0008.886 CREATE_TARGET
+0x2004b378
+index           = 178
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b338
+next            = 0x0
+
+0008.980 CREATE_TARGET
+0x2004b3b8
+index           = 179
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b378
+next            = 0x0
+
+0008.980 CREATE_TARGET
+0x2004b3f8
+index           = 180
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b3b8
+next            = 0x0
+
+0009.150 CREATE_TARGET
+0x2004b438
+index           = 181
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b3f8
+next            = 0x0
+
+0009.291 CREATE_TARGET
+0x2004b478
+index           = 182
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b438
+next            = 0x0
+
+0009.291 CREATE_TARGET
+0x2004b4b8
+index           = 183
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b478
+next            = 0x0
+
+0009.338 CREATE_TARGET
+0x2004b4f8
+index           = 184
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b4b8
+next            = 0x0
+
+0009.338 CREATE_TARGET
+0x2004b538
+index           = 185
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b4f8
+next            = 0x0
+
+0009.430 CREATE_TARGET
+0x2004b578
+index           = 186
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b538
+next            = 0x0
+
+0009.431 CREATE_TARGET
+0x2004b5b8
+index           = 187
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b578
+next            = 0x0
+
+0009.462 CREATE_TARGET
+0x2004b5f8
+index           = 188
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b5b8
+next            = 0x0
+
+0009.462 CREATE_TARGET
+0x2004b638
+index           = 189
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b5f8
+next            = 0x0
+
+0009.462 CREATE_TARGET
+0x2004b678
+index           = 190
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b638
+next            = 0x0
+
+0009.557 CREATE_TARGET
+0x2004b6b8
+index           = 191
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x2004b678
+next            = 0x0
+
+0009.557 CREATE_TARGET
+0x2004b6f8
+index           = 192
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x2004b6b8
+next            = 0x0
+
+0009.557 CREATE_TARGET
+0x2004b738
+index           = 193
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x2004b6f8
+next            = 0x0
+
+0014.056 CLOSE_TARGET_ALL
+ROOT: 0x200383b0
+0:    0x200383b0, type = 0, x = 1508, y = 984, prev = 0x0, next = 0x20038498
+1:    0x20038498, type = 1, x = 2920, y = 2865, prev = 0x200383b0, next = 0x20048778
+2:    0x20048778, type = 2, x = 3830, y = 4078, prev = 0x20038498, next = 0x200487b8
+3:    0x200487b8, type = 2, x = 3691, y = 3892, prev = 0x20048778, next = 0x200487f8
+4:    0x200487f8, type = 2, x = 3643, y = 3828, prev = 0x200487b8, next = 0x20048838
+5:    0x20048838, type = 1, x = 2729, y = 2611, prev = 0x200487f8, next = 0x20048878
+6:    0x20048878, type = 2, x = 3628, y = 3809, prev = 0x20048838, next = 0x200488b8
+7:    0x200488b8, type = 1, x = 2693, y = 2563, prev = 0x20048878, next = 0x200488f8
+8:    0x200488f8, type = 2, x = 3580, y = 3745, prev = 0x200488b8, next = 0x20048938
+9:    0x20048938, type = 0, x = 1327, y = 744, prev = 0x200488f8, next = 0x20048978
+10:    0x20048978, type = 1, x = 2577, y = 2409, prev = 0x20048938, next = 0x200489b8
+11:    0x200489b8, type = 1, x = 2556, y = 2381, prev = 0x20048978, next = 0x200489f8
+12:    0x200489f8, type = 2, x = 3398, y = 3502, prev = 0x200489b8, next = 0x20048a38
+13:    0x20048a38, type = 0, x = 1279, y = 680, prev = 0x200489f8, next = 0x20048a78
+14:    0x20048a78, type = 1, x = 2545, y = 2366, prev = 0x20048a38, next = 0x20048ab8
+15:    0x20048ab8, type = 2, x = 3383, y = 3483, prev = 0x20048a78, next = 0x20048af8
+16:    0x20048af8, type = 0, x = 1266, y = 663, prev = 0x20048ab8, next = 0x20048b38
+17:    0x20048b38, type = 1, x = 2520, y = 2333, prev = 0x20048af8, next = 0x20048b78
+18:    0x20048b78, type = 0, x = 1263, y = 658, prev = 0x20048b38, next = 0x20048bb8
+19:    0x20048bb8, type = 1, x = 2513, y = 2323, prev = 0x20048b78, next = 0x20048bf8
+20:    0x20048bf8, type = 2, x = 3340, y = 3425, prev = 0x20048bb8, next = 0x20048c38
+21:    0x20048c38, type = 0, x = 1248, y = 639, prev = 0x20048bf8, next = 0x20048c78
+22:    0x20048c78, type = 0, x = 1245, y = 634, prev = 0x20048c38, next = 0x20048cb8
+23:    0x20048cb8, type = 1, x = 2477, y = 2275, prev = 0x20048c78, next = 0x20048cf8
+24:    0x20048cf8, type = 0, x = 1237, y = 625, prev = 0x20048cb8, next = 0x20048d38
+25:    0x20048d38, type = 1, x = 2462, y = 2256, prev = 0x20048cf8, next = 0x20048d78
+26:    0x20048d78, type = 2, x = 3273, y = 3335, prev = 0x20048d38, next = 0x20048db8
+27:    0x20048db8, type = 0, x = 1225, y = 608, prev = 0x20048d78, next = 0x20048df8
+28:    0x20048df8, type = 2, x = 3239, y = 3291, prev = 0x20048db8, next = 0x20048e38
+29:    0x20048e38, type = 0, x = 1218, y = 598, prev = 0x20048df8, next = 0x20048e78
+30:    0x20048e78, type = 1, x = 2423, y = 2203, prev = 0x20048e38, next = 0x20048eb8
+31:    0x20048eb8, type = 0, x = 1210, y = 589, prev = 0x20048e78, next = 0x20048ef8
+32:    0x20048ef8, type = 1, x = 2408, y = 2184, prev = 0x20048eb8, next = 0x20048f38
+33:    0x20048f38, type = 2, x = 3201, y = 3239, prev = 0x20048ef8, next = 0x20048f78
+34:    0x20048f78, type = 0, x = 1199, y = 574, prev = 0x20048f38, next = 0x20048fb8
+35:    0x20048fb8, type = 2, x = 3172, y = 3201, prev = 0x20048f78, next = 0x20048ff8
+36:    0x20048ff8, type = 0, x = 1196, y = 569, prev = 0x20048fb8, next = 0x20049038
+37:    0x20049038, type = 1, x = 2379, y = 2146, prev = 0x20048ff8, next = 0x20049078
+38:    0x20049078, type = 2, x = 3162, y = 3188, prev = 0x20049038, next = 0x200490b8
+39:    0x200490b8, type = 0, x = 1187, y = 557, prev = 0x20049078, next = 0x200490f8
+40:    0x200490f8, type = 1, x = 2361, y = 2122, prev = 0x200490b8, next = 0x20049138
+41:    0x20049138, type = 2, x = 3138, y = 3156, prev = 0x200490f8, next = 0x20049178
+42:    0x20049178, type = 0, x = 1174, y = 541, prev = 0x20049138, next = 0x200491b8
+43:    0x200491b8, type = 2, x = 3105, y = 3112, prev = 0x20049178, next = 0x200491f8
+44:    0x200491f8, type = 0, x = 1171, y = 536, prev = 0x200491b8, next = 0x20049238
+45:    0x20049238, type = 1, x = 2329, y = 2078, prev = 0x200491f8, next = 0x20049278
+46:    0x20049278, type = 2, x = 3095, y = 3099, prev = 0x20049238, next = 0x200492b8
+47:    0x200492b8, type = 0, x = 1162, y = 524, prev = 0x20049278, next = 0x200492f8
+48:    0x200492f8, type = 1, x = 2311, y = 2054, prev = 0x200492b8, next = 0x20049338
+49:    0x20049338, type = 2, x = 3071, y = 3067, prev = 0x200492f8, next = 0x20049378
+50:    0x20049378, type = 0, x = 1151, y = 509, prev = 0x20049338, next = 0x200493b8
+51:    0x200493b8, type = 2, x = 3042, y = 3028, prev = 0x20049378, next = 0x200493f8
+52:    0x200493f8, type = 0, x = 1147, y = 505, prev = 0x200493b8, next = 0x20049438
+53:    0x20049438, type = 1, x = 2282, y = 2016, prev = 0x200493f8, next = 0x20049478
+54:    0x20049478, type = 2, x = 3033, y = 3016, prev = 0x20049438, next = 0x200494b8
+55:    0x200494b8, type = 0, x = 1140, y = 495, prev = 0x20049478, next = 0x200494f8
+56:    0x200494f8, type = 1, x = 2268, y = 1997, prev = 0x200494b8, next = 0x20049538
+57:    0x20049538, type = 2, x = 3013, y = 2990, prev = 0x200494f8, next = 0x20049578
+58:    0x20049578, type = 0, x = 1129, y = 481, prev = 0x20049538, next = 0x200495b8
+59:    0x200495b8, type = 2, x = 2985, y = 2952, prev = 0x20049578, next = 0x200495f8
+60:    0x200495f8, type = 0, x = 1122, y = 471, prev = 0x200495b8, next = 0x20049638
+61:    0x20049638, type = 1, x = 2232, y = 1949, prev = 0x200495f8, next = 0x20049678
+62:    0x20049678, type = 1, x = 2206, y = 1915, prev = 0x20049638, next = 0x200496b8
+63:    0x200496b8, type = 0, x = 1106, y = 449, prev = 0x20049678, next = 0x200496f8
+64:    0x200496f8, type = 1, x = 2199, y = 1906, prev = 0x200496b8, next = 0x20049738
+65:    0x20049738, type = 0, x = 1100, y = 442, prev = 0x200496f8, next = 0x20049778
+66:    0x20049778, type = 2, x = 2908, y = 2849, prev = 0x20049738, next = 0x200497b8
+67:    0x200497b8, type = 0, x = 1095, y = 435, prev = 0x20049778, next = 0x200497f8
+68:    0x200497f8, type = 1, x = 2178, y = 1877, prev = 0x200497b8, next = 0x20049838
+69:    0x20049838, type = 2, x = 2893, y = 2830, prev = 0x200497f8, next = 0x20049878
+70:    0x20049878, type = 0, x = 1086, y = 423, prev = 0x20049838, next = 0x200498b8
+71:    0x200498b8, type = 0, x = 1082, y = 418, prev = 0x20049878, next = 0x200498f8
+72:    0x200498f8, type = 2, x = 2860, y = 2785, prev = 0x200498b8, next = 0x20049938
+73:    0x20049938, type = 0, x = 1079, y = 413, prev = 0x200498f8, next = 0x20049978
+74:    0x20049978, type = 1, x = 2145, y = 1834, prev = 0x20049938, next = 0x200499b8
+75:    0x200499b8, type = 2, x = 2850, y = 2772, prev = 0x20049978, next = 0x200499f8
+76:    0x200499f8, type = 0, x = 1066, y = 400, prev = 0x200499b8, next = 0x20049a38
+77:    0x20049a38, type = 0, x = 1050, y = 408, prev = 0x200499f8, next = 0x20049a78
+78:    0x20049a78, type = 1, x = 2102, y = 1776, prev = 0x20049a38, next = 0x20049ab8
+79:    0x20049ab8, type = 0, x = 1045, y = 411, prev = 0x20049a78, next = 0x20049af8
+80:    0x20049af8, type = 1, x = 2095, y = 1766, prev = 0x20049ab8, next = 0x20049b38
+81:    0x20049b38, type = 2, x = 2783, y = 2683, prev = 0x20049af8, next = 0x20049b78
+82:    0x20049b78, type = 0, x = 1034, y = 417, prev = 0x20049b38, next = 0x20049bb8
+83:    0x20049bb8, type = 1, x = 2080, y = 1747, prev = 0x20049b78, next = 0x20049bf8
+84:    0x20049bf8, type = 0, x = 1024, y = 423, prev = 0x20049bb8, next = 0x20049c38
+85:    0x20049c38, type = 2, x = 2744, y = 2632, prev = 0x20049bf8, next = 0x20049c78
+86:    0x20049c78, type = 1, x = 2055, y = 1714, prev = 0x20049c38, next = 0x20049cb8
+87:    0x20049cb8, type = 2, x = 2730, y = 2613, prev = 0x20049c78, next = 0x20049cf8
+88:    0x20049cf8, type = 0, x = 1003, y = 434, prev = 0x20049cb8, next = 0x20049d38
+89:    0x20049d38, type = 0, x = 997, y = 437, prev = 0x20049cf8, next = 0x20049d78
+90:    0x20049d78, type = 2, x = 2696, y = 2568, prev = 0x20049d38, next = 0x20049db8
+91:    0x20049db8, type = 0, x = 989, y = 441, prev = 0x20049d78, next = 0x20049df8
+92:    0x20049df8, type = 1, x = 2019, y = 1666, prev = 0x20049db8, next = 0x20049e38
+93:    0x20049e38, type = 2, x = 2682, y = 2549, prev = 0x20049df8, next = 0x20049e78
+94:    0x20049e78, type = 0, x = 971, y = 451, prev = 0x20049e38, next = 0x20049eb8
+95:    0x20049eb8, type = 0, x = 966, y = 454, prev = 0x20049e78, next = 0x20049ef8
+96:    0x20049ef8, type = 2, x = 2639, y = 2491, prev = 0x20049eb8, next = 0x20049f38
+97:    0x20049f38, type = 0, x = 958, y = 458, prev = 0x20049ef8, next = 0x20049f78
+98:    0x20049f78, type = 1, x = 1976, y = 1608, prev = 0x20049f38, next = 0x20049fb8
+99:    0x20049fb8, type = 2, x = 2624, y = 2472, prev = 0x20049f78, next = 0x20049ff8
+100:    0x20049ff8, type = 1, x = 1954, y = 1579, prev = 0x20049fb8, next = 0x2004a038
+101:    0x2004a038, type = 2, x = 2595, y = 2433, prev = 0x20049ff8, next = 0x2004a078
+102:    0x2004a078, type = 0, x = 936, y = 469, prev = 0x2004a038, next = 0x2004a0b8
+103:    0x2004a0b8, type = 1, x = 1947, y = 1570, prev = 0x2004a078, next = 0x2004a0f8
+104:    0x2004a0f8, type = 2, x = 2586, y = 2421, prev = 0x2004a0b8, next = 0x2004a138
+105:    0x2004a138, type = 0, x = 923, y = 476, prev = 0x2004a0f8, next = 0x2004a178
+106:    0x2004a178, type = 1, x = 1929, y = 1546, prev = 0x2004a138, next = 0x2004a1b8
+107:    0x2004a1b8, type = 1, x = 1918, y = 1531, prev = 0x2004a178, next = 0x2004a1f8
+108:    0x2004a1f8, type = 2, x = 2547, y = 2369, prev = 0x2004a1b8, next = 0x2004a238
+109:    0x2004a238, type = 0, x = 907, y = 485, prev = 0x2004a1f8, next = 0x2004a278
+110:    0x2004a278, type = 1, x = 1907, y = 1517, prev = 0x2004a238, next = 0x2004a2b8
+111:    0x2004a2b8, type = 2, x = 2533, y = 2350, prev = 0x2004a278, next = 0x2004a2f8
+112:    0x2004a2f8, type = 2, x = 2350, y = 2107, prev = 0x2004a2b8, next = 0x2004a338
+113:    0x2004a338, type = 1, x = 1756, y = 1315, prev = 0x2004a2f8, next = 0x2004a378
+114:    0x2004a378, type = 2, x = 2331, y = 2082, prev = 0x2004a338, next = 0x2004a3b8
+115:    0x2004a3b8, type = 0, x = 783, y = 551, prev = 0x2004a378, next = 0x2004a3f8
+116:    0x2004a3f8, type = 1, x = 1738, y = 1291, prev = 0x2004a3b8, next = 0x2004a438
+117:    0x2004a438, type = 2, x = 2307, y = 2050, prev = 0x2004a3f8, next = 0x2004a478
+118:    0x2004a478, type = 2, x = 2274, y = 2005, prev = 0x2004a438, next = 0x2004a4b8
+119:    0x2004a4b8, type = 1, x = 1706, y = 1248, prev = 0x2004a478, next = 0x2004a4f8
+120:    0x2004a4f8, type = 2, x = 2264, y = 1992, prev = 0x2004a4b8, next = 0x2004a538
+121:    0x2004a538, type = 0, x = 746, y = 571, prev = 0x2004a4f8, next = 0x2004a578
+122:    0x2004a578, type = 1, x = 1688, y = 1224, prev = 0x2004a538, next = 0x2004a5b8
+123:    0x2004a5b8, type = 2, x = 2240, y = 1960, prev = 0x2004a578, next = 0x2004a5f8
+124:    0x2004a5f8, type = 2, x = 2197, y = 1902, prev = 0x2004a5b8, next = 0x2004a638
+125:    0x2004a638, type = 1, x = 1641, y = 1162, prev = 0x2004a5f8, next = 0x2004a678
+126:    0x2004a678, type = 2, x = 2178, y = 1877, prev = 0x2004a638, next = 0x2004a6b8
+127:    0x2004a6b8, type = 0, x = 701, y = 595, prev = 0x2004a678, next = 0x2004a6f8
+128:    0x2004a6f8, type = 1, x = 1626, y = 1143, prev = 0x2004a6b8, next = 0x2004a738
+129:    0x2004a738, type = 2, x = 2158, y = 1851, prev = 0x2004a6f8, next = 0x2004a778
+130:    0x2004a778, type = 2, x = 2115, y = 1794, prev = 0x2004a738, next = 0x2004a7b8
+131:    0x2004a7b8, type = 1, x = 1587, y = 1090, prev = 0x2004a778, next = 0x2004a7f8
+132:    0x2004a7f8, type = 2, x = 2106, y = 1781, prev = 0x2004a7b8, next = 0x2004a838
+133:    0x2004a838, type = 0, x = 659, y = 617, prev = 0x2004a7f8, next = 0x2004a878
+134:    0x2004a878, type = 1, x = 1569, y = 1066, prev = 0x2004a838, next = 0x2004a8b8
+135:    0x2004a8b8, type = 2, x = 2082, y = 1749, prev = 0x2004a878, next = 0x2004a8f8
+136:    0x2004a8f8, type = 0, x = 637, y = 629, prev = 0x2004a8b8, next = 0x2004a938
+137:    0x2004a938, type = 2, x = 2043, y = 1698, prev = 0x2004a8f8, next = 0x2004a978
+138:    0x2004a978, type = 1, x = 1529, y = 1013, prev = 0x2004a938, next = 0x2004a9b8
+139:    0x2004a9b8, type = 2, x = 2029, y = 1678, prev = 0x2004a978, next = 0x2004a9f8
+140:    0x2004a9f8, type = 0, x = 616, y = 640, prev = 0x2004a9b8, next = 0x2004aa38
+141:    0x2004aa38, type = 1, x = 1511, y = 989, prev = 0x2004a9f8, next = 0x2004aa78
+142:    0x2004aa78, type = 2, x = 2005, y = 1647, prev = 0x2004aa38, next = 0x2004aab8
+143:    0x2004aab8, type = 0, x = 595, y = 651, prev = 0x2004aa78, next = 0x2004aaf8
+144:    0x2004aaf8, type = 2, x = 1966, y = 1595, prev = 0x2004aab8, next = 0x2004ab38
+145:    0x2004ab38, type = 1, x = 1471, y = 936, prev = 0x2004aaf8, next = 0x2004ab78
+146:    0x2004ab78, type = 2, x = 1952, y = 1576, prev = 0x2004ab38, next = 0x2004abb8
+147:    0x2004abb8, type = 0, x = 574, y = 663, prev = 0x2004ab78, next = 0x2004abf8
+148:    0x2004abf8, type = 1, x = 1453, y = 912, prev = 0x2004abb8, next = 0x2004ac38
+149:    0x2004ac38, type = 2, x = 1928, y = 1544, prev = 0x2004abf8, next = 0x2004ac78
+150:    0x2004ac78, type = 0, x = 555, y = 673, prev = 0x2004ac38, next = 0x2004acb8
+151:    0x2004acb8, type = 2, x = 1894, y = 1499, prev = 0x2004ac78, next = 0x2004acf8
+152:    0x2004acf8, type = 0, x = 550, y = 675, prev = 0x2004acb8, next = 0x2004ad38
+153:    0x2004ad38, type = 1, x = 1421, y = 869, prev = 0x2004acf8, next = 0x2004ad78
+154:    0x2004ad78, type = 2, x = 1885, y = 1487, prev = 0x2004ad38, next = 0x2004adb8
+155:    0x2004adb8, type = 0, x = 537, y = 682, prev = 0x2004ad78, next = 0x2004adf8
+156:    0x2004adf8, type = 1, x = 1403, y = 845, prev = 0x2004adb8, next = 0x2004ae38
+157:    0x2004ae38, type = 2, x = 1861, y = 1455, prev = 0x2004adf8, next = 0x2004ae78
+158:    0x2004ae78, type = 0, x = 521, y = 691, prev = 0x2004ae38, next = 0x2004aeb8
+159:    0x2004aeb8, type = 1, x = 1381, y = 816, prev = 0x2004ae78, next = 0x2004aef8
+160:    0x2004aef8, type = 1, x = 1356, y = 783, prev = 0x2004aeb8, next = 0x2004af38
+161:    0x2004af38, type = 2, x = 1798, y = 1371, prev = 0x2004aef8, next = 0x2004af78
+162:    0x2004af78, type = 1, x = 1327, y = 744, prev = 0x2004af38, next = 0x2004afb8
+163:    0x2004afb8, type = 2, x = 1760, y = 1320, prev = 0x2004af78, next = 0x2004aff8
+164:    0x2004aff8, type = 0, x = 473, y = 716, prev = 0x2004afb8, next = 0x2004b038
+165:    0x2004b038, type = 1, x = 1317, y = 730, prev = 0x2004aff8, next = 0x2004b078
+166:    0x2004b078, type = 2, x = 1745, y = 1301, prev = 0x2004b038, next = 0x2004b0b8
+167:    0x2004b0b8, type = 0, x = 455, y = 726, prev = 0x2004b078, next = 0x2004b0f8
+168:    0x2004b0f8, type = 1, x = 1291, y = 696, prev = 0x2004b0b8, next = 0x2004b138
+169:    0x2004b138, type = 0, x = 436, y = 736, prev = 0x2004b0f8, next = 0x2004b178
+170:    0x2004b178, type = 1, x = 1266, y = 663, prev = 0x2004b138, next = 0x2004b1b8
+171:    0x2004b1b8, type = 0, x = 428, y = 740, prev = 0x2004b178, next = 0x2004b1f8
+172:    0x2004b1f8, type = 1, x = 1255, y = 649, prev = 0x2004b1b8, next = 0x2004b238
+173:    0x2004b238, type = 2, x = 1664, y = 1192, prev = 0x2004b1f8, next = 0x2004b278
+174:    0x2004b278, type = 1, x = 1230, y = 615, prev = 0x2004b238, next = 0x2004b2b8
+175:    0x2004b2b8, type = 2, x = 1630, y = 1148, prev = 0x2004b278, next = 0x2004b2f8
+176:    0x2004b2f8, type = 0, x = 402, y = 755, prev = 0x2004b2b8, next = 0x2004b338
+177:    0x2004b338, type = 1, x = 1219, y = 601, prev = 0x2004b2f8, next = 0x2004b378
+178:    0x2004b378, type = 2, x = 1616, y = 1128, prev = 0x2004b338, next = 0x2004b3b8
+179:    0x2004b3b8, type = 0, x = 386, y = 763, prev = 0x2004b378, next = 0x2004b3f8
+180:    0x2004b3f8, type = 2, x = 1587, y = 1090, prev = 0x2004b3b8, next = 0x2004b438
+181:    0x2004b438, type = 1, x = 1158, y = 519, prev = 0x2004b3f8, next = 0x2004b478
+182:    0x2004b478, type = 1, x = 1126, y = 476, prev = 0x2004b438, next = 0x2004b4b8
+183:    0x2004b4b8, type = 2, x = 1491, y = 962, prev = 0x2004b478, next = 0x2004b4f8
+184:    0x2004b4f8, type = 0, x = 325, y = 795, prev = 0x2004b4b8, next = 0x2004b538
+185:    0x2004b538, type = 2, x = 1476, y = 943, prev = 0x2004b4f8, next = 0x2004b578
+186:    0x2004b578, type = 0, x = 309, y = 804, prev = 0x2004b538, next = 0x2004b5b8
+187:    0x2004b5b8, type = 1, x = 1093, y = 433, prev = 0x2004b578, next = 0x2004b5f8
+188:    0x2004b5f8, type = 0, x = 304, y = 807, prev = 0x2004b5b8, next = 0x2004b638
+189:    0x2004b638, type = 1, x = 1086, y = 423, prev = 0x2004b5f8, next = 0x2004b678
+190:    0x2004b678, type = 2, x = 1438, y = 892, prev = 0x2004b638, next = 0x2004b6b8
+191:    0x2004b6b8, type = 0, x = 292, y = 802, prev = 0x2004b678, next = 0x2004b6f8
+192:    0x2004b6f8, type = 1, x = 1058, y = 404, prev = 0x2004b6b8, next = 0x2004b738
+193:    0x2004b738, type = 2, x = 1409, y = 853, prev = 0x2004b6f8, next = 0x0
+
+0014.057 CLOSE_TARGET_ALL
+DONE ROOT: 0x0
+
+0014.643 CREATE_TARGET
+0x200383b0
+index           = 0
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x0
+next            = 0x0
+
+0015.249 CREATE_TARGET
+0x20038498
+index           = 1
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200383b0
+next            = 0x0
+
+0015.633 CREATE_TARGET
+0x20048778
+index           = 2
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20038498
+next            = 0x0
+
+0015.821 CREATE_TARGET
+0x200487b8
+index           = 3
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048778
+next            = 0x0
+
+0016.174 CREATE_TARGET
+0x200487f8
+index           = 4
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200487b8
+next            = 0x0
+
+0016.471 CREATE_TARGET
+0x20048838
+index           = 5
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200487f8
+next            = 0x0
+
+0016.920 CREATE_TARGET
+0x20048878
+index           = 6
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048838
+next            = 0x0
+
+0017.432 CREATE_TARGET
+0x200488b8
+index           = 7
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048878
+next            = 0x0
+
+0017.770 CREATE_TARGET
+0x200488f8
+index           = 8
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200488b8
+next            = 0x0
+
+0018.232 CREATE_TARGET
+0x20048938
+index           = 9
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200488f8
+next            = 0x0
+
+0018.556 CREATE_TARGET
+0x20048978
+index           = 10
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048938
+next            = 0x0
+
+0018.739 CREATE_TARGET
+0x200489b8
+index           = 11
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x20048978
+next            = 0x0
+
+0018.968 CREATE_TARGET
+0x200489f8
+index           = 12
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200489b8
+next            = 0x0
+
+0019.201 CREATE_TARGET
+0x20048a38
+index           = 13
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200489f8
+next            = 0x0
+
+0020.886 CREATE_TARGET
+0x20048a78
+index           = 14
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048a38
+next            = 0x0
+
+0021.057 CREATE_TARGET
+0x20048ab8
+index           = 15
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048a78
+next            = 0x0
+
+0021.208 CREATE_TARGET
+0x20048af8
+index           = 16
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048ab8
+next            = 0x0
+
+0022.371 CREATE_TARGET
+0x20048b38
+index           = 17
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048af8
+next            = 0x0
+
+0022.621 CREATE_TARGET
+0x20048b78
+index           = 18
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048b38
+next            = 0x0
+
+0022.653 CREATE_TARGET
+0x20048bb8
+index           = 19
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048b78
+next            = 0x0
+
+0022.684 CREATE_TARGET
+0x20048bf8
+index           = 20
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048bb8
+next            = 0x0
+
+0022.714 CREATE_TARGET
+0x20048c38
+index           = 21
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048bf8
+next            = 0x0
+
+0022.744 CREATE_TARGET
+0x20048c78
+index           = 22
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x20048c38
+next            = 0x0
+
+0034.290 CLOSE_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
 2:    0x20038370, x = 1106, y = 437, prev = 0x20038350, next = 0x20038390
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 
-0003.817 CLOSE_PATH
+0034.290 CLOSE_PATH
 DONE ROOT: 0x0
 
-0003.817 CLOSE_TARGET_ALL
+0034.290 CLOSE_TARGET_ALL
 ROOT: 0x200383b0
-0:    0x200383b0, type = 0, x = 154, y = 434, prev = 0x0, next = 0x20038498
-1:    0x20038498, type = 1, x = 278, y = 762, prev = 0x200383b0, next = 0x20048778
-2:    0x20048778, type = 1, x = 261, y = 717, prev = 0x20038498, next = 0x200487b8
-3:    0x200487b8, type = 2, x = 290, y = 796, prev = 0x20048778, next = 0x200487f8
-4:    0x200487f8, type = 1, x = 189, y = 526, prev = 0x200487b8, next = 0x20048838
-5:    0x20048838, type = 0, x = 74, y = 220, prev = 0x200487f8, next = 0x20048878
-6:    0x20048878, type = 2, x = 184, y = 511, prev = 0x20048838, next = 0x200488b8
-7:    0x200488b8, type = 0, x = 50, y = 156, prev = 0x20048878, next = 0x200488f8
-8:    0x200488f8, type = 0, x = 44, y = 139, prev = 0x200488b8, next = 0x20048938
-9:    0x20048938, type = 1, x = 80, y = 234, prev = 0x200488f8, next = 0x20048978
-10:    0x20048978, type = 0, x = 23, y = 83, prev = 0x20048938, next = 0x200489b8
-11:    0x200489b8, type = 1, x = 23, y = 83, prev = 0x20048978, next = 0x0
+0:    0x200383b0, type = 2, x = 6116, y = 7123, prev = 0x0, next = 0x20038498
+1:    0x20038498, type = 1, x = 4454, y = 4909, prev = 0x200383b0, next = 0x20048778
+2:    0x20048778, type = 1, x = 4364, y = 4789, prev = 0x20038498, next = 0x200487b8
+3:    0x200487b8, type = 0, x = 2167, y = 1862, prev = 0x20048778, next = 0x200487f8
+4:    0x200487f8, type = 2, x = 5641, y = 6489, prev = 0x200487b8, next = 0x20048838
+5:    0x20048838, type = 1, x = 4170, y = 4530, prev = 0x200487f8, next = 0x20048878
+6:    0x20048878, type = 2, x = 5410, y = 6182, prev = 0x20048838, next = 0x200488b8
+7:    0x200488b8, type = 1, x = 3946, y = 4233, prev = 0x20048878, next = 0x200488f8
+8:    0x200488f8, type = 2, x = 5146, y = 5830, prev = 0x200488b8, next = 0x20048938
+9:    0x20048938, type = 0, x = 1886, y = 1488, prev = 0x200488f8, next = 0x20048978
+10:    0x20048978, type = 0, x = 1848, y = 1438, prev = 0x20048938, next = 0x200489b8
+11:    0x200489b8, type = 1, x = 3640, y = 3825, prev = 0x20048978, next = 0x200489f8
+12:    0x200489f8, type = 2, x = 4771, y = 5331, prev = 0x200489b8, next = 0x20048a38
+13:    0x20048a38, type = 0, x = 1772, y = 1337, prev = 0x200489f8, next = 0x20048a78
+14:    0x20048a78, type = 2, x = 4176, y = 4538, prev = 0x20048a38, next = 0x20048ab8
+15:    0x20048ab8, type = 2, x = 4123, y = 4468, prev = 0x20048a78, next = 0x20048af8
+16:    0x20048af8, type = 2, x = 4075, y = 4404, prev = 0x20048ab8, next = 0x20048b38
+17:    0x20048b38, type = 2, x = 3715, y = 3924, prev = 0x20048af8, next = 0x20048b78
+18:    0x20048b78, type = 2, x = 3638, y = 3822, prev = 0x20048b38, next = 0x20048bb8
+19:    0x20048bb8, type = 2, x = 3628, y = 3809, prev = 0x20048b78, next = 0x20048bf8
+20:    0x20048bf8, type = 2, x = 3619, y = 3796, prev = 0x20048bb8, next = 0x20048c38
+21:    0x20048c38, type = 2, x = 3609, y = 3783, prev = 0x20048bf8, next = 0x20048c78
+22:    0x20048c78, type = 2, x = 3599, y = 3770, prev = 0x20048c38, next = 0x0
 
-0003.817 CLOSE_TARGET_ALL
+0034.290 CLOSE_TARGET_ALL
 DONE ROOT: 0x0
 
-0005.150 LOAD_PATH
-ROOT: 0x20038498
-0:    0x20038498, x = 25, y = 25, prev = 0x0, next = 0x200384b8
-1:    0x200384b8, x = 334, y = 849, prev = 0x20038498, next = 0x20038330
-2:    0x20038330, x = 1106, y = 437, prev = 0x200384b8, next = 0x20038350
-3:    0x20038350, x = 1570, y = 1055, prev = 0x20038330, next = 0x0
-
-0005.165 CREATE_TARGET
-0x20038370
-index           = 0
-type            = 1
-move_speed      = 6.000000
-pos             = x-13 y-13
-vel             = x2.106741 y5.617975
-next_path_block = 0x200384b8
-prev            = 0x0
-next            = 0x0
-
-0005.446 CREATE_TARGET
-0x200383b0
-index           = 1
-type            = 1
-move_speed      = 6.000000
-pos             = x-13 y-13
-vel             = x2.106741 y5.617975
-next_path_block = 0x200384b8
-prev            = 0x20038370
-next            = 0x0
-
-0005.572 CREATE_TARGET
-0x20048778
-index           = 2
-type            = 1
-move_speed      = 6.000000
-pos             = x-13 y-13
-vel             = x2.106741 y5.617975
-next_path_block = 0x200384b8
-prev            = 0x200383b0
-next            = 0x0
-
-0005.809 CREATE_TARGET
-0x200487b8
-index           = 3
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x200384b8
-prev            = 0x20048778
-next            = 0x0
-
-0006.108 CLOSE_TARGET_ALL
-ROOT: 0x20038370
-0:    0x20038370, type = 1, x = 113, y = 324, prev = 0x0, next = 0x200383b0
-1:    0x200383b0, type = 1, x = 75, y = 223, prev = 0x20038370, next = 0x20048778
-2:    0x20048778, type = 1, x = 59, y = 178, prev = 0x200383b0, next = 0x200487b8
-3:    0x200487b8, type = 0, x = 7, y = 40, prev = 0x20048778, next = 0x0
-
-0006.108 CLOSE_TARGET_ALL
-DONE ROOT: 0x0
-
-0006.326 CREATE_TARGET
-0x20038370
-index           = 0
-type            = 1
-move_speed      = 6.000000
-pos             = x-13 y-13
-vel             = x2.106741 y5.617975
-next_path_block = 0x200384b8
-prev            = 0x0
-next            = 0x0
-
-0006.450 CREATE_TARGET
-0x200383b0
-index           = 1
-type            = 1
-move_speed      = 6.000000
-pos             = x-13 y-13
-vel             = x2.106741 y5.617975
-next_path_block = 0x200384b8
-prev            = 0x20038370
-next            = 0x0
-
-0006.574 CREATE_TARGET
-0x20048778
-index           = 2
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x200384b8
-prev            = 0x200383b0
-next            = 0x0
-
-0006.667 CREATE_TARGET
-0x200487b8
-index           = 3
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x200384b8
-prev            = 0x20048778
-next            = 0x0
-
-0006.793 CREATE_TARGET
-0x200487f8
-index           = 4
-type            = 1
-move_speed      = 6.000000
-pos             = x-13 y-13
-vel             = x2.106741 y5.617975
-next_path_block = 0x200384b8
-prev            = 0x200487b8
-next            = 0x0
-
-0006.840 CREATE_TARGET
-0x20048838
-index           = 5
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x200384b8
-prev            = 0x200487f8
-next            = 0x0
-
-0006.935 CREATE_TARGET
-0x20048878
-index           = 6
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x200384b8
-prev            = 0x20048838
-next            = 0x0
-
-0007.012 CREATE_TARGET
-0x200488b8
-index           = 7
-type            = 2
-move_speed      = 8.000000
-pos             = x-13 y-13
-vel             = x2.808988 y7.490633
-next_path_block = 0x200384b8
-prev            = 0x20048878
-next            = 0x0
-
-0007.216 CLOSE_TARGET_ALL
-ROOT: 0x20038370
-0:    0x20038370, type = 1, x = 107, y = 307, prev = 0x0, next = 0x200383b0
-1:    0x200383b0, type = 1, x = 90, y = 262, prev = 0x20038370, next = 0x20048778
-2:    0x20048778, type = 0, x = 30, y = 102, prev = 0x200383b0, next = 0x200487b8
-3:    0x200487b8, type = 0, x = 24, y = 85, prev = 0x20048778, next = 0x200487f8
-4:    0x200487f8, type = 1, x = 44, y = 139, prev = 0x200487b8, next = 0x20048838
-5:    0x20048838, type = 0, x = 12, y = 54, prev = 0x200487f8, next = 0x20048878
-6:    0x20048878, type = 0, x = 6, y = 38, prev = 0x20048838, next = 0x200488b8
-7:    0x200488b8, type = 2, x = 24, y = 84, prev = 0x20048878, next = 0x0
-
-0007.216 CLOSE_TARGET_ALL
-DONE ROOT: 0x0
-
-0007.719 CLOSE_PATH
-ROOT: 0x20038498
-0:    0x20038498, x = 25, y = 25, prev = 0x0, next = 0x200384b8
-1:    0x200384b8, x = 334, y = 849, prev = 0x20038498, next = 0x20038330
-2:    0x20038330, x = 1106, y = 437, prev = 0x200384b8, next = 0x20038350
-3:    0x20038350, x = 1570, y = 1055, prev = 0x20038330, next = 0x0
-
-0007.719 CLOSE_PATH
-DONE ROOT: 0x0
-
-0007.719 CLOSE_TARGET_ALL
-ROOT: 0x0
-
-0007.719 CLOSE_TARGET_ALL
-DONE ROOT: 0x0
-
-0008.230 CLOSE_GAME
+0035.141 CLOSE_GAME
 Closing cursor
 Closing game menu
 Closing SDL and SDL_Image
