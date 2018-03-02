@@ -38,20 +38,20 @@ void  handle_event_play_keydown_down(struct s_game *game)
 
 void  handle_event_play_keydown(struct s_game *game)
 {
-  if      (game->input.key[SDL_SCANCODE_DOWN] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_DOWN] == SDL_TRUE)
     handle_event_play_keydown_down(game);
-  else if (game->input.key[SDL_SCANCODE_UP] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_UP] == SDL_TRUE)
     handle_event_play_keydown_up(game);
-  else if (game->input.key[SDL_SCANCODE_Q] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_Q] == SDL_TRUE)
     handle_event_play_keydown_q(game);
-  else if (game->input.key[SDL_SCANCODE_W] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_W] == SDL_TRUE)
     handle_event_play_keydown_w(game);
-  else if (game->input.key[SDL_SCANCODE_E] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_E] == SDL_TRUE)
     handle_event_play_keydown_e(game);
-  else if (game->input.key[SDL_SCANCODE_SPACE] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_SPACE] == SDL_TRUE)
     handle_event_play_keydown_space(game);
-  else if (game->input.key[SDL_SCANCODE_RETURN] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_RETURN] == SDL_TRUE)
     handle_event_play_keydown_return(game);
-  else if (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE)
+  if (game->input.key[SDL_SCANCODE_ESCAPE] == SDL_TRUE)
     handle_event_play_keydown_escape(game);
 }
