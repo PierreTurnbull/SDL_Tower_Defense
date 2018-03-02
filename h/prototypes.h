@@ -76,6 +76,8 @@ void  play_game(struct s_game *game);
     void  render_play(struct s_game *game);
       void  render_play_gui(struct s_game *game);
       void  render_play_warzone(struct s_game *game);
+        void  render_play_warzone_targets(struct s_game *game);
+        void  render_play_warzone_path(struct s_game *game);
 void  close_game(struct s_game *game);
   void  close_cursor(struct s_game *game);
   void  close_main_menu(struct s_game *game);
