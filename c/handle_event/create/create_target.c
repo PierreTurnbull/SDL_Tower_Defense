@@ -19,7 +19,6 @@ void  fill_target(struct s_game *game, struct s_target *new_target, int type)
                                 (new_target->next_path_block->pos.x - game->play.path.first->pos.x) +
                                 (new_target->next_path_block->pos.y - game->play.path.first->pos.y) *
                                 (new_target->next_path_block->pos.y - game->play.path.first->pos.y));
-  new_target->next            = NULL;
 }
 
 void  append_target(struct s_game *game, struct s_target *new_target, struct s_target *ptr)
@@ -43,6 +42,7 @@ void  append_target(struct s_game *game, struct s_target *new_target, struct s_t
     ptr->next = new_target;
   }
   new_target->index           = i;
+  new_target->next            = NULL;
 }
 
 void  create_target(struct s_game *game, int type)

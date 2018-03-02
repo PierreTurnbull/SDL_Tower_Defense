@@ -42,4 +42,4 @@ ALLOCATED MEMORY TO FREE:
 
 
 TODO:
-- remove useless backgrounds
+- transfer path from play to play->warzone

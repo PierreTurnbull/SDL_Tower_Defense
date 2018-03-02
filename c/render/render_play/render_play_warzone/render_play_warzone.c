@@ -1,5 +1,27 @@
+void  fill_path_block_simulation(struct s_game *game, struct s_target *pbs)
+{
+  fill_target(game, pbs, TARGET_TYPE_1);
+  pbs->pos.w      = PATH_BLOCK_SIZE;
+  pbs->pos.h      = PATH_BLOCK_SIZE;
+  pbs->move_speed = PATH_BLOCK_SPEED;
+  pbs->velx       = (pbs->next_path_block->pos.x - game->play.path.first->pos.x) * pbs->move_speed / sqrt(
+                    (pbs->next_path_block->pos.x - game->play.path.first->pos.x) *
+                    (pbs->next_path_block->pos.x - game->play.path.first->pos.x) +
+                    (pbs->next_path_block->pos.y - game->play.path.first->pos.y) *
+                    (pbs->next_path_block->pos.y - game->play.path.first->pos.y));
+  pbs->vely       = (pbs->next_path_block->pos.y - game->play.path.first->pos.y) * pbs->move_speed / sqrt(
+                    (pbs->next_path_block->pos.x - game->play.path.first->pos.x) *
+                    (pbs->next_path_block->pos.x - game->play.path.first->pos.x) +
+                    (pbs->next_path_block->pos.y - game->play.path.first->pos.y) *
+                    (pbs->next_path_block->pos.y - game->play.path.first->pos.y));
+}
+
 void  render_play_warzone_path(struct s_game *game)
-{}
+{
+  struct s_target path_block_simulation;
+
+  fill_path_block_simulation(game, &path_block_simulation);
+}
 
 void  render_play_warzone_targets(struct s_game *game)
 {
