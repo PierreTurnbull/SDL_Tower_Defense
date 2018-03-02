@@ -5,16 +5,16 @@ void  load_path_block(struct s_game *game, int x, int y)
   struct s_path_block *ptr;
 
   i = 0;
-  ptr = game->play.path.first;
+  ptr = game->play.warzone.path.first;
   while (ptr != NULL) {
     ptr = ptr->next;
     i++;
   }
   if (i == 0) {
-    game->play.path.first = new_path_block;
+    game->play.warzone.path.first = new_path_block;
     new_path_block->prev = NULL;
   } else {
-    ptr = game->play.path.first;
+    ptr = game->play.warzone.path.first;
     while (ptr->next != NULL) {
       ptr = ptr->next;
     }
@@ -77,7 +77,7 @@ void  load_path(struct s_game *game, char *which)
   FILE *stream = NULL;
   float coordinates[256];
 
-  game->play.path.first = NULL;
+  game->play.warzone.path.first = NULL;
   if (load_path_file(&stream, which) != 0) {
     game->screen = SCREEN_MAIN_MENU;
     return;
@@ -85,9 +85,9 @@ void  load_path(struct s_game *game, char *which)
   load_path_coordinates(game, stream, coordinates);
   fclose(stream);
   load_path_blocks(game, stream, coordinates);
-  game->play.path.path_block_tex = IMG_LoadTexture(game->rend, "img/play/path_block.png");
-  ptr = game->play.path.first;
-  fprintf(stderr, "%s LOAD_PATH\nROOT: %p\n", TIME_get_time(), game->play.path.first);
+  game->play.warzone.path.path_block_tex = IMG_LoadTexture(game->rend, "img/play/path_block.png");
+  ptr = game->play.warzone.path.first;
+  fprintf(stderr, "%s LOAD_PATH\nROOT: %p\n", TIME_get_time(), game->play.warzone.path.first);
   while (ptr != NULL) {
     fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
     ptr = ptr->next;

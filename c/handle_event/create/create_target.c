@@ -2,23 +2,23 @@ void  fill_target(struct s_game *game, struct s_target *new_target, int type)
 {
   new_target->type            = type;
   new_target->move_speed      = game->play.target_list.target_move_speed[type];
-  new_target->pos.x           = game->play.path.first->pos.x - game->play.target_list.target_size[type] / 2;
-  new_target->pos.y           = game->play.path.first->pos.y - game->play.target_list.target_size[type] / 2;
+  new_target->pos.x           = game->play.warzone.path.first->pos.x - game->play.target_list.target_size[type] / 2;
+  new_target->pos.y           = game->play.warzone.path.first->pos.y - game->play.target_list.target_size[type] / 2;
   new_target->pos_float_x     = new_target->pos.x;
   new_target->pos_float_y     = new_target->pos.y;
   new_target->pos.w           = game->play.target_list.target_size[type];
   new_target->pos.h           = game->play.target_list.target_size[type];
-  new_target->next_path_block = game->play.path.first->next;
-  new_target->velx            = (new_target->next_path_block->pos.x - game->play.path.first->pos.x) * new_target->move_speed / sqrt(
-                                (new_target->next_path_block->pos.x - game->play.path.first->pos.x) *
-                                (new_target->next_path_block->pos.x - game->play.path.first->pos.x) +
-                                (new_target->next_path_block->pos.y - game->play.path.first->pos.y) *
-                                (new_target->next_path_block->pos.y - game->play.path.first->pos.y));
-  new_target->vely            = (new_target->next_path_block->pos.y - game->play.path.first->pos.y) * new_target->move_speed / sqrt(
-                                (new_target->next_path_block->pos.x - game->play.path.first->pos.x) *
-                                (new_target->next_path_block->pos.x - game->play.path.first->pos.x) +
-                                (new_target->next_path_block->pos.y - game->play.path.first->pos.y) *
-                                (new_target->next_path_block->pos.y - game->play.path.first->pos.y));
+  new_target->next_path_block = game->play.warzone.path.first->next;
+  new_target->velx            = (new_target->next_path_block->pos.x - game->play.warzone.path.first->pos.x) * new_target->move_speed / sqrt(
+                                (new_target->next_path_block->pos.x - game->play.warzone.path.first->pos.x) *
+                                (new_target->next_path_block->pos.x - game->play.warzone.path.first->pos.x) +
+                                (new_target->next_path_block->pos.y - game->play.warzone.path.first->pos.y) *
+                                (new_target->next_path_block->pos.y - game->play.warzone.path.first->pos.y));
+  new_target->vely            = (new_target->next_path_block->pos.y - game->play.warzone.path.first->pos.y) * new_target->move_speed / sqrt(
+                                (new_target->next_path_block->pos.x - game->play.warzone.path.first->pos.x) *
+                                (new_target->next_path_block->pos.x - game->play.warzone.path.first->pos.x) +
+                                (new_target->next_path_block->pos.y - game->play.warzone.path.first->pos.y) *
+                                (new_target->next_path_block->pos.y - game->play.warzone.path.first->pos.y));
 }
 
 void  append_target(struct s_game *game, struct s_target *new_target, struct s_target *ptr)

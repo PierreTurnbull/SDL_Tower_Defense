@@ -73,4 +73,6 @@
 #include "../c/render/render_main_menu/render_main_menu.c"
 #include "../c/render/render_play/render_play.c"
 #include "../c/render/render_play/render_play_gui/render_play_gui.c"
+#include "../c/render/render_play/render_play_targets.c"
 #include "../c/render/render_play/render_play_warzone/render_play_warzone.c"
+#include "../c/render/render_play/render_play_warzone/render_play_warzone_path.c"
