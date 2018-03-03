@@ -37,6 +37,26 @@
 #define TARGET_2_MOVE_SPEED         6
 #define TARGET_3_MOVE_SPEED         8
 
+// TOWER
+
+#define TOWER_TYPES                 3
+
+#define TOWER_TYPE_1                0
+#define TOWER_TYPE_2                1
+#define TOWER_TYPE_3                2
+
+#define TOWER_1_SIZE                76
+#define TOWER_2_SIZE                76
+#define TOWER_3_SIZE                76
+
+#define TOWER_1_DAMAGE              3
+#define TOWER_2_DAMAGE              6
+#define TOWER_3_DAMAGE              8
+
+#define TOWER_1_SHOOT_SPEED         3
+#define TOWER_2_SHOOT_SPEED         6
+#define TOWER_3_SHOOT_SPEED         8
+
 // CURSOR
 
 #define CURSOR_NORMAL               0

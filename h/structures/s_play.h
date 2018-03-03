@@ -41,6 +41,7 @@ struct s_play
   struct s_warzone      warzone;
   struct s_gui          gui;
   struct s_target_list  target_list;
+  struct s_tower_list   tower_list;
 
   SDL_Rect              render_r;
 };

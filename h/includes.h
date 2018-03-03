@@ -1,7 +1,7 @@
-/****************************************************************/
-/* Included files are sorted by types, then by loading priority */
-/* if there is one, then by names                               */
-/****************************************************************/
+/*******************************************************/
+/* Included files are sorted by types, then by loading */
+/* priority, then by names                             */
+/*******************************************************/
 
 /* STANDARD LIBRARIES */
 
@@ -15,7 +15,7 @@
 #include "SDL.h"
 #include "SDL_image.h"
 
-/* GAME STRUCTURE */
+/* GAME STRUCTURE (has to be defined before any function is read) */
 
 struct s_game game;
 
@@ -27,6 +27,7 @@ struct s_game game;
 
 #include "../h/structures/s_path.h"
 #include "../h/structures/s_target.h"
+#include "../h/structures/s_tower.h"
 #include "../h/structures/s_play.h"
 #include "../h/structures/s_main_menu.h"
 #include "../h/structures/s_main.h"
@@ -69,6 +70,8 @@ struct s_game game;
 #include "../c/load/load_main_menu/load_main_menu.c"
 #include "../c/load/load_path/load_path.c"
 #include "../c/load/load_play/load_play.c"
+#include "../c/load/load_play/load_play_gui/load_play_gui.c"
+#include "../c/load/load_play/load_play_warzone/load_play_warzone.c"
 #include "../c/load/load_target_list/load_target_list.c"
 #include "../c/move_items/move_items.c"
 #include "../c/move_items/move_targets/move_targets.c"
