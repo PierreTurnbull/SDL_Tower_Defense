@@ -15,6 +15,10 @@
 #include "SDL.h"
 #include "SDL_image.h"
 
+/* GAME STRUCTURE */
+
+struct s_game game;
+
 /* MACRO DEFINITIONS */
 
 #include "../h/defines.h"

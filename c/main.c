@@ -2,11 +2,9 @@
 
 int main(int argc, char *argv[])
 {
-  struct s_game game;
-
-  load_game(&game);
-  play_game(&game);
-  close_game(&game);
+  load_game();
+  play_game();
+  close_game();
   fprintf(stderr, "MAIN\n");
   fprintf(stderr, "Last SDL error: \"%s\"\n", SDL_GetError());
   fprintf(stderr, "Last IMG error: \"%s\"\n", IMG_GetError());

@@ -1,4 +1,4 @@
-void  move_items(struct s_game *game)
+void  move_items(void)
 {
-  move_targets(game);
+  move_targets();
 }
