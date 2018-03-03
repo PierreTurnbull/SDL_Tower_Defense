@@ -27,7 +27,10 @@ void  close_path(struct s_game *game)
     ptr = ptr->next;
   }
   fprintf(stderr, "\n");
-  SDL_DestroyTexture(game->play.warzone.path.path_block_tex);
+  SDL_DestroyTexture(game->play.warzone.path.path_block_tex[0]);
+  SDL_DestroyTexture(game->play.warzone.path.path_block_tex[1]);
+  SDL_DestroyTexture(game->play.warzone.path.path_block_tex[2]);
+  SDL_DestroyTexture(game->play.warzone.path.path_block_tex[3]);
   close_path_blocks(game);
   fprintf(stderr, "%s CLOSE_PATH\nDONE ROOT: %p\n\n", TIME_get_time(), game->play.warzone.path.first);
 }

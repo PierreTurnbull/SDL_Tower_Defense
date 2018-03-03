@@ -19,7 +19,7 @@
 // PATH
 
 #define PATH_BLOCK_SIZE             112
-#define PATH_BLOCK_SPEED            32
+#define PATH_BLOCK_SPEED            24
 
 // TARGET
 

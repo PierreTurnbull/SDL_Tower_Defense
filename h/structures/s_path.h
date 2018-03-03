@@ -8,7 +8,7 @@ struct s_path_block
 
 struct s_path
 {
-  SDL_Texture         *path_block_tex;
+  SDL_Texture         *path_block_tex[4];
 
   struct s_path_block *first;
 };

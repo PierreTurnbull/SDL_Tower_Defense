@@ -85,7 +85,10 @@ void  load_path(struct s_game *game, char *which)
   load_path_coordinates(game, stream, coordinates);
   fclose(stream);
   load_path_blocks(game, stream, coordinates);
-  game->play.warzone.path.path_block_tex = IMG_LoadTexture(game->rend, "img/play/path_block.png");
+  game->play.warzone.path.path_block_tex[0] = IMG_LoadTexture(game->rend, "img/play/path_block1.png");
+  game->play.warzone.path.path_block_tex[1] = IMG_LoadTexture(game->rend, "img/play/path_block2.png");
+  game->play.warzone.path.path_block_tex[2] = IMG_LoadTexture(game->rend, "img/play/path_block3.png");
+  game->play.warzone.path.path_block_tex[3] = IMG_LoadTexture(game->rend, "img/play/path_block4.png");
   ptr = game->play.warzone.path.first;
   fprintf(stderr, "%s LOAD_PATH\nROOT: %p\n", TIME_get_time(), game->play.warzone.path.first);
   while (ptr != NULL) {

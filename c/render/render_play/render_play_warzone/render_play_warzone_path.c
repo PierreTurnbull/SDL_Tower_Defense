@@ -22,12 +22,15 @@ void  fill_path_block_simulation(struct s_game *game, struct s_target *pbs)
 
 void  render_play_warzone_path(struct s_game *game)
 {
+  int i;
   struct s_target path_block_simulation;
 
   fill_path_block_simulation(game, &path_block_simulation);
+  i = 0;
   while (path_block_simulation.next_path_block != NULL) {
-    SDL_RenderCopy(game->rend, game->play.warzone.path.path_block_tex, NULL, &path_block_simulation.pos);
+    SDL_RenderCopy(game->rend, game->play.warzone.path.path_block_tex[i % 4], NULL, &path_block_simulation.pos);
     update_target_vel(game, &path_block_simulation);
     move_target(&path_block_simulation);
+    i++;
   }
 }
