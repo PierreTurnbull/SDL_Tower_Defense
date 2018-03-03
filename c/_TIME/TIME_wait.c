@@ -6,6 +6,6 @@ void  TIME_wait(int *time, int ms)
   {
     SDL_Delay(ms - ((int)SDL_GetTicks() - *time));
   }
-  //fprintf(stderr, "Time since last loop: %d\n", SDL_GetTicks() - game->game_time);
+  //fprintf(stderr, "Time since last loop: %d\n", SDL_GetTicks() - game.game_time);
   *time = SDL_GetTicks();
 }

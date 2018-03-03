@@ -1,15 +1,15 @@
-void  play_game(struct s_game *game)
+void  play_game(void)
 {
   // Empty event queue
-  while (SDL_PollEvent(&game->event) == 1);
-  game->event.type = 0;
-  while (game->input.quit == SDL_FALSE)
+  while (SDL_PollEvent(&game.event) == 1);
+  game.event.type = 0;
+  while (game.input.quit == SDL_FALSE)
   {
-    SDL_PollEvent(&game->event);
-    handle_input(game);
-    handle_event(game);
-    move_items(game);
-    render_game(game);
-    TIME_wait(&game->game_time, 15);
+    SDL_PollEvent(&game.event);
+    handle_input();
+    handle_event();
+    move_items();
+    render_game();
+    TIME_wait(&game.game_time, 15);
   }
 }

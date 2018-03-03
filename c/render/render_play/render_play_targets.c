@@ -1,10 +1,10 @@
-void  render_play_targets(struct s_game *game)
+void  render_play_targets(void)
 {
   struct s_target *ptr;
 
-  ptr = game->play.target_list.first;
+  ptr = game.play.target_list.first;
   while (ptr != NULL) {
-    SDL_RenderCopy(game->rend, game->play.target_list.target_tex[ptr->type], NULL, &ptr->pos);
+    SDL_RenderCopy(game.rend, game.play.target_list.target_tex[ptr->type], NULL, &ptr->pos);
     ptr = ptr->next;
   }
 }

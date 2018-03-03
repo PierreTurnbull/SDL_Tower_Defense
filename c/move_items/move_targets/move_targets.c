@@ -22,7 +22,7 @@ int   compare_sign(float f1, float f2)
         return 0; // different signs
 }
 
-void  update_target_vel(struct s_game *game, struct s_target *ptr)
+void  update_target_vel(struct s_target *ptr)
 {
   float f1;
   float f2;
@@ -79,13 +79,13 @@ void  update_target_vel(struct s_game *game, struct s_target *ptr)
   }
 }
 
-void  move_targets(struct s_game *game)
+void  move_targets(void)
 {
   struct s_target *ptr;
 
-  ptr = game->play.target_list.first;
+  ptr = game.play.target_list.first;
   while (ptr != NULL) {
-    update_target_vel(game, ptr);
+    update_target_vel(ptr);
     move_target(ptr);
     ptr = ptr->next;
   }
