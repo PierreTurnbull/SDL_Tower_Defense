@@ -26,11 +26,10 @@ void  close_path(void)
     fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
     ptr = ptr->next;
   }
-  fprintf(stderr, "\n");
   SDL_DestroyTexture(game.play.warzone.path.path_block_tex[0]);
   SDL_DestroyTexture(game.play.warzone.path.path_block_tex[1]);
   SDL_DestroyTexture(game.play.warzone.path.path_block_tex[2]);
   SDL_DestroyTexture(game.play.warzone.path.path_block_tex[3]);
   close_path_blocks();
-  fprintf(stderr, "%s CLOSE_PATH\nDONE ROOT: %p\n\n", TIME_get_time(), game.play.warzone.path.first);
+  fprintf(stderr, "DONE ROOT: %p\n\n", game.play.warzone.path.first);
 }
