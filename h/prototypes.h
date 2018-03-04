@@ -82,6 +82,7 @@ void  play_game(void);
     void  render_play(void);
       void  render_play_gui(void);
       void  render_play_targets(void);
+      void  render_play_towers(void);
       void  render_play_warzone(void);
         void  render_play_warzone_path(void);
           void  fill_path_block_simulation(struct s_target *pbs);

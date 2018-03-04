@@ -55,5 +55,6 @@ void  load_game(void)
   load_main_menu();
   load_play();
   load_target_list();
+  load_tower_list();
   fprintf(stderr, "Game loaded correctly\n\n");
 }

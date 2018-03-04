@@ -6,6 +6,8 @@ void  render_play(void)
   SDL_RenderClear(game.rend);
   render_play_warzone();
   render_play_gui();
+  render_play_targets();
+  render_play_towers();
   SDL_SetRenderTarget(game.rend, NULL);
   SDL_RenderCopy(game.rend, game.play.render, NULL, &game.play.render_r);
 }

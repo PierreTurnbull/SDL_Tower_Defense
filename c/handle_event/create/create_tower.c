@@ -3,6 +3,8 @@ void  fill_tower(struct s_tower *new_tower, int type)
   new_tower->type               = type;
   new_tower->pos.x              = new_tower->index * 100 + 200;
   new_tower->pos.y              = new_tower->index * 100 + 200;
+  new_tower->pos.w              = game.play.tower_list.tower_size[type];
+  new_tower->pos.h              = game.play.tower_list.tower_size[type];
 }
 
 void  append_tower(struct s_tower *new_tower)

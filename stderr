@@ -2,49 +2,55 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.474 LOAD_PATH
+0000.437 LOAD_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
 2:    0x20038370, x = 1106, y = 437, prev = 0x20038350, next = 0x20038390
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 
-0000.802 CREATE_TOWER
+0000.659 CREATE_TARGET
 0x200383b0
 index           = 0
 type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x0
+next            = 0x0
+
+0000.737 CREATE_TARGET
+0x20038498
+index           = 1
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200383b0
+next            = 0x0
+
+0000.737 CREATE_TOWER
+0x20048778
+index           = 0
+type            = 1
 pos             = x200 y200
 prev            = 0x0
 next            = 0x0
 
-0000.989 CREATE_TOWER
-0x200383d8
-index           = 1
-type            = 1
-pos             = x300 y300
-prev            = 0x200383b0
-next            = 0x0
-
-0001.142 CREATE_TOWER
-0x20038400
-index           = 2
-type            = 2
-pos             = x400 y400
-prev            = 0x200383d8
-next            = 0x0
-
-0001.394 CLOSE_TARGET_ALL
-ROOT: 0x0
-DONE ROOT: 0x0
-
-0001.394 CLOSE_TOWER_ALL
+0001.044 CLOSE_TARGET_ALL
 ROOT: 0x200383b0
-0:    0x200383b0, type = 0, x = 200, y = 200, prev = 0x0, next = 0x200383d8
-1:    0x200383d8, type = 1, x = 300, y = 300, prev = 0x200383b0, next = 0x20038400
-2:    0x20038400, type = 2, x = 400, y = 400, prev = 0x200383d8, next = 0x0
+0:    0x200383b0, type = 0, x = 13, y = 57, prev = 0x0, next = 0x20038498
+1:    0x20038498, type = 0, x = 8, y = 43, prev = 0x200383b0, next = 0x0
 DONE ROOT: 0x0
 
-0001.394 CLOSE_PATH
+0001.044 CLOSE_TOWER_ALL
+ROOT: 0x20048778
+0:    0x20048778, type = 1, x = 200, y = 200, prev = 0x0, next = 0x0
+DONE ROOT: 0x0
+
+0001.044 CLOSE_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
@@ -52,7 +58,7 @@ ROOT: 0x20038330
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 DONE ROOT: 0x0
 
-0000.000 CLOSE_GAME
+0001.584 CLOSE_GAME
 Game closed correctly
 
 MAIN

@@ -4,5 +4,4 @@ void  render_play_warzone(void)
 
   SDL_RenderCopy(game.rend, warzone->background, NULL, &warzone->background_pos);
   render_play_warzone_path();
-  render_play_targets();
 }
