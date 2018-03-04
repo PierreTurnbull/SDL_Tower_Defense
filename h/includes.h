@@ -56,6 +56,7 @@ struct s_game game;
 #include "../c/close/close_play/close_play_target.c"
 #include "../c/close/close_play/close_play_tower.c"
 #include "../c/handle_event/create/create_target.c"
+#include "../c/handle_event/create/create_tower.c"
 #include "../c/handle_event/handle_event.c"
 #include "../c/handle_event/handle_event_main_menu/handle_event_main_menu.c"
 #include "../c/handle_event/handle_event_main_menu/handle_event_main_menu_keydown.c"

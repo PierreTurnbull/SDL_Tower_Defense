@@ -21,11 +21,13 @@ void  fill_target(struct s_target *new_target, int type)
                                 (new_target->next_path_block->pos.y - game.play.warzone.path.first->pos.y));
 }
 
-void  append_target(struct s_target *new_target, struct s_target *ptr)
+void  append_target(struct s_target *new_target)
 {
+  struct s_target *ptr;
   int i;
 
   i = 0;
+  ptr = game.play.target_list.first;
   while (ptr != NULL) {
     ptr = ptr->next;
     i++;
@@ -41,17 +43,15 @@ void  append_target(struct s_target *new_target, struct s_target *ptr)
     new_target->prev = ptr;
     ptr->next = new_target;
   }
-  new_target->index           = i;
-  new_target->next            = NULL;
+  new_target->index = i;
+  new_target->next  = NULL;
 }
 
 void  create_target(int type)
 {
   struct s_target *new_target = malloc(sizeof(*new_target));
-  struct s_target *ptr;
 
-  ptr = game.play.target_list.first;
-  append_target(new_target, ptr);
+  append_target(new_target);
   fill_target(new_target, type);
   fprintf(stderr, "%s CREATE_TARGET\n%p\nindex           = %d\ntype            = %d\nmove_speed      = %f\npos             = x%d y%d\nvel             = x%f y%f\nnext_path_block = %p\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_target, new_target->index, new_target->type, new_target->move_speed, new_target->pos.x, new_target->pos.y, new_target->velx, new_target->vely, new_target->next_path_block, new_target->prev, new_target->next);
 }
