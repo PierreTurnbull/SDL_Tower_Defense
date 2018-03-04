@@ -2,14 +2,14 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0001.132 LOAD_PATH
+0000.396 LOAD_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
 2:    0x20038370, x = 1106, y = 437, prev = 0x20038350, next = 0x20038390
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 
-0002.017 CREATE_TARGET
+0000.613 CREATE_TARGET
 0x200383b0
 index           = 0
 type            = 1
@@ -20,96 +20,132 @@ next_path_block = 0x20038350
 prev            = 0x0
 next            = 0x0
 
-0002.298 CREATE_TARGET
+0000.689 CREATE_TARGET
 0x20038498
 index           = 1
-type            = 0
-move_speed      = 3.000000
+type            = 1
+move_speed      = 6.000000
 pos             = x-13 y-13
-vel             = x1.053370 y2.808988
+vel             = x2.106741 y5.617975
 next_path_block = 0x20038350
 prev            = 0x200383b0
 next            = 0x0
 
-0002.440 CREATE_TARGET
+0000.689 CREATE_TARGET
 0x20048778
 index           = 2
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x20038350
-prev            = 0x20038498
-next            = 0x0
-
-0002.440 CREATE_TARGET
-0x200487b8
-index           = 3
-type            = 1
-move_speed      = 6.000000
-pos             = x-13 y-13
-vel             = x2.106741 y5.617975
-next_path_block = 0x20038350
-prev            = 0x20048778
-next            = 0x0
-
-0002.472 CREATE_TARGET
-0x200487f8
-index           = 4
-type            = 0
-move_speed      = 3.000000
-pos             = x-13 y-13
-vel             = x1.053370 y2.808988
-next_path_block = 0x20038350
-prev            = 0x200487b8
-next            = 0x0
-
-0002.472 CREATE_TARGET
-0x20048838
-index           = 5
-type            = 1
-move_speed      = 6.000000
-pos             = x-13 y-13
-vel             = x2.106741 y5.617975
-next_path_block = 0x20038350
-prev            = 0x200487f8
-next            = 0x0
-
-0002.472 CREATE_TARGET
-0x20048878
-index           = 6
 type            = 2
 move_speed      = 8.000000
 pos             = x-13 y-13
 vel             = x2.808988 y7.490633
 next_path_block = 0x20038350
+prev            = 0x20038498
+next            = 0x0
+
+0000.798 CREATE_TARGET
+0x200487b8
+index           = 3
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048778
+next            = 0x0
+
+0000.798 CREATE_TARGET
+0x200487f8
+index           = 4
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200487b8
+next            = 0x0
+
+0000.891 CREATE_TARGET
+0x20048838
+index           = 5
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x200487f8
+next            = 0x0
+
+0000.891 CREATE_TARGET
+0x20048878
+index           = 6
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
 prev            = 0x20048838
 next            = 0x0
 
-0002.946 CLOSE_PATH
+0000.967 CREATE_TARGET
+0x200488b8
+index           = 7
+type            = 0
+move_speed      = 3.000000
+pos             = x-13 y-13
+vel             = x1.053370 y2.808988
+next_path_block = 0x20038350
+prev            = 0x20048878
+next            = 0x0
+
+0000.967 CREATE_TARGET
+0x200488f8
+index           = 8
+type            = 1
+move_speed      = 6.000000
+pos             = x-13 y-13
+vel             = x2.106741 y5.617975
+next_path_block = 0x20038350
+prev            = 0x200488b8
+next            = 0x0
+
+0000.967 CREATE_TARGET
+0x20048938
+index           = 9
+type            = 2
+move_speed      = 8.000000
+pos             = x-13 y-13
+vel             = x2.808988 y7.490633
+next_path_block = 0x20038350
+prev            = 0x200488f8
+next            = 0x0
+
+0001.184 CLOSE_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
 2:    0x20038370, x = 1106, y = 437, prev = 0x20038350, next = 0x20038390
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 
-0002.947 CLOSE_PATH
+0001.184 CLOSE_PATH
 DONE ROOT: 0x0
 
-0002.947 CLOSE_TARGET_ALL
+0001.184 CLOSE_TARGET_ALL
 ROOT: 0x200383b0
-0:    0x200383b0, type = 1, x = 113, y = 324, prev = 0x0, next = 0x20038498
-1:    0x20038498, type = 0, x = 31, y = 105, prev = 0x200383b0, next = 0x20048778
-2:    0x20048778, type = 0, x = 22, y = 80, prev = 0x20038498, next = 0x200487b8
-3:    0x200487b8, type = 1, x = 57, y = 172, prev = 0x20048778, next = 0x200487f8
-4:    0x200487f8, type = 0, x = 20, y = 74, prev = 0x200487b8, next = 0x20048838
-5:    0x20048838, type = 1, x = 52, y = 161, prev = 0x200487f8, next = 0x20048878
-6:    0x20048878, type = 2, x = 74, y = 219, prev = 0x20048838, next = 0x0
+0:    0x200383b0, type = 1, x = 65, y = 195, prev = 0x0, next = 0x20038498
+1:    0x20038498, type = 1, x = 54, y = 167, prev = 0x200383b0, next = 0x20048778
+2:    0x20048778, type = 2, x = 77, y = 227, prev = 0x20038498, next = 0x200487b8
+3:    0x200487b8, type = 0, x = 13, y = 57, prev = 0x20048778, next = 0x200487f8
+4:    0x200487f8, type = 2, x = 57, y = 174, prev = 0x200487b8, next = 0x20048838
+5:    0x20048838, type = 0, x = 7, y = 40, prev = 0x200487f8, next = 0x20048878
+6:    0x20048878, type = 1, x = 27, y = 94, prev = 0x20048838, next = 0x200488b8
+7:    0x200488b8, type = 0, x = 2, y = 26, prev = 0x20048878, next = 0x200488f8
+8:    0x200488f8, type = 1, x = 16, y = 66, prev = 0x200488b8, next = 0x20048938
+9:    0x20048938, type = 2, x = 26, y = 92, prev = 0x200488f8, next = 0x0
 
-0002.947 CLOSE_TARGET_ALL
+0001.184 CLOSE_TARGET_ALL
 DONE ROOT: 0x0
 
-0003.538 CLOSE_GAME
+0001.663 CLOSE_GAME
 Closing cursor
 Closing game menu
 Closing SDL and SDL_Image

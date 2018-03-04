@@ -34,6 +34,7 @@ void  load_game(void);
         void  load_path_blocks(FILE *stream, float coordinates[256]);
         void  load_path_block(int x, int y);
       void  load_target_list(void);
+      void  load_tower_list(void);
 void  play_game(void);
   void  handle_input(void);
   void  handle_event(void);
