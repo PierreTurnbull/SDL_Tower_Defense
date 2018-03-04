@@ -1,8 +1,9 @@
 void  handle_event_play_keydown_escape(void)
 {
   if (game.input.repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE) {
+    close_play_target_list();
+    close_play_tower_list();
     close_path();
-    close_target_all();
     game.screen = SCREEN_MAIN_MENU;
   }
 }
@@ -12,7 +13,7 @@ void  handle_event_play_keydown_return(void)
 
 void  handle_event_play_keydown_space(void)
 {
-  close_target_all();
+  close_play_target_list();
 }
 
 void  handle_event_play_keydown_e(void)
