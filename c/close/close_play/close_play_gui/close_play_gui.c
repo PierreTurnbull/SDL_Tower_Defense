@@ -10,6 +10,9 @@ void  close_play_gui(void)
   SDL_DestroyTexture(gui->items_category_hover[0]);
   SDL_DestroyTexture(gui->items_category_hover[1]);
   SDL_DestroyTexture(gui->items_category_hover[2]);
+  SDL_DestroyTexture(gui->item_tower[0]);
+  SDL_DestroyTexture(gui->item_tower[1]);
+  SDL_DestroyTexture(gui->item_tower[2]);
   SDL_DestroyTexture(gui->gold_background);
   SDL_DestroyTexture(gui->next_wave_background);
   SDL_DestroyTexture(gui->next_wave_background_hover);
