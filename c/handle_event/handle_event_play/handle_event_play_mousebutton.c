@@ -23,6 +23,9 @@ void  handle_event_play_mousebutton_left(void)
   } else if (CLICK_ON_ITEM_TOWER_3) {
     close_play_tower(game.mouse_grab, 3);
     game.mouse_grab = create_tower(TOWER_TYPE_3);
+  } else if (game.mouse_grab && CLICK_ON_WARZONE_WITH_GRAB) {
+    game.mouse_grab->state[TOWER_STATE_GRAB] = TOWER_STATE_NOT_GRABBED;
+    game.mouse_grab = NULL;
   }
 }
 

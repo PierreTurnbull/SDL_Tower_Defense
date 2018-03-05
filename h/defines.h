@@ -95,7 +95,10 @@
                                     game.input.mouse_pos.x <= game.play.gui.item_tower_pos[2].x + game.play.gui.item_tower_pos[2].w &&\
                                     game.input.mouse_pos.y >= game.play.gui.item_tower_pos[2].y &&\
                                     game.input.mouse_pos.y <= game.play.gui.item_tower_pos[2].y + game.play.gui.item_tower_pos[2].h
-
+#define CLICK_ON_WARZONE_WITH_GRAB  game.mouse_grab->pos.x >= 25 &&\
+                                    game.mouse_grab->pos.x + game.play.tower_list.tower_size[game.mouse_grab->type] <= 25 + WARZONE_W &&\
+                                    game.mouse_grab->pos.y >= 25 &&\
+                                    game.mouse_grab->pos.y + game.play.tower_list.tower_size[game.mouse_grab->type] <= 25 + WARZONE_H
 // PLAY GUI BUTTONS
 
 #define BTN_SELECTED_NONE           -1
