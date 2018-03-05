@@ -6,6 +6,9 @@ void  load_tower_list(void)
   game.play.tower_list.tower_tex[0]          = IMG_LoadTexture(game.rend, "img/play/towers/tower1.png");
   game.play.tower_list.tower_tex[1]          = IMG_LoadTexture(game.rend, "img/play/towers/tower2.png");
   game.play.tower_list.tower_tex[2]          = IMG_LoadTexture(game.rend, "img/play/towers/tower3.png");
+  game.play.tower_list.tower_blocked_tex[0]  = IMG_LoadTexture(game.rend, "img/play/towers/tower_blocked1.png");
+  game.play.tower_list.tower_blocked_tex[1]  = IMG_LoadTexture(game.rend, "img/play/towers/tower_blocked2.png");
+  game.play.tower_list.tower_blocked_tex[2]  = IMG_LoadTexture(game.rend, "img/play/towers/tower_blocked3.png");
   game.play.tower_list.tower_size[0]         = TOWER_1_SIZE;
   game.play.tower_list.tower_size[1]         = TOWER_2_SIZE;
   game.play.tower_list.tower_size[2]         = TOWER_3_SIZE;

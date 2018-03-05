@@ -84,12 +84,12 @@ void  play_game(void);
         int   compare_sign(float f1, float f2);
       void  move_target(struct s_target *ptr);
   // HANDLE HITBOXES
-  void  handle_hitboxes(void);
-  int handle_hitboxes_cursor_warzone(void);
-  int handle_hitboxes_tower_tower(struct s_tower *ptr);
-    int handle_hitboxes_tower_tower_condition(struct s_tower *ptr, struct s_tower *ptr2);
-  int handle_hitboxes_tower_path(struct s_tower *ptr);
-  int handle_hitboxes_tower_target(struct s_tower *ptr, struct s_target *ptr2);
+  void  check_hitboxes(void);
+  int check_hitboxes_cursor_warzone(void);
+  int check_hitboxes_tower_tower(struct s_tower *ptr);
+    int check_hitboxes_tower_tower_condition(struct s_tower *ptr, struct s_tower *ptr2);
+  int check_hitboxes_tower_path(struct s_tower *ptr);
+  int check_hitboxes_tower_target(struct s_tower *ptr, struct s_target *ptr2);
   // RENDER
   void  render_game(void);
     void  render_main_menu(void);

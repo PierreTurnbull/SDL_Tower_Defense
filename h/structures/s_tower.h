@@ -25,6 +25,7 @@ struct s_tower_list {
   // TOWER
 
   SDL_Texture         *tower_tex[TOWER_TYPES];
+  SDL_Texture         *tower_blocked_tex[TOWER_TYPES];
   struct s_tower      *first;
   int                 tower_size[TOWER_TYPES];
   int                 tower_damage[TOWER_TYPES];

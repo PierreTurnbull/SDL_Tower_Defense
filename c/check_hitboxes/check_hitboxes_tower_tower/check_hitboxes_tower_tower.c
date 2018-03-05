@@ -1,4 +1,4 @@
-int handle_hitboxes_tower_tower_condition(struct s_tower *ptr, struct s_tower *ptr2)
+int check_hitboxes_tower_tower_condition(struct s_tower *ptr, struct s_tower *ptr2)
 {
   if (
       (ptr->pos.x >= ptr2->pos.x &&
@@ -21,13 +21,13 @@ int handle_hitboxes_tower_tower_condition(struct s_tower *ptr, struct s_tower *p
   return 0;
 }
 
-int handle_hitboxes_tower_tower(struct s_tower *ptr)
+int check_hitboxes_tower_tower(struct s_tower *ptr)
 {
   struct s_tower *ptr2;
 
   ptr2 = game.play.tower_list.first;
   while (ptr2 != NULL) {
-    if (ptr != ptr2 && handle_hitboxes_tower_tower_condition(ptr, ptr2) == 1) {
+    if (ptr != ptr2 && check_hitboxes_tower_tower_condition(ptr, ptr2) == 1) {
       return 1;
     }
     ptr2 = ptr2->next;

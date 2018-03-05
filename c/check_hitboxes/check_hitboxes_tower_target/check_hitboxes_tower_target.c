@@ -1,4 +1,4 @@
-int handle_hitboxes_tower_target(struct s_tower *ptr, struct s_target *ptr2)
+int check_hitboxes_tower_target(struct s_tower *ptr, struct s_target *ptr2)
 {
   if (
       (ptr->pos.x >= ptr2->pos.x &&
