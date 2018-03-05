@@ -70,6 +70,8 @@ struct s_game game;
 #include "../c/handle_event/handle_event_play/handle_event_play_mousebutton.c"
 #include "../c/handle_event/handle_event_play/handle_event_play_mousemotion.c"
 #include "../c/handle_input.c"
+#include "../c/handle_hitboxes/handle_hitboxes.c"
+#include "../c/handle_hitboxes/handle_hitboxes_tower_tower/handle_hitboxes_tower_tower.c"
 #include "../c/load/load_game.c"
 #include "../c/load/load_main_menu/load_main_menu.c"
 #include "../c/load/load_play/load_play.c"

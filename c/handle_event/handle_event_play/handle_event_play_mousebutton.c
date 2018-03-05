@@ -8,22 +8,23 @@ void  handle_event_play_mousebutton_middle(void)
 
 void  handle_event_play_mousebutton_left(void)
 {
-  if        (CLICK_ON_ITEM_TOWER_1 && game.mouse_grab == MOUSE_IS_FREE) {
+  if        (CLICK_ON_ITEM_TOWER_1 && game.mouse_grab == NULL) {
     game.mouse_grab = create_tower(TOWER_TYPE_1);
   } else if (CLICK_ON_ITEM_TOWER_1) {
     close_play_tower(game.mouse_grab, 1);
     game.mouse_grab = create_tower(TOWER_TYPE_1);
-  } else if (CLICK_ON_ITEM_TOWER_2 && game.mouse_grab == MOUSE_IS_FREE) {
+  } else if (CLICK_ON_ITEM_TOWER_2 && game.mouse_grab == NULL) {
     game.mouse_grab = create_tower(TOWER_TYPE_2);
   } else if (CLICK_ON_ITEM_TOWER_2) {
     close_play_tower(game.mouse_grab, 2);
     game.mouse_grab = create_tower(TOWER_TYPE_2);
-  } else if (CLICK_ON_ITEM_TOWER_3 && game.mouse_grab == MOUSE_IS_FREE) {
+  } else if (CLICK_ON_ITEM_TOWER_3 && game.mouse_grab == NULL) {
     game.mouse_grab = create_tower(TOWER_TYPE_3);
   } else if (CLICK_ON_ITEM_TOWER_3) {
     close_play_tower(game.mouse_grab, 3);
     game.mouse_grab = create_tower(TOWER_TYPE_3);
-  } else if (game.mouse_grab && CLICK_ON_WARZONE_WITH_GRAB) {
+  } else if (game.mouse_grab != NULL && CLICK_ON_WARZONE_WITH_GRAB && handle_hitboxes_tower_tower(game.mouse_grab)) {
+  fprintf(stderr, "fuck\n");
     game.mouse_grab->state[TOWER_STATE_GRAB] = TOWER_STATE_NOT_GRABBED;
     game.mouse_grab = NULL;
   }

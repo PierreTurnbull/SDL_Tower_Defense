@@ -2,157 +2,102 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.663 LOAD_PATH
+0000.563 LOAD_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
 2:    0x20038370, x = 1106, y = 437, prev = 0x20038350, next = 0x20038390
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 
-0001.519 CREATE_TOWER
+0001.615 CREATE_TOWER
 0x200383b0
 index           = 0
-type            = 2
-pos             = x1605 y381
+type            = 1
+pos             = x1625 y213
 prev            = 0x0
 next            = 0x0
 
-0005.685 CREATE_TOWER
+fuck
+0003.409 CREATE_TOWER
 0x200383e0
 index           = 1
 type            = 2
-pos             = x1650 y383
+pos             = x1649 y376
 prev            = 0x200383b0
 next            = 0x0
 
-0007.425 CREATE_TOWER
+fuck
+0004.913 CREATE_TOWER
 0x20038410
 index           = 2
-type            = 2
-pos             = x1658 y394
+type            = 0
+pos             = x1642 y96
 prev            = 0x200383e0
 next            = 0x0
 
-0014.873 CREATE_TOWER
+fuck
+0012.240 CREATE_TOWER
 0x20038440
 index           = 3
 type            = 0
-pos             = x1594 y105
+pos             = x1625 y142
 prev            = 0x20038410
 next            = 0x0
 
-0016.653 CREATE_TOWER
+fuck
+0014.998 CREATE_TOWER
 0x20038470
 index           = 4
-type            = 0
-pos             = x1655 y96
+type            = 2
+pos             = x1641 y360
 prev            = 0x20038440
 next            = 0x0
 
-0019.803 CREATE_TOWER
+fuck
+0016.484 CREATE_TOWER
 0x200384a0
 index           = 5
-type            = 1
-pos             = x1646 y231
+type            = 2
+pos             = x1606 y387
 prev            = 0x20038470
 next            = 0x0
 
-0023.438 CREATE_TOWER
+fuck
+0019.500 CREATE_TOWER
 0x20048778
 index           = 6
-type            = 0
-pos             = x1641 y120
+type            = 2
+pos             = x1658 y362
 prev            = 0x200384a0
 next            = 0x0
 
-0030.687 CREATE_TOWER
+fuck
+0028.200 CREATE_TOWER
 0x200487a8
 index           = 7
-type            = 1
-pos             = x1620 y247
+type            = 2
+pos             = x1613 y352
 prev            = 0x20048778
 next            = 0x0
 
-0035.389 CREATE_TOWER
-0x200487d8
-index           = 8
-type            = 2
-pos             = x1639 y366
-prev            = 0x200487a8
-next            = 0x0
-
-0037.186 CREATE_TOWER
-0x20048808
-index           = 9
-type            = 1
-pos             = x1641 y230
-prev            = 0x200487d8
-next            = 0x0
-
-0038.414 CREATE_TOWER
-0x20048838
-index           = 10
-type            = 1
-pos             = x1668 y252
-prev            = 0x20048808
-next            = 0x0
-
-0039.209 CREATE_TOWER
-0x20048868
-index           = 11
-type            = 2
-pos             = x1625 y368
-prev            = 0x20048838
-next            = 0x0
-
-0040.132 CREATE_TOWER
-0x20048898
-index           = 12
-type            = 0
-pos             = x1606 y136
-prev            = 0x20048868
-next            = 0x0
-
-0043.570 CREATE_TOWER
-0x200488c8
-index           = 13
-type            = 2
-pos             = x1628 y364
-prev            = 0x20048898
-next            = 0x0
-
-0045.164 CREATE_TOWER
-0x200488f8
-index           = 14
-type            = 2
-pos             = x1592 y377
-prev            = 0x200488c8
-next            = 0x0
-
-0058.742 CLOSE_TARGET_ALL
+fuck
+0031.279 CLOSE_TARGET_ALL
 ROOT: 0x0
 DONE ROOT: 0x0
 
-0058.742 CLOSE_TOWER_ALL
+0031.279 CLOSE_TOWER_ALL
 ROOT: 0x200383b0
-0:    0x200383b0, type = 2, x = 1468, y = 442, prev = 0x0, next = 0x200383e0
-1:    0x200383e0, type = 2, x = 1468, y = 501, prev = 0x200383b0, next = 0x20038410
-2:    0x20038410, type = 2, x = 27, y = 154, prev = 0x200383e0, next = 0x20038440
-3:    0x20038440, type = 0, x = 1381, y = 26, prev = 0x20038410, next = 0x20038470
-4:    0x20038470, type = 0, x = 1469, y = 31, prev = 0x20038440, next = 0x200384a0
-5:    0x200384a0, type = 1, x = 1470, y = 26, prev = 0x20038470, next = 0x20048778
-6:    0x20048778, type = 0, x = 1467, y = 951, prev = 0x200384a0, next = 0x200487a8
-7:    0x200487a8, type = 1, x = 34, y = 950, prev = 0x20048778, next = 0x200487d8
-8:    0x200487d8, type = 2, x = 742, y = 302, prev = 0x200487a8, next = 0x20048808
-9:    0x20048808, type = 1, x = 664, y = 570, prev = 0x200487d8, next = 0x20048838
-10:    0x20048838, type = 1, x = 957, y = 361, prev = 0x20048808, next = 0x20048868
-11:    0x20048868, type = 2, x = 616, y = 160, prev = 0x20048838, next = 0x20048898
-12:    0x20048898, type = 0, x = 497, y = 723, prev = 0x20048868, next = 0x200488c8
-13:    0x200488c8, type = 2, x = 550, y = 446, prev = 0x20048898, next = 0x200488f8
-14:    0x200488f8, type = 2, x = 783, y = 172, prev = 0x200488c8, next = 0x0
+0:    0x200383b0, type = 1, x = 734, y = 359, prev = 0x0, next = 0x200383e0
+1:    0x200383e0, type = 2, x = 583, y = 366, prev = 0x200383b0, next = 0x20038410
+2:    0x20038410, type = 0, x = 480, y = 273, prev = 0x200383e0, next = 0x20038440
+3:    0x20038440, type = 0, x = 592, y = 261, prev = 0x20038410, next = 0x20038470
+4:    0x20038470, type = 2, x = 837, y = 375, prev = 0x20038440, next = 0x200384a0
+5:    0x200384a0, type = 2, x = 574, y = 468, prev = 0x20038470, next = 0x20048778
+6:    0x20048778, type = 2, x = 474, y = 170, prev = 0x200384a0, next = 0x200487a8
+7:    0x200487a8, type = 2, x = 841, y = 505, prev = 0x20048778, next = 0x0
 DONE ROOT: 0x0
 
-0058.742 CLOSE_PATH
+0031.279 CLOSE_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
@@ -160,11 +105,11 @@ ROOT: 0x20038330
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 DONE ROOT: 0x0
 
-0059.884 CLOSE_GAME
+0031.765 CLOSE_GAME
 Game closed correctly
 
 MAIN
-Last SDL error: "CreateTexture(D3DPOOL_DEFAULT): INVALIDCALL"
-Last IMG error: "CreateTexture(D3DPOOL_DEFAULT): INVALIDCALL"
+Last SDL error: ""
+Last IMG error: ""
 Returning status 0
 

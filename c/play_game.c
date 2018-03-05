@@ -9,6 +9,7 @@ void  play_game(void)
     handle_input();
     handle_event();
     move_items();
+    handle_hitboxes();
     render_game();
     TIME_wait(&game.game_time, 15);
   }
