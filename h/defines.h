@@ -41,6 +41,16 @@
 
 #define TOWER_TYPES                 3
 
+#define TOWER_STATES                1
+
+#define TOWER_STATE_GRAB            0
+#define TOWER_STATE_FIX             1
+
+#define TOWER_STATE_NOT_GRABBED     0
+#define TOWER_STATE_GRABBED         1
+#define TOWER_STATE_NOT_FIXED       0
+#define TOWER_STATE_FIXED           1
+
 #define TOWER_TYPE_1                0
 #define TOWER_TYPE_2                1
 #define TOWER_TYPE_3                2
@@ -66,6 +76,21 @@
 #define CURSOR_NORMAL               0
 #define CURSOR_POINTER              1
 #define CURSOR_DRAG                 2
+
+// MOUSE POSITION
+
+#define CLICK_ON_ITEM_TOWER_1       game.input.mouse_pos.x >= game.play.gui.item_tower_pos[0].x &&\
+                                    game.input.mouse_pos.x <= game.play.gui.item_tower_pos[0].x + game.play.gui.item_tower_pos[0].w &&\
+                                    game.input.mouse_pos.y >= game.play.gui.item_tower_pos[0].y &&\
+                                    game.input.mouse_pos.y <= game.play.gui.item_tower_pos[0].y + game.play.gui.item_tower_pos[0].h
+#define CLICK_ON_ITEM_TOWER_2       game.input.mouse_pos.x >= game.play.gui.item_tower_pos[1].x &&\
+                                    game.input.mouse_pos.x <= game.play.gui.item_tower_pos[1].x + game.play.gui.item_tower_pos[1].w &&\
+                                    game.input.mouse_pos.y >= game.play.gui.item_tower_pos[1].y &&\
+                                    game.input.mouse_pos.y <= game.play.gui.item_tower_pos[1].y + game.play.gui.item_tower_pos[1].h
+#define CLICK_ON_ITEM_TOWER_3       game.input.mouse_pos.x >= game.play.gui.item_tower_pos[2].x &&\
+                                    game.input.mouse_pos.x <= game.play.gui.item_tower_pos[2].x + game.play.gui.item_tower_pos[2].w &&\
+                                    game.input.mouse_pos.y >= game.play.gui.item_tower_pos[2].y &&\
+                                    game.input.mouse_pos.y <= game.play.gui.item_tower_pos[2].y + game.play.gui.item_tower_pos[2].h
 
 // PLAY GUI BUTTONS
 

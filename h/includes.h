@@ -80,6 +80,7 @@ struct s_game game;
 #include "../c/load/load_play/load_tower_list.c"
 #include "../c/move_items/move_items.c"
 #include "../c/move_items/move_targets/move_targets.c"
+#include "../c/move_items/move_towers/move_towers.c"
 #include "../c/play_game.c"
 #include "../c/render/render_game.c"
 #include "../c/render/render_main_menu/render_main_menu.c"

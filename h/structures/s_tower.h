@@ -13,6 +13,7 @@ struct s_proj_list {
 struct s_tower {
   int                 index;
   int                 type;
+  int                 state[TOWER_STATES];
   struct s_tower      *prev;
   struct s_tower      *next;
   struct s_proj_list  proj_list; // proj = projectile

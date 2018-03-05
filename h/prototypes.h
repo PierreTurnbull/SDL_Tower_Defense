@@ -76,6 +76,7 @@ void  play_game(void);
     void  update_target_vel(struct s_target *ptr);
       int   compare_sign(float f1, float f2);
     void  move_target(struct s_target *ptr);
+  void  move_towers(void);
   void  render_game(void);
     void  render_main_menu(void);
       void  render_main_menu_choice(void);
