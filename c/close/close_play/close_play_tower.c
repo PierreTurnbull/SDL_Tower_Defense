@@ -12,7 +12,7 @@ void  reindex_tower(void)
   }
 }
 
-struct s_tower  *close_play_tower(struct s_tower *ptr)
+struct s_tower  *close_play_tower(struct s_tower *ptr, int mouse_grab_reset)
 {
   struct s_tower *prev;
   struct s_tower *next;
@@ -29,6 +29,8 @@ struct s_tower  *close_play_tower(struct s_tower *ptr)
   }
   free(ptr);
   reindex_tower();
+  if (mouse_grab_reset)
+    game.mouse_grab = NULL;
   return next;
 }
 
@@ -44,7 +46,7 @@ void  close_play_tower_list(void)
   }
   ptr = game.play.tower_list.first;
   while (ptr != NULL) {
-    ptr = close_play_tower(ptr);
+    ptr = close_play_tower(ptr, 0);
   }
   fprintf(stderr, "DONE ROOT: %p\n\n", game.play.tower_list.first);
 }

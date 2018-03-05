@@ -54,6 +54,7 @@ void  load_game(void)
   fprintf(stderr, "%s LOAD_GAME\n", TIME_get_time());
   load_sdl();
   load_window();
+  game.mouse_grab = NULL;
   load_cursor();
   load_input();
   load_main_menu();

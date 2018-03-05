@@ -34,11 +34,12 @@ void  append_tower(struct s_tower *new_tower)
   new_tower->next  = NULL;
 }
 
-void  create_tower(int type)
+struct s_tower  *create_tower(int type)
 {
   struct s_tower *new_tower = malloc(sizeof(*new_tower));
 
   append_tower(new_tower);
   fill_tower(new_tower, type);
   fprintf(stderr, "%s CREATE_TOWER\n%p\nindex           = %d\ntype            = %d\npos             = x%d y%d\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_tower, new_tower->index, new_tower->type, new_tower->pos.x, new_tower->pos.y, new_tower->prev, new_tower->next);
+  return new_tower;
 }

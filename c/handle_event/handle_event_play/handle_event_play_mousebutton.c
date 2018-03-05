@@ -8,12 +8,21 @@ void  handle_event_play_mousebutton_middle(void)
 
 void  handle_event_play_mousebutton_left(void)
 {
-  if (CLICK_ON_ITEM_TOWER_1) {
-    create_tower(TOWER_TYPE_1);
+  if        (CLICK_ON_ITEM_TOWER_1 && game.mouse_grab == MOUSE_IS_FREE) {
+    game.mouse_grab = create_tower(TOWER_TYPE_1);
+  } else if (CLICK_ON_ITEM_TOWER_1) {
+    close_play_tower(game.mouse_grab, 1);
+    game.mouse_grab = create_tower(TOWER_TYPE_1);
+  } else if (CLICK_ON_ITEM_TOWER_2 && game.mouse_grab == MOUSE_IS_FREE) {
+    game.mouse_grab = create_tower(TOWER_TYPE_2);
   } else if (CLICK_ON_ITEM_TOWER_2) {
-    create_tower(TOWER_TYPE_2);
+    close_play_tower(game.mouse_grab, 2);
+    game.mouse_grab = create_tower(TOWER_TYPE_2);
+  } else if (CLICK_ON_ITEM_TOWER_3 && game.mouse_grab == MOUSE_IS_FREE) {
+    game.mouse_grab = create_tower(TOWER_TYPE_3);
   } else if (CLICK_ON_ITEM_TOWER_3) {
-    create_tower(TOWER_TYPE_3);
+    close_play_tower(game.mouse_grab, 3);
+    game.mouse_grab = create_tower(TOWER_TYPE_3);
   }
 }
 

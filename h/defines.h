@@ -77,6 +77,10 @@
 #define CURSOR_POINTER              1
 #define CURSOR_DRAG                 2
 
+// MOUSE GRAB
+
+#define MOUSE_IS_FREE               NULL
+
 // MOUSE POSITION
 
 #define CLICK_ON_ITEM_TOWER_1       game.input.mouse_pos.x >= game.play.gui.item_tower_pos[0].x &&\

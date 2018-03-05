@@ -23,6 +23,7 @@ struct s_game
   struct s_input      input;
   struct s_main_menu  main_menu;
   struct s_play       play;
+  struct s_tower      *mouse_grab;
   int                 screen;
   int                 current_cursor;
   int                 game_time;
