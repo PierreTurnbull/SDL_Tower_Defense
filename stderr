@@ -2,102 +2,52 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.563 LOAD_PATH
+0000.453 LOAD_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
 2:    0x20038370, x = 1106, y = 437, prev = 0x20038350, next = 0x20038390
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 
-0001.615 CREATE_TOWER
+0001.575 CREATE_TOWER
 0x200383b0
 index           = 0
 type            = 1
-pos             = x1625 y213
+pos             = x1658 y253
 prev            = 0x0
 next            = 0x0
 
 fuck
-0003.409 CREATE_TOWER
+0003.925 CREATE_TOWER
 0x200383e0
 index           = 1
 type            = 2
-pos             = x1649 y376
+pos             = x1638 y380
 prev            = 0x200383b0
 next            = 0x0
 
 fuck
-0004.913 CREATE_TOWER
+0006.114 CREATE_TOWER
 0x20038410
 index           = 2
-type            = 0
-pos             = x1642 y96
+type            = 2
+pos             = x1632 y368
 prev            = 0x200383e0
 next            = 0x0
 
 fuck
-0012.240 CREATE_TOWER
-0x20038440
-index           = 3
-type            = 0
-pos             = x1625 y142
-prev            = 0x20038410
-next            = 0x0
-
-fuck
-0014.998 CREATE_TOWER
-0x20038470
-index           = 4
-type            = 2
-pos             = x1641 y360
-prev            = 0x20038440
-next            = 0x0
-
-fuck
-0016.484 CREATE_TOWER
-0x200384a0
-index           = 5
-type            = 2
-pos             = x1606 y387
-prev            = 0x20038470
-next            = 0x0
-
-fuck
-0019.500 CREATE_TOWER
-0x20048778
-index           = 6
-type            = 2
-pos             = x1658 y362
-prev            = 0x200384a0
-next            = 0x0
-
-fuck
-0028.200 CREATE_TOWER
-0x200487a8
-index           = 7
-type            = 2
-pos             = x1613 y352
-prev            = 0x20048778
-next            = 0x0
-
-fuck
-0031.279 CLOSE_TARGET_ALL
+0007.882 CLOSE_TARGET_ALL
 ROOT: 0x0
 DONE ROOT: 0x0
 
-0031.279 CLOSE_TOWER_ALL
+0007.882 CLOSE_TOWER_ALL
 ROOT: 0x200383b0
-0:    0x200383b0, type = 1, x = 734, y = 359, prev = 0x0, next = 0x200383e0
-1:    0x200383e0, type = 2, x = 583, y = 366, prev = 0x200383b0, next = 0x20038410
-2:    0x20038410, type = 0, x = 480, y = 273, prev = 0x200383e0, next = 0x20038440
-3:    0x20038440, type = 0, x = 592, y = 261, prev = 0x20038410, next = 0x20038470
-4:    0x20038470, type = 2, x = 837, y = 375, prev = 0x20038440, next = 0x200384a0
-5:    0x200384a0, type = 2, x = 574, y = 468, prev = 0x20038470, next = 0x20048778
-6:    0x20048778, type = 2, x = 474, y = 170, prev = 0x200384a0, next = 0x200487a8
-7:    0x200487a8, type = 2, x = 841, y = 505, prev = 0x20048778, next = 0x0
+0:    0x200383b0, type = 1, x = 1455, y = 664, prev = 0x0, next = 0x200383e0
+1:    0x200383e0, type = 2, x = 1380, y = 560, prev = 0x200383b0, next = 0x20038410
+2:    0x20038410, type = 2, x = 836, y = 680, prev = 0x200383e0, next = 0x0
 DONE ROOT: 0x0
 
-0031.279 CLOSE_PATH
+0007.882 CLOSE_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
@@ -105,7 +55,7 @@ ROOT: 0x20038330
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 DONE ROOT: 0x0
 
-0031.765 CLOSE_GAME
+0008.340 CLOSE_GAME
 Game closed correctly
 
 MAIN

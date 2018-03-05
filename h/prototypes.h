@@ -19,6 +19,7 @@ void  TIME_wait(int *time, int ms);
 
 /* GAME BODY */
 
+// LOAD GAME
 void  load_game(void);
   void  load_sdl(void);
   void  load_window(void);
@@ -35,8 +36,11 @@ void  load_game(void);
         void  load_path_block(int x, int y);
       void  load_target_list(void);
       void  load_tower_list(void);
+// PLAY GAME
 void  play_game(void);
+  // HANDLE INPUT
   void  handle_input(void);
+  // HANDLE EVENT
   void  handle_event(void);
     void  handle_event_main_menu(void);
       void  handle_event_main_menu_mousemotion(void);
@@ -65,22 +69,28 @@ void  play_game(void);
         void  handle_event_play_keyup_return(void);
         void  handle_event_play_keyup_escape(void);
     void  handle_event_main_options(void);
+    // CREATE
     void  create_target(int type);
       void  append_target(struct s_target *new_target);
         void  fill_target(struct s_target *new_target, int type);
     struct s_tower  *create_tower(int type);
       void  append_tower(struct s_tower *new_tower);
         void  fill_tower(struct s_tower *new_tower, int type);
+  // MOVE
   void  move_items(void);
-    void  move_targets(void);
     void  move_towers(void);
+    void  move_targets(void);
+      void  update_target_vel(struct s_target *ptr);
+        int   compare_sign(float f1, float f2);
+      void  move_target(struct s_target *ptr);
+  // HANDLE HITBOXES
   void  handle_hitboxes(void);
-  int   handle_hitboxes_tower_tower(struct s_tower *ptr);
-  void  move_targets(void);
-    void  update_target_vel(struct s_target *ptr);
-      int   compare_sign(float f1, float f2);
-    void  move_target(struct s_target *ptr);
-  void  move_towers(void);
+  int handle_hitboxes_cursor_warzone(void);
+  int handle_hitboxes_tower_tower(struct s_tower *ptr);
+    int handle_hitboxes_tower_tower_condition(struct s_tower *ptr, struct s_tower *ptr2);
+  int handle_hitboxes_tower_path(struct s_tower *ptr);
+  int handle_hitboxes_tower_target(struct s_tower *ptr, struct s_target *ptr2);
+  // RENDER
   void  render_game(void);
     void  render_main_menu(void);
       void  render_main_menu_choice(void);
@@ -91,6 +101,7 @@ void  play_game(void);
       void  render_play_warzone(void);
         void  render_play_warzone_path(void);
           void  fill_path_block_simulation(struct s_target *pbs);
+// CLOSE GAME
 void  close_game(void);
   void  close_cursor(void);
   void  close_main_menu(void);

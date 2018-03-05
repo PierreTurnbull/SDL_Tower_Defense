@@ -91,35 +91,6 @@
                                         game.input.mouse_pos.x <= game.play.gui.item_tower_pos[2].x + game.play.gui.item_tower_pos[2].w &&\
                                         game.input.mouse_pos.y >= game.play.gui.item_tower_pos[2].y &&\
                                         game.input.mouse_pos.y <= game.play.gui.item_tower_pos[2].y + game.play.gui.item_tower_pos[2].h
-#define CLICK_ON_WARZONE_WITH_GRAB      game.mouse_grab->pos.x >= 25 &&\
-                                        game.mouse_grab->pos.x + game.play.tower_list.tower_size[game.mouse_grab->type] <= 25 + WARZONE_W &&\
-                                        game.mouse_grab->pos.y >= 25 &&\
-                                        game.mouse_grab->pos.y + game.play.tower_list.tower_size[game.mouse_grab->type] <= 25 + WARZONE_H
-
-// HITBOXES
-
-#define HITBOX_TOWER_HIT_TOWER          (HITBOX_TOWER_HIT_TOWER_CORNER_1 ||\
-                                        HITBOX_TOWER_HIT_TOWER_CORNER_2 ||\
-                                        HITBOX_TOWER_HIT_TOWER_CORNER_3 ||\
-                                        HITBOX_TOWER_HIT_TOWER_CORNER_4)
-
-#define HITBOX_TOWER_HIT_TOWER_CORNER_1 (ptr->pos.x >= ptr2->pos.x &&\
-                                        ptr->pos.x <= ptr2->pos.x + game.play.tower_list.tower_size[ptr2->type] &&\
-                                        ptr->pos.y >= ptr2->pos.y &&\
-                                        ptr->pos.y <= ptr2->pos.y + game.play.tower_list.tower_size[ptr2->type])
-#define HITBOX_TOWER_HIT_TOWER_CORNER_2 (ptr->pos.x + game.play.tower_list.tower_size[ptr->type] >= ptr2->pos.x &&\
-                                        ptr->pos.x + game.play.tower_list.tower_size[ptr->type] <= ptr2->pos.x + game.play.tower_list.tower_size[ptr2->type] &&\
-                                        ptr->pos.y >= ptr2->pos.y &&\
-                                        ptr->pos.y <= ptr2->pos.y + game.play.tower_list.tower_size[ptr2->type])
-#define HITBOX_TOWER_HIT_TOWER_CORNER_3 (ptr->pos.x >= ptr2->pos.x &&\
-                                        ptr->pos.x <= ptr2->pos.x + game.play.tower_list.tower_size[ptr2->type] &&\
-                                        ptr->pos.y + game.play.tower_list.tower_size[ptr->type] >= ptr2->pos.y &&\
-                                        ptr->pos.y + game.play.tower_list.tower_size[ptr->type] <= ptr2->pos.y + game.play.tower_list.tower_size[ptr2->type])
-#define HITBOX_TOWER_HIT_TOWER_CORNER_4 (ptr->pos.x + game.play.tower_list.tower_size[ptr->type] >= ptr2->pos.x &&\
-                                        ptr->pos.x + game.play.tower_list.tower_size[ptr->type] <= ptr2->pos.x + game.play.tower_list.tower_size[ptr2->type] &&\
-                                        ptr->pos.y + game.play.tower_list.tower_size[ptr->type] >= ptr2->pos.y &&\
-                                        ptr->pos.y + game.play.tower_list.tower_size[ptr->type] <= ptr2->pos.y + game.play.tower_list.tower_size[ptr2->type])
-
 // PLAY GUI BUTTONS
 
 #define BTN_SELECTED_NONE               -1
