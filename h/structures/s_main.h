@@ -3,12 +3,14 @@ struct s_input
   SDL_bool            quit;
 
   SDL_bool            key[SDL_NUM_SCANCODES];
-  SDL_bool            repeat[SDL_NUM_SCANCODES];
+  SDL_bool            key_repeat[SDL_NUM_SCANCODES];
   SDL_bool            mouse_btn[3];
+  SDL_bool            mouse_btn_repeat[3];
 
   SDL_Rect            mouse_pos;
 
-  int                 timer[SDL_NUM_SCANCODES];
+  int                 key_timer[SDL_NUM_SCANCODES];
+  int                 mouse_btn_timer[3];
 };
 
 struct s_game

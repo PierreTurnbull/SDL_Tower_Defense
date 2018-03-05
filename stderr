@@ -2,22 +2,29 @@
 Loading SDL and SDL_Image
 Game loaded correctly
 
-0000.721 LOAD_PATH
+0000.808 LOAD_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
 2:    0x20038370, x = 1106, y = 437, prev = 0x20038350, next = 0x20038390
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 
-0001.526 CLOSE_TARGET_ALL
+LEFT
+MID
+RIGHT
+RIGHT
+MID
+LEFT
+MID
+0004.722 CLOSE_TARGET_ALL
 ROOT: 0x0
 DONE ROOT: 0x0
 
-0001.526 CLOSE_TOWER_ALL
+0004.722 CLOSE_TOWER_ALL
 ROOT: 0x0
 DONE ROOT: 0x0
 
-0001.526 CLOSE_PATH
+0004.722 CLOSE_PATH
 ROOT: 0x20038330
 0:    0x20038330, x = 25, y = 25, prev = 0x0, next = 0x20038350
 1:    0x20038350, x = 334, y = 849, prev = 0x20038330, next = 0x20038370
@@ -25,11 +32,11 @@ ROOT: 0x20038330
 3:    0x20038390, x = 1570, y = 1055, prev = 0x20038370, next = 0x0
 DONE ROOT: 0x0
 
-0001.987 CLOSE_GAME
+0005.095 CLOSE_GAME
 Game closed correctly
 
 MAIN
-Last SDL error: "Invalid texture"
-Last IMG error: "Invalid texture"
+Last SDL error: ""
+Last IMG error: ""
 Returning status 0
 

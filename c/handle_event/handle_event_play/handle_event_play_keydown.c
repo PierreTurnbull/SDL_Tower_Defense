@@ -1,6 +1,6 @@
 void  handle_event_play_keydown_escape(void)
 {
-  if (game.input.repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE) {
+  if (game.input.key_repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE) {
     close_play_target_list();
     close_play_tower_list();
     close_path();
@@ -33,21 +33,21 @@ void  handle_event_play_keydown_q(void)
 
 void  handle_event_play_keydown_a(void)
 {
-  if (game.input.repeat[SDL_SCANCODE_A] == SDL_FALSE) {
+  if (game.input.key_repeat[SDL_SCANCODE_A] == SDL_FALSE) {
     create_tower(TOWER_TYPE_1);
   }
 }
 
 void  handle_event_play_keydown_s(void)
 {
-  if (game.input.repeat[SDL_SCANCODE_S] == SDL_FALSE) {
+  if (game.input.key_repeat[SDL_SCANCODE_S] == SDL_FALSE) {
     create_tower(TOWER_TYPE_2);
   }
 }
 
 void  handle_event_play_keydown_d(void)
 {
-  if (game.input.repeat[SDL_SCANCODE_D] == SDL_FALSE) {
+  if (game.input.key_repeat[SDL_SCANCODE_D] == SDL_FALSE) {
     create_tower(TOWER_TYPE_3);
   }
 }
