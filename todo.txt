@@ -42,6 +42,6 @@ ALLOCATED MEMORY TO FREE:
 
 
 TODO:
-- transfer path from play to play->warzone
 - make a unique fill_target function for paths, or change fill_target to have
   only 1 function call to fill the path block simulation
+- make functions for room transition
