@@ -27,6 +27,8 @@ struct s_tower_list {
 
   SDL_Texture         *tower_tex[TOWER_TYPES];
   SDL_Texture         *tower_blocked_tex[TOWER_TYPES];
+  SDL_Texture         *tower_range_tex[TOWER_TYPES];
+  SDL_Texture         *tower_proj_tex[TOWER_TYPES];
   struct s_tower      *first;
   int                 tower_size[TOWER_TYPES];
   int                 tower_reload_time[TOWER_TYPES];
