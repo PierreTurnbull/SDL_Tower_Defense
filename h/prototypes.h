@@ -69,6 +69,10 @@ void  play_game(void);
         void  handle_event_play_keyup_return(void);
         void  handle_event_play_keyup_escape(void);
     void  handle_event_main_options(void);
+    // TOWERS SHOOT
+    void  tower_shoot_all(void);
+      void  check_tower_shoot(struct s_tower *ptr);
+        void  tower_shoot(struct s_tower *ptr);
     // CREATE
     void  create_target(int type);
       void  append_target(struct s_target *new_target);
@@ -76,6 +80,9 @@ void  play_game(void);
     struct s_tower  *create_tower(int type);
       void  append_tower(struct s_tower *new_tower);
         void  fill_tower(struct s_tower *new_tower, int type);
+    void  create_proj(int type);
+      void  append_proj(struct s_proj *new_proj);
+        void  fill_proj(struct s_proj *new_proj, int type);
   // MOVE
   void  move_items(void);
     void  move_towers(void);

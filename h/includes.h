@@ -56,6 +56,7 @@ struct s_game game;
 #include "../c/close/close_play/close_play_tower.c"
 #include "../c/close/close_play/close_play_warzone/close_path.c"
 #include "../c/close/close_play/close_play_warzone/close_play_warzone.c"
+#include "../c/handle_event/create/create_proj.c"
 #include "../c/handle_event/create/create_target.c"
 #include "../c/handle_event/create/create_tower.c"
 #include "../c/handle_event/handle_event.c"
@@ -96,3 +97,4 @@ struct s_game game;
 #include "../c/render/render_play/render_play_towers.c"
 #include "../c/render/render_play/render_play_warzone/render_play_warzone.c"
 #include "../c/render/render_play/render_play_warzone/render_play_warzone_path.c"
+#include "../c/tower_shoot_all/tower_shoot_all.c"

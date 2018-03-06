@@ -14,6 +14,7 @@ struct s_tower {
   int                 index;
   int                 type;
   int                 state[TOWER_STATES];
+  int                 reload_time;
   struct s_tower      *prev;
   struct s_tower      *next;
   struct s_proj_list  proj_list; // proj = projectile
@@ -28,6 +29,7 @@ struct s_tower_list {
   SDL_Texture         *tower_blocked_tex[TOWER_TYPES];
   struct s_tower      *first;
   int                 tower_size[TOWER_TYPES];
+  int                 tower_reload_time[TOWER_TYPES];
   int                 tower_damage[TOWER_TYPES];
   int                 tower_shoot_speed[TOWER_TYPES];
   int                 tower_shoot_reload[TOWER_TYPES];

@@ -67,9 +67,9 @@
 #define TOWER_2_SHOOT_SPEED             6
 #define TOWER_3_SHOOT_SPEED             8
 
-#define TOWER_1_SHOOT_RELOAD            3
-#define TOWER_2_SHOOT_RELOAD            6
-#define TOWER_3_SHOOT_RELOAD            8
+#define TOWER_1_RELOAD_TIME             40
+#define TOWER_2_RELOAD_TIME             75
+#define TOWER_3_RELOAD_TIME             100
 
 // CURSOR
 

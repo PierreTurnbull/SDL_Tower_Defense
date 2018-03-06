@@ -2,6 +2,7 @@ void  fill_tower(struct s_tower *new_tower, int type)
 {
   new_tower->type                     = type;
   new_tower->state[TOWER_STATE_GRAB]  = TOWER_STATE_GRABBED;
+  new_tower->reload_time              = 0;
   new_tower->pos.x                    = game.input.mouse_pos.x - game.play.tower_list.tower_size[type] / 2;
   new_tower->pos.y                    = game.input.mouse_pos.y - game.play.tower_list.tower_size[type] / 2;
   new_tower->pos.w                    = game.play.tower_list.tower_size[type];
