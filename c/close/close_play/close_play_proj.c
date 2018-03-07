@@ -1,9 +1,9 @@
-void  reindex_proj(void)
+void  reindex_proj(struct s_tower *tower_ptr)
 {
   int i;
-  struct s_tower *ptr;
+  struct s_proj *ptr;
 
-  ptr = game.play.tower_list.first;
+  ptr = tower_ptr->proj_list.first;
   i = 0;
   while (ptr != NULL) {
     ptr->index = i;
@@ -12,23 +12,24 @@ void  reindex_proj(void)
   }
 }
 
-void  close_play_proj(struct s_tower *tower_ptr, struct s_proj *ptr)
+struct s_proj *close_play_proj(struct s_tower *tower_ptr, struct s_proj *ptr)
 {
-    struct s_proj *prev;
-    struct s_proj *next;
+  struct s_proj *prev;
+  struct s_proj *next;
 
-    prev = ptr->prev;
-    next = ptr->next;
-    if (prev == NULL) {
-      tower_ptr->proj_list.first = next;
-    } else {
-      prev->next = next;
-    }
-    if (next != NULL) {
-      next->prev = prev;
-    }
-    free(ptr);
-    reindex_proj();
+  prev = ptr->prev;
+  next = ptr->next;
+  if (prev == NULL) {
+    tower_ptr->proj_list.first = next;
+  } else {
+    prev->next = next;
+  }
+  if (next != NULL) {
+    next->prev = prev;
+  }
+  free(ptr);
+  reindex_proj(tower_ptr);
+  return next;
 }
 
 void  close_play_proj_list(struct s_tower *tower_ptr)
@@ -43,8 +44,7 @@ void  close_play_proj_list(struct s_tower *tower_ptr)
   }
   ptr = tower_ptr->proj_list.first;
   while (ptr != NULL) {
-    close_play_proj(tower_ptr, ptr);
-    ptr = ptr->next;
+    ptr = close_play_proj(tower_ptr, ptr);
   }
   fprintf(stderr, "  DONE ROOT: %p\n\n", tower_ptr->proj_list.first);
 }
