@@ -71,8 +71,8 @@ void  play_game(void);
     void  handle_event_main_options(void);
     // TOWERS SHOOT
     void  tower_shoot_all(void);
-      void  check_tower_shoot(struct s_tower *ptr);
-        void  tower_shoot(struct s_tower *ptr);
+      void  check_tower_shoot(struct s_tower *tower_ptr);
+        void  tower_shoot(struct s_tower *tower_ptr, struct s_target *target_ptr);
     // CREATE
     void  create_target(int type);
       void  append_target(struct s_target *new_target);

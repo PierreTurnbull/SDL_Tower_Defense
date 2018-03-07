@@ -45,11 +45,11 @@ void  close_play_tower_list(void)
     fprintf(stderr, "%d:    %p, type = %d, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->type, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
     ptr = ptr->next;
   }
+  fprintf(stderr, "DONE ROOT: %p\n\n", game.play.tower_list.first);
   ptr = game.play.tower_list.first;
   while (ptr != NULL) {
     ptr = close_play_tower(ptr, 0);
   }
-  fprintf(stderr, "DONE ROOT: %p\n\n", game.play.tower_list.first);
 }
 
 void  close_play_tower_all(void)

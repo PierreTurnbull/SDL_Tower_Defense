@@ -34,7 +34,7 @@ struct s_tower_list {
   SDL_Texture         *tower_proj_tex[TOWER_TYPES];
   struct s_tower      *first;
   int                 tower_size[TOWER_TYPES];
-  int                 tower_range_size[TOWER_TYPES];
+  int                 tower_range[TOWER_TYPES];
   int                 tower_reload_time[TOWER_TYPES];
   int                 tower_damage[TOWER_TYPES];
   int                 tower_proj_size[TOWER_TYPES];

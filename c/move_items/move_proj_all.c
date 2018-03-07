@@ -6,7 +6,6 @@ void  move_proj_list(struct s_tower *tower_ptr)
   while (ptr != NULL) {
     ptr->pos.x += ptr->velx;
     ptr->pos.y += ptr->vely;
-    fprintf(stderr, "x%d y%d\n", ptr->pos.x, ptr->pos.y);
     ptr = ptr->next;
   }
 }

@@ -21,6 +21,17 @@
 #define PATH_BLOCK_SIZE                 112
 #define PATH_BLOCK_SPEED                24
 
+// PLAY GUI BUTTONS
+
+#define BTN_SELECTED_NONE               -1
+#define BTN_SELECTED_CAT1               0
+#define BTN_SELECTED_CAT2               1
+#define BTN_SELECTED_CAT3               2
+#define BTN_SELECTED_WAVE               3
+#define BTN_SELECTED_PAUSE              4
+#define BTN_SELECTED_OPTIONS            5
+#define BTN_SELECTED_MENU               6
+
 // TARGET
 
 #define TARGET_TYPES                    3
@@ -59,9 +70,9 @@
 #define TOWER_2_SIZE                    100
 #define TOWER_3_SIZE                    100
 
-#define TOWER_1_RANGE_SIZE              400
-#define TOWER_2_RANGE_SIZE              500
-#define TOWER_3_RANGE_SIZE              700
+#define TOWER_1_RANGE                   200
+#define TOWER_2_RANGE                   250
+#define TOWER_3_RANGE                   350
 
 #define TOWER_1_DAMAGE                  3
 #define TOWER_2_DAMAGE                  6
@@ -78,6 +89,19 @@
 #define TOWER_1_RELOAD_TIME             40
 #define TOWER_2_RELOAD_TIME             75
 #define TOWER_3_RELOAD_TIME             100
+
+// TOWER SHOOT
+
+#define X1                              (target_ptr->pos.x + game.play.target_list.target_size[target_ptr->type] / 2)
+#define X2                              (tower_ptr->pos.x  + game.play.tower_list.tower_size[tower_ptr->type]    / 2)
+#define Y1                              (target_ptr->pos.y + game.play.target_list.target_size[target_ptr->type] / 2)
+#define Y2                              (tower_ptr->pos.y  + game.play.tower_list.tower_size[tower_ptr->type]    / 2)
+
+#define TOWER_CAN_SHOOT                 sqrt(\
+                                            (X1 - X2) *\
+                                            (X1 - X2) +\
+                                            (Y1 - Y2) *\
+                                            (Y1 - Y2)) <= game.play.tower_list.tower_range[tower_ptr->type]
 
 // CURSOR
 
@@ -99,13 +123,3 @@
                                         game.input.mouse_pos.x <= game.play.gui.item_tower_pos[2].x + game.play.gui.item_tower_pos[2].w &&\
                                         game.input.mouse_pos.y >= game.play.gui.item_tower_pos[2].y &&\
                                         game.input.mouse_pos.y <= game.play.gui.item_tower_pos[2].y + game.play.gui.item_tower_pos[2].h
-// PLAY GUI BUTTONS
-
-#define BTN_SELECTED_NONE               -1
-#define BTN_SELECTED_CAT1               0
-#define BTN_SELECTED_CAT2               1
-#define BTN_SELECTED_CAT3               2
-#define BTN_SELECTED_WAVE               3
-#define BTN_SELECTED_PAUSE              4
-#define BTN_SELECTED_OPTIONS            5
-#define BTN_SELECTED_MENU               6
