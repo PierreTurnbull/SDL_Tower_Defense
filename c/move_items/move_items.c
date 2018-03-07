@@ -1,5 +1,6 @@
 void  move_items(void)
 {
-  move_targets();
-  move_towers();
+  move_target_list();
+  move_tower_list();
+  move_proj_all();
 }

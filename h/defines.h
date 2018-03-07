@@ -67,9 +67,13 @@
 #define TOWER_2_DAMAGE                  6
 #define TOWER_3_DAMAGE                  8
 
-#define TOWER_1_SHOOT_SPEED             3
-#define TOWER_2_SHOOT_SPEED             6
-#define TOWER_3_SHOOT_SPEED             8
+#define TOWER_1_PROJ_SIZE               10
+#define TOWER_2_PROJ_SIZE               20
+#define TOWER_3_PROJ_SIZE               30
+
+#define TOWER_1_PROJ_SPEED              10
+#define TOWER_2_PROJ_SPEED              7
+#define TOWER_3_PROJ_SPEED              4
 
 #define TOWER_1_RELOAD_TIME             40
 #define TOWER_2_RELOAD_TIME             75

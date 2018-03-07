@@ -27,9 +27,12 @@ void  load_tower_list(void)
   game.play.tower_list.tower_damage[0]      = TOWER_1_DAMAGE;
   game.play.tower_list.tower_damage[1]      = TOWER_2_DAMAGE;
   game.play.tower_list.tower_damage[2]      = TOWER_3_DAMAGE;
-  game.play.tower_list.tower_shoot_speed[0] = TOWER_1_SHOOT_SPEED;
-  game.play.tower_list.tower_shoot_speed[1] = TOWER_2_SHOOT_SPEED;
-  game.play.tower_list.tower_shoot_speed[2] = TOWER_3_SHOOT_SPEED;
+  game.play.tower_list.tower_proj_size[0]   = TOWER_1_PROJ_SIZE;
+  game.play.tower_list.tower_proj_size[1]   = TOWER_2_PROJ_SIZE;
+  game.play.tower_list.tower_proj_size[2]   = TOWER_3_PROJ_SIZE;
+  game.play.tower_list.tower_proj_speed[0]  = TOWER_1_PROJ_SPEED;
+  game.play.tower_list.tower_proj_speed[1]  = TOWER_2_PROJ_SPEED;
+  game.play.tower_list.tower_proj_speed[2]  = TOWER_3_PROJ_SPEED;
 
   // PROJECTILE
 

@@ -10,6 +10,7 @@ void  render_play_towers(void)
       SDL_RenderCopy(game.rend, game.play.tower_list.tower_blocked_tex[ptr->type], NULL, &ptr->pos);
     else
       SDL_RenderCopy(game.rend, game.play.tower_list.tower_tex[ptr->type], NULL, &ptr->pos);
+    SDL_RenderCopy(game.rend, game.play.tower_list.tower_range_tex[ptr->type], NULL, &ptr->range_pos);
     ptr = ptr->next;
   }
 }

@@ -1,6 +1,7 @@
 void  tower_shoot(struct s_tower *ptr)
 {
   fprintf(stderr, "%s SHOOT\n", TIME_get_time());
+  create_proj(ptr);
   ptr->reload_time = game.play.tower_list.tower_reload_time[ptr->type];
 }
 

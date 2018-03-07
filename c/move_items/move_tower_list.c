@@ -1,4 +1,4 @@
-void  move_towers(void)
+void  move_tower_list(void)
 {
   struct s_tower *ptr;
 

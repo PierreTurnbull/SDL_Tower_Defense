@@ -1,5 +1,7 @@
 struct s_proj {
   int                 index;
+  float               velx;
+  float               vely;
   struct s_proj       *prev;
   struct s_proj       *next;
 
@@ -35,7 +37,8 @@ struct s_tower_list {
   int                 tower_range_size[TOWER_TYPES];
   int                 tower_reload_time[TOWER_TYPES];
   int                 tower_damage[TOWER_TYPES];
-  int                 tower_shoot_speed[TOWER_TYPES];
+  int                 tower_proj_size[TOWER_TYPES];
+  int                 tower_proj_speed[TOWER_TYPES];
   int                 tower_shoot_reload[TOWER_TYPES];
 
   // PROJECTILE
