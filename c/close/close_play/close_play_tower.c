@@ -54,8 +54,13 @@ void  close_play_tower_list(void)
 
 void  close_play_tower_all(void)
 {
-  SDL_DestroyTexture(game.play.tower_list.tower_tex[0]);
-  SDL_DestroyTexture(game.play.tower_list.tower_tex[1]);
-  SDL_DestroyTexture(game.play.tower_list.tower_tex[2]);
+  int i;
+
+  for (i = 0; i < TOWER_TYPES; i++) {
+    SDL_DestroyTexture(game.play.tower_list.tower_tex[i]);
+    SDL_DestroyTexture(game.play.tower_list.tower_blocked_tex[i]);
+    SDL_DestroyTexture(game.play.tower_list.tower_range_tex[i]);
+    SDL_DestroyTexture(game.play.tower_list.tower_proj_tex[i]);
+  }
   close_play_tower_list();
 }

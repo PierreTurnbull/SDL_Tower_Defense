@@ -18,6 +18,9 @@ void  load_tower_list(void)
   game.play.tower_list.tower_size[0]        = TOWER_1_SIZE;
   game.play.tower_list.tower_size[1]        = TOWER_2_SIZE;
   game.play.tower_list.tower_size[2]        = TOWER_3_SIZE;
+  game.play.tower_list.tower_range_size[0]  = TOWER_1_RANGE_SIZE;
+  game.play.tower_list.tower_range_size[1]  = TOWER_2_RANGE_SIZE;
+  game.play.tower_list.tower_range_size[2]  = TOWER_3_RANGE_SIZE;
   game.play.tower_list.tower_reload_time[0] = TOWER_1_RELOAD_TIME;
   game.play.tower_list.tower_reload_time[1] = TOWER_2_RELOAD_TIME;
   game.play.tower_list.tower_reload_time[2] = TOWER_3_RELOAD_TIME;

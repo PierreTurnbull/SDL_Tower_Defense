@@ -59,6 +59,10 @@
 #define TOWER_2_SIZE                    100
 #define TOWER_3_SIZE                    100
 
+#define TOWER_1_RANGE_SIZE              400
+#define TOWER_2_RANGE_SIZE              500
+#define TOWER_3_RANGE_SIZE              700
+
 #define TOWER_1_DAMAGE                  3
 #define TOWER_2_DAMAGE                  6
 #define TOWER_3_DAMAGE                  8

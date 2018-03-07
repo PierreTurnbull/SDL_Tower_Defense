@@ -20,6 +20,7 @@ struct s_tower {
   struct s_proj_list  proj_list; // proj = projectile
 
   SDL_Rect            pos;
+  SDL_Rect            range_pos;
 };
 
 struct s_tower_list {
@@ -31,6 +32,7 @@ struct s_tower_list {
   SDL_Texture         *tower_proj_tex[TOWER_TYPES];
   struct s_tower      *first;
   int                 tower_size[TOWER_TYPES];
+  int                 tower_range_size[TOWER_TYPES];
   int                 tower_reload_time[TOWER_TYPES];
   int                 tower_damage[TOWER_TYPES];
   int                 tower_shoot_speed[TOWER_TYPES];

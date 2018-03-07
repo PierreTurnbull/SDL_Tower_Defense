@@ -7,6 +7,10 @@ void  fill_tower(struct s_tower *new_tower, int type)
   new_tower->pos.y                    = game.input.mouse_pos.y - game.play.tower_list.tower_size[type] / 2;
   new_tower->pos.w                    = game.play.tower_list.tower_size[type];
   new_tower->pos.h                    = game.play.tower_list.tower_size[type];
+  new_tower->range_pos.x              = new_tower->pos.x - game.play.tower_list.tower_range_size[type] / 2 + new_tower->pos.w / 2;
+  new_tower->range_pos.y              = new_tower->pos.y - game.play.tower_list.tower_range_size[type] / 2 + new_tower->pos.h / 2;
+  new_tower->range_pos.w              = game.play.tower_list.tower_range_size[type];
+  new_tower->range_pos.h              = game.play.tower_list.tower_range_size[type];
 }
 
 void  append_tower(struct s_tower *new_tower)
