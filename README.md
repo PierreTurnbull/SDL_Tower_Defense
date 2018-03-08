@@ -24,5 +24,5 @@ Error outputs in ``stderr``
 
 ## Hey!
 
-- You found a bug? You have a suggestion? Something is going wrong? Please write an [issue!](https://github.com/PierreTurnbull/SDL_Tower_Defense/issues)
+- If you found a bug, have a suggestion, or if you feel the need for any reason, please write an [issue!](https://github.com/PierreTurnbull/SDL_Tower_Defense/issues)
 - If you want to contribute, feel free to fork the project!
