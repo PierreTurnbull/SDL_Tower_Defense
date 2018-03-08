@@ -44,7 +44,7 @@
 #define TARGET_2_SIZE                   76
 #define TARGET_3_SIZE                   76
 
-#define TARGET_1_MOVE_SPEED             1
+#define TARGET_1_MOVE_SPEED             3
 #define TARGET_2_MOVE_SPEED             6
 #define TARGET_3_MOVE_SPEED             8
 
@@ -90,12 +90,15 @@
 #define TOWER_2_RELOAD_TIME             50
 #define TOWER_3_RELOAD_TIME             75
 
-// TOWER SHOOT
+// POSITIONS
 
 #define TARGET_X                        (target_ptr->pos.x + game.play.target_list.target_size[target_ptr->type] / 2)
-#define TOWER_X                         (tower_ptr->pos.x  + game.play.tower_list.tower_size[tower_ptr->type]    / 2)
+#define TOWER_X                         (tower_ptr->pos.x  + game.play.tower_list.tower_size[tower_ptr->type] / 2)
+#define TARGET_SIMULATION_X             (target_simulation.pos.x + game.play.target_list.target_size[target_simulation.type] / 2)
+
 #define TARGET_Y                        (target_ptr->pos.y + game.play.target_list.target_size[target_ptr->type] / 2)
-#define TOWER_Y                         (tower_ptr->pos.y  + game.play.tower_list.tower_size[tower_ptr->type]    / 2)
+#define TOWER_Y                         (tower_ptr->pos.y  + game.play.tower_list.tower_size[tower_ptr->type] / 2)
+#define TARGET_SIMULATION_Y             (target_simulation.pos.y + game.play.target_list.target_size[target_simulation.type] / 2)
 
 // CURSOR
 
