@@ -17,6 +17,9 @@ void  RENDER_btwn_2_tex(SDL_Texture *tex1, SDL_Texture *tex2, SDL_Rect *pos, int
 char  *TIME_get_time(void);
 void  TIME_wait(int *time, int ms);
 
+int VEL_get_distance(int x1, int x2, int y1, int y2);
+double  VEL_get_vel(int x1, int x2, int y1, int y2, float speed, char axis);
+
 /* GAME BODY */
 
 // LOAD GAME
@@ -72,7 +75,7 @@ void  play_game(void);
     // TOWERS SHOOT
     void  tower_shoot_all(void);
       void  check_tower_shoot(struct s_tower *tower_ptr);
-        void  tower_shoot(struct s_tower *tower_ptr, struct s_target *target_ptr);
+        void  tower_shoot(struct s_tower *tower_ptr, struct s_target *target_ptr, int x, int y);
     // CREATE
     void  create_target(int type);
       void  append_target(struct s_target *new_target);
@@ -80,9 +83,9 @@ void  play_game(void);
     struct s_tower  *create_tower(int type);
       void  append_tower(struct s_tower *new_tower);
         void  fill_tower(struct s_tower *new_tower, int type);
-    void  create_proj(struct s_tower *tower_ptr);
+    void  create_proj(struct s_tower *tower_ptr, int destx, int desty);
       void  append_proj(struct s_tower *tower_ptr, struct s_proj *new_proj);
-        void  fill_proj(struct s_tower *tower_ptr, struct s_proj *new_proj);
+        void  fill_proj(struct s_tower *tower_ptr, struct s_proj *new_proj, int destx, int desty);
   // MOVE
   void  move_items(void);
     void  move_target_list(void);

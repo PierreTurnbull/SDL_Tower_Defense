@@ -44,7 +44,7 @@
 #define TARGET_2_SIZE                   76
 #define TARGET_3_SIZE                   76
 
-#define TARGET_1_MOVE_SPEED             3
+#define TARGET_1_MOVE_SPEED             1
 #define TARGET_2_MOVE_SPEED             6
 #define TARGET_3_MOVE_SPEED             8
 
@@ -86,22 +86,16 @@
 #define TOWER_2_PROJ_SPEED              7
 #define TOWER_3_PROJ_SPEED              4
 
-#define TOWER_1_RELOAD_TIME             40
-#define TOWER_2_RELOAD_TIME             75
-#define TOWER_3_RELOAD_TIME             100
+#define TOWER_1_RELOAD_TIME             30
+#define TOWER_2_RELOAD_TIME             50
+#define TOWER_3_RELOAD_TIME             75
 
 // TOWER SHOOT
 
-#define X1                              (target_ptr->pos.x + game.play.target_list.target_size[target_ptr->type] / 2)
-#define X2                              (tower_ptr->pos.x  + game.play.tower_list.tower_size[tower_ptr->type]    / 2)
-#define Y1                              (target_ptr->pos.y + game.play.target_list.target_size[target_ptr->type] / 2)
-#define Y2                              (tower_ptr->pos.y  + game.play.tower_list.tower_size[tower_ptr->type]    / 2)
-
-#define TOWER_CAN_SHOOT                 sqrt(\
-                                            (X1 - X2) *\
-                                            (X1 - X2) +\
-                                            (Y1 - Y2) *\
-                                            (Y1 - Y2)) <= game.play.tower_list.tower_range[tower_ptr->type]
+#define TARGET_X                        (target_ptr->pos.x + game.play.target_list.target_size[target_ptr->type] / 2)
+#define TOWER_X                         (tower_ptr->pos.x  + game.play.tower_list.tower_size[tower_ptr->type]    / 2)
+#define TARGET_Y                        (target_ptr->pos.y + game.play.target_list.target_size[target_ptr->type] / 2)
+#define TOWER_Y                         (tower_ptr->pos.y  + game.play.tower_list.tower_size[tower_ptr->type]    / 2)
 
 // CURSOR
 

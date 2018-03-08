@@ -44,6 +44,8 @@ struct s_game game;
 #include "../c/_RENDER/RENDER_btwn_2_tex.c"
 #include "../c/_TIME/TIME_get_time.c"
 #include "../c/_TIME/TIME_wait.c"
+#include "../c/_VEL/VEL_get_distance.c"
+#include "../c/_VEL/VEL_get_vel.c"
 
 /* C FILES */
 

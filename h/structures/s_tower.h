@@ -33,12 +33,12 @@ struct s_tower_list {
   SDL_Texture         *tower_range_tex[TOWER_TYPES];
   SDL_Texture         *tower_proj_tex[TOWER_TYPES];
   struct s_tower      *first;
+  float               tower_proj_speed[TOWER_TYPES];
   int                 tower_size[TOWER_TYPES];
   int                 tower_range[TOWER_TYPES];
   int                 tower_reload_time[TOWER_TYPES];
   int                 tower_damage[TOWER_TYPES];
   int                 tower_proj_size[TOWER_TYPES];
-  int                 tower_proj_speed[TOWER_TYPES];
   int                 tower_shoot_reload[TOWER_TYPES];
 
   // PROJECTILE
