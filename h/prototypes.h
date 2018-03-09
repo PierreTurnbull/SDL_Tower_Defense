@@ -10,7 +10,7 @@ void  MENU_change_choice(int *index, int direction, int size);
   void  MENU_next_choice(int *index, int size);
   void  MENU_previous_choice(int *index, int size);
 
-int   POS_check_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse);
+int   POS_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse);
 
 void  RENDER_btwn_2_tex(SDL_Texture *tex1, SDL_Texture *tex2, SDL_Rect *pos, int is_true);
 
