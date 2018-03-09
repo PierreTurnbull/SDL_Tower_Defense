@@ -82,9 +82,9 @@
 #define TOWER_2_PROJ_SIZE               20
 #define TOWER_3_PROJ_SIZE               30
 
-#define TOWER_1_PROJ_SPEED              10
-#define TOWER_2_PROJ_SPEED              7
-#define TOWER_3_PROJ_SPEED              4
+#define TOWER_1_PROJ_SPEED              30
+#define TOWER_2_PROJ_SPEED              25
+#define TOWER_3_PROJ_SPEED              20
 
 #define TOWER_1_RELOAD_TIME             30
 #define TOWER_2_RELOAD_TIME             50
