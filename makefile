@@ -24,8 +24,8 @@ l2="D:\SDL2\x32\lib\libSDL2main.a"
 l3="D:\SDL2\x32\lib\libSDL2.dll.a"
 l4="D:\SDL2\x32\lib\libSDL2_image.dll.a"
 CFROM="c\main.c"
-OBJTO="obj\Debug\main.o"
-EXETO="bin\SDL Tower Defense.exe"
+OBJTO="obj\main.o"
+EXETO="SDL Tower Defense.exe"
 
 main: main.o
 	$(CC) $(L1) $(L2) -o $(EXETO) $(OBJTO) $(l) $(l1) $(l2) $(l3) $(l4); echo ""; echo "      - BUILD DONE -"; echo ""
