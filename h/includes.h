@@ -75,7 +75,6 @@ struct s_game game;
 #include "../c/handle_event/handle_event_play/handle_event_play_mousemotion.c"
 #include "../c/handle_input.c"
 #include "../c/check_hitboxes/check_hitboxes.c"
-#include "../c/check_hitboxes/check_hitboxes_cursor_warzone/check_hitboxes_cursor_warzone.c"
 #include "../c/check_hitboxes/check_hitboxes_tower_path/check_hitboxes_tower_path.c"
 #include "../c/check_hitboxes/check_hitboxes_tower_target/check_hitboxes_tower_target.c"
 #include "../c/check_hitboxes/check_hitboxes_tower_tower/check_hitboxes_tower_tower.c"

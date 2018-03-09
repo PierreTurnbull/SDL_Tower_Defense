@@ -24,9 +24,9 @@ void  handle_event_play_mousebutton_left(void)
     close_play_tower(game.mouse_grab, 3);
     game.mouse_grab = create_tower(TOWER_TYPE_3);
   } else if (game.mouse_grab != NULL &&
-            check_hitboxes_cursor_warzone() == 1 &&
+            POS_rect_in_rect_fully(game.mouse_grab->pos, game.play.warzone.background_pos) == 1 &&
             check_hitboxes_tower_tower(game.mouse_grab) == 0 &&
-            check_hitboxes_tower_path(game.mouse_grab) == 0) {
+            check_hitboxes_tower_path(game.mouse_grab) == 0) { // TODO
     game.mouse_grab->state[TOWER_STATE_GRAB] = TOWER_STATE_NOT_GRABBED;
     game.mouse_grab = NULL;
   }
