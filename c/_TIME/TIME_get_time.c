@@ -12,6 +12,6 @@ char  *TIME_get_time(void)
   str[5] = SDL_GetTicks() % 1000 / 100 + 48;
   str[6] = SDL_GetTicks() % 100 / 10 + 48;
   str[7] = SDL_GetTicks() % 10 + 48;
-  str[8] = 0;
+  str[8] = '\0';
   return str;
 }

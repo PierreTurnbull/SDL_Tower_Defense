@@ -79,7 +79,7 @@ void  update_target_vel(struct s_target *ptr)
   }
 }
 
-void  move_targets(void)
+void  move_target_list(void)
 {
   struct s_target *ptr;
 

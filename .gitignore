@@ -2,3 +2,4 @@ stderr
 ..gitignore.un~
 .gitignore~
 *.exe.stackdump
+.gitattributes
