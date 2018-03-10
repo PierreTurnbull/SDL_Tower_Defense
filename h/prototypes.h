@@ -10,7 +10,9 @@ void  MENU_change_choice(int *index, int direction, int size);
   void  MENU_next_choice(int *index, int size);
   void  MENU_previous_choice(int *index, int size);
 
-int   POS_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse);
+int POS_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse);
+int POS_rect_in_rect(SDL_Rect r1, SDL_Rect r2);
+int POS_rect_in_rect_fully(SDL_Rect r1, SDL_Rect r2);
 
 void  RENDER_btwn_2_tex(SDL_Texture *tex1, SDL_Texture *tex2, SDL_Rect *pos, int is_true);
 
@@ -108,7 +110,7 @@ void  play_game(void);
     void  render_play(void);
       void  render_play_warzone(void);
         void  render_play_warzone_path(void);
-          void  fill_path_block_simulation(struct s_target *pbs);
+          void  fill_path_block_simulation(struct s_target *pbs, int size);
       void  render_play_gui(void);
       void  render_play_targets(void);
       void  render_play_towers(void);

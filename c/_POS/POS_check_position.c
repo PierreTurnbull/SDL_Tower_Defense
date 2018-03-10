@@ -8,6 +8,11 @@ int POS_mouse_in_rect(SDL_Rect m, SDL_Rect r)
     m.y < r.y + r.h;
 }
 
+/*  note: POS_rect_in_rect and POS_rect_in_rect_fully could be factorized in 1
+    function, but it would make them slightly slower due to if statements, which
+    we do not want since these functions can be called very often in a limited
+    time. */
+
 // returns 1 if r1 is partially or fully in r2, else 0
 int POS_rect_in_rect(SDL_Rect r1, SDL_Rect r2)
 {
