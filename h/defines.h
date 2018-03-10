@@ -123,3 +123,26 @@
                                         game.input.mouse_pos.x <= game.play.gui.item_tower_pos[2].x + game.play.gui.item_tower_pos[2].w &&\
                                         game.input.mouse_pos.y >= game.play.gui.item_tower_pos[2].y &&\
                                         game.input.mouse_pos.y <= game.play.gui.item_tower_pos[2].y + game.play.gui.item_tower_pos[2].h
+
+// MESSAGES TO PRINT IN STDERR
+// set 1 to print, else 0
+
+#define PRINT_ALL                       0
+
+#define PRINT_TIME_WAIT                 0 || PRINT_ALL
+#define PRINT_CLOSE_GAME                0 || PRINT_ALL
+#define PRINT_CLOSE_PLAY_PROJ_LIST      0 || PRINT_ALL
+#define PRINT_CLOSE_PLAY_TARGET         0 || PRINT_ALL
+#define PRINT_CLOSE_PLAY_TOWER          0 || PRINT_ALL
+#define PRINT_CLOSE_PATH                0 || PRINT_ALL
+#define PRINT_CREATE_PROJ               0 || PRINT_ALL
+#define PRINT_CREATE_TARGET             0 || PRINT_ALL
+#define PRINT_CREATE_TOWER              0 || PRINT_ALL
+#define PRINT_HANDLE_EVENT_MAIN_MENU    0 || PRINT_ALL
+#define PRINT_HANDLE_EVENT_MAIN_OPTIONS 0 || PRINT_ALL
+#define PRINT_HANDLE_EVENT_PLAY         0 || PRINT_ALL
+#define PRINT_HANDLE_EVENT              1 || PRINT_ALL
+#define PRINT_LOAD_GAME                 0 || PRINT_ALL
+#define PRINT_LOAD_PATH                 0 || PRINT_ALL
+#define PRINT_MAIN                      1 || PRINT_ALL
+#define PRINT_RENDER_GAME               1 || PRINT_ALL

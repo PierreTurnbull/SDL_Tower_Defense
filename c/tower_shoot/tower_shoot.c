@@ -20,7 +20,6 @@ int check_tower_shoot_hits(struct s_tower *tower_ptr, struct s_target *target_pt
         i * game.play.tower_list.tower_proj_speed[tower_ptr->type]) {
           aim->x = target_simulation.pos.x + game.play.target_list.target_size[target_simulation.type] / 2;
           aim->y = target_simulation.pos.y + game.play.target_list.target_size[target_simulation.type] / 2;
-          fprintf(stderr, "i = %d\n", i);
           return 1;
         };
     update_target_vel(&target_simulation);

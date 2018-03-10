@@ -40,12 +40,15 @@ void  close_play_tower_list(void)
   struct s_tower *ptr;
 
   ptr = game.play.tower_list.first;
-  fprintf(stderr, "%s CLOSE_PLAY_TOWER_ALL\nROOT: %p\n", TIME_get_time(), game.play.tower_list.first);
+  if (PRINT_CLOSE_PLAY_TOWER)
+    fprintf(stderr, "%s CLOSE_PLAY_TOWER_ALL\nROOT: %p\n", TIME_get_time(), game.play.tower_list.first);
   while (ptr != NULL) {
-    fprintf(stderr, "%d:    %p, type = %d, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->type, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
+    if (PRINT_CLOSE_PLAY_TOWER)
+      fprintf(stderr, "%d:    %p, type = %d, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->type, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
     ptr = ptr->next;
   }
-  fprintf(stderr, "DONE ROOT: %p\n\n", game.play.tower_list.first);
+  if (PRINT_CLOSE_PLAY_TOWER)
+    fprintf(stderr, "DONE ROOT: %p\n\n", game.play.tower_list.first);
   ptr = game.play.tower_list.first;
   while (ptr != NULL) {
     ptr = close_play_tower(ptr, 0);

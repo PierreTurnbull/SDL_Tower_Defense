@@ -37,16 +37,19 @@ void  close_play_target_list(void)
   struct s_target *ptr;
 
   ptr = game.play.target_list.first;
-  fprintf(stderr, "%s CLOSE_TARGET_ALL\nROOT: %p\n", TIME_get_time(), game.play.target_list.first);
+  if (PRINT_CLOSE_PLAY_TARGET)
+    fprintf(stderr, "%s CLOSE_TARGET_ALL\nROOT: %p\n", TIME_get_time(), game.play.target_list.first);
   while (ptr != NULL) {
-    fprintf(stderr, "%d:    %p, type = %d, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->type, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
+    if (PRINT_CLOSE_PLAY_TARGET)
+      fprintf(stderr, "%d:    %p, type = %d, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->type, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
     ptr = ptr->next;
   }
   ptr = game.play.target_list.first;
   while (ptr != NULL) {
     ptr = close_play_target(ptr);
   }
-  fprintf(stderr, "DONE ROOT: %p\n\n", game.play.target_list.first);
+  if (PRINT_CLOSE_PLAY_TARGET)
+    fprintf(stderr, "DONE ROOT: %p\n\n", game.play.target_list.first);
 }
 
 void  close_play_target_all(void)

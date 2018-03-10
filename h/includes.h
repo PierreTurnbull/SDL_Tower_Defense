@@ -99,4 +99,4 @@ struct s_game game;
 #include "../c/render/render_play/render_play_towers.c"
 #include "../c/render/render_play/render_play_warzone/render_play_warzone.c"
 #include "../c/render/render_play/render_play_warzone/render_play_warzone_path.c"
-#include "../c/tower_shoot_all/tower_shoot_all.c"
+#include "../c/tower_shoot/tower_shoot.c"

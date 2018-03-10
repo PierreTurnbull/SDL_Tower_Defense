@@ -46,6 +46,7 @@ struct s_tower  *create_tower(int type)
 
   append_tower(new_tower);
   fill_tower(new_tower, type);
-  fprintf(stderr, "%s CREATE_TOWER\n%p\nindex           = %d\ntype            = %d\npos             = x%d y%d\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_tower, new_tower->index, new_tower->type, new_tower->pos.x, new_tower->pos.y, new_tower->prev, new_tower->next);
+  if (PRINT_CREATE_TOWER)
+    fprintf(stderr, "%s CREATE_TOWER\n%p\nindex           = %d\ntype            = %d\npos             = x%d y%d\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_tower, new_tower->index, new_tower->type, new_tower->pos.x, new_tower->pos.y, new_tower->prev, new_tower->next);
   return new_tower;
 }

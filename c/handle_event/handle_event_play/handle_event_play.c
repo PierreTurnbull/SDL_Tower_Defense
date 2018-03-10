@@ -20,7 +20,8 @@ void  handle_event_play(void)
       handle_event_play_mousebutton();
       break;
     default:
-      //fprintf(stderr, "%s HANDLE_EVENT_MAIN_MENU\nCouldn't resolve event of type %d\n\n", get_game_time(), game.event.type);
+      if (PRINT_HANDLE_EVENT_PLAY)
+        fprintf(stderr, "%s HANDLE_EVENT_PLAY\nCouldn't resolve event of type %d\n\n", TIME_get_time(), game.event.type);
       break;
   }
 }

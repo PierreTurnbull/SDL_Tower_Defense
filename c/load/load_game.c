@@ -32,10 +32,12 @@ void  load_cursor(void)
 
 void  load_sdl(void)
 {
-  fprintf(stderr, "Loading SDL and SDL_Image\n");
+  if (PRINT_LOAD_GAME)
+    fprintf(stderr, "Loading SDL and SDL_Image\n");
   if (SDL_Init(SDL_INIT_VIDEO) != 0 || (IMG_Init(IMG_INIT_JPG) & IMG_INIT_JPG) != IMG_INIT_JPG)
   {
-    fprintf(stderr,"Failed SDL initialization: \"%s\"\n", SDL_GetError());
+    if (PRINT_LOAD_GAME)
+      fprintf(stderr,"Failed SDL initialization: \"%s\"\n", SDL_GetError());
     exit(EXIT_FAILURE);
   }
 }
@@ -51,7 +53,8 @@ void  load_window(void)
 void  load_game(void)
 {
   stderr = freopen("stderr", "w+", stderr);
-  fprintf(stderr, "%s LOAD_GAME\n", TIME_get_time());
+  if (PRINT_LOAD_GAME)
+    fprintf(stderr, "%s LOAD_GAME\n", TIME_get_time());
   load_sdl();
   load_window();
   game.mouse_grab = NULL;
@@ -61,5 +64,6 @@ void  load_game(void)
   load_play();
   load_target_list();
   load_tower_list();
-  fprintf(stderr, "Game loaded correctly\n\n");
+  if (PRINT_LOAD_GAME)
+    fprintf(stderr, "Game loaded correctly\n\n");
 }

@@ -8,7 +8,8 @@ void  handle_event(void)
     handle_event_play();
   else
   {
-    fprintf(stderr, "%s HANDLE_EVENT\nFATAL ERROR: screen of value %d not found.\n\n", TIME_get_time(), game.screen);
+    if (PRINT_HANDLE_EVENT)
+      fprintf(stderr, "%s HANDLE_EVENT\nFATAL ERROR: screen of value %d not found.\n\n", TIME_get_time(), game.screen);
     game.input.quit = SDL_TRUE;
   }
 }

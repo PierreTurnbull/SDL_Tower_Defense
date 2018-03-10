@@ -18,7 +18,9 @@ void  close_game(void)
   close_play();
   SDL_DestroyRenderer(game.rend);
   SDL_DestroyWindow(game.wind);
-  fprintf(stderr, "%s CLOSE_GAME\n", TIME_get_time());
+  if (PRINT_CLOSE_GAME)
+    fprintf(stderr, "%s CLOSE_GAME\n", TIME_get_time());
   close_sdl();
-  fprintf(stderr, "Game closed correctly\n\n");
+  if (PRINT_CLOSE_GAME)
+    fprintf(stderr, "Game closed correctly\n\n");
 }

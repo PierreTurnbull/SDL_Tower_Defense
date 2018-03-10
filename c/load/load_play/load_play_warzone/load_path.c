@@ -65,7 +65,8 @@ int   load_path_file(FILE **stream, char *which)
   strcat(file_name, which);
   strcat(file_name, ".lvl");
   if ((*stream = fopen(file_name, "r+")) == NULL) {
-    fprintf(stderr, "%s LOAD_PATH_FILE\nFailed to open file '%s'\n\n", TIME_get_time(), file_name);
+    if (PRINT_LOAD_PATH)
+      fprintf(stderr, "%s LOAD_PATH_FILE\nFailed to open file '%s'\n\n", TIME_get_time(), file_name);
     return 1;
   }
   return 0;
@@ -90,10 +91,13 @@ void  load_path(char *which)
   game.play.warzone.path.path_block_tex[2] = IMG_LoadTexture(game.rend, "img/play/path_block3.png");
   game.play.warzone.path.path_block_tex[3] = IMG_LoadTexture(game.rend, "img/play/path_block4.png");
   ptr = game.play.warzone.path.first;
-  fprintf(stderr, "%s LOAD_PATH\nROOT: %p\n", TIME_get_time(), game.play.warzone.path.first);
+  if (PRINT_LOAD_PATH)
+    fprintf(stderr, "%s LOAD_PATH\nROOT: %p\n", TIME_get_time(), game.play.warzone.path.first);
   while (ptr != NULL) {
-    fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
+    if (PRINT_LOAD_PATH)
+  fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
     ptr = ptr->next;
   }
-  fprintf(stderr, "\n");
+  if (PRINT_LOAD_PATH)
+    fprintf(stderr, "\n");
 }
