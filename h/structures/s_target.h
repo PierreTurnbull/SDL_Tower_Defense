@@ -14,7 +14,7 @@ struct s_target {
 };
 
 struct s_target_list {
-  SDL_Texture         *target_tex[3];
+  SDL_Texture         *target_tex[TARGET_TYPES];
   struct s_target     *first;
   int                 target_move_speed[TARGET_TYPES];
   int                 target_size[TARGET_TYPES];

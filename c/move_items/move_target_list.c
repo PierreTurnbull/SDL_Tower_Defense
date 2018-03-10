@@ -32,46 +32,30 @@ void  update_target_vel(struct s_target *ptr)
   if (ptr->next_path_block == NULL) {
     return;
   }
-  f1 = ((ptr->pos_float_x + ptr->pos.w / 2 - ptr->next_path_block->pos.x) *
-        ptr->move_speed / sqrt(
-        (ptr->pos_float_x + ptr->pos.w / 2 - ptr->next_path_block->pos.x) *
-        (ptr->pos_float_x + ptr->pos.w / 2 - ptr->next_path_block->pos.x) +
-        (ptr->pos_float_y + ptr->pos.w / 2 - ptr->next_path_block->pos.y) *
-        (ptr->pos_float_y + ptr->pos.w / 2 - ptr->next_path_block->pos.y)));
-  f2 = ((ptr->pos_float_x + ptr->pos.w / 2 + ptr->velx - ptr->next_path_block->pos.x) *
-        ptr->move_speed / sqrt(
-        (ptr->pos_float_x + ptr->pos.w / 2 + ptr->velx - ptr->next_path_block->pos.x) *
-        (ptr->pos_float_x + ptr->pos.w / 2 + ptr->velx - ptr->next_path_block->pos.x) +
-        (ptr->pos_float_y + ptr->pos.w / 2 + ptr->vely - ptr->next_path_block->pos.y) *
-        (ptr->pos_float_y + ptr->pos.w / 2 + ptr->vely - ptr->next_path_block->pos.y)));
-  f3 = ((ptr->pos_float_y + ptr->pos.w / 2 - ptr->next_path_block->pos.y) *
-        ptr->move_speed / sqrt(
-        (ptr->pos_float_x + ptr->pos.w / 2 - ptr->next_path_block->pos.x) *
-        (ptr->pos_float_x + ptr->pos.w / 2 - ptr->next_path_block->pos.x) +
-        (ptr->pos_float_y + ptr->pos.w / 2 - ptr->next_path_block->pos.y) *
-        (ptr->pos_float_y + ptr->pos.w / 2 - ptr->next_path_block->pos.y)));
-  f4 = ((ptr->pos_float_y + ptr->pos.w / 2 + ptr->vely - ptr->next_path_block->pos.y) *
-        ptr->move_speed / sqrt(
-        (ptr->pos_float_x + ptr->pos.w / 2 + ptr->velx - ptr->next_path_block->pos.x) *
-        (ptr->pos_float_x + ptr->pos.w / 2 + ptr->velx - ptr->next_path_block->pos.x) +
-        (ptr->pos_float_y + ptr->pos.w / 2 + ptr->vely - ptr->next_path_block->pos.y) *
-        (ptr->pos_float_y + ptr->pos.w / 2 + ptr->vely - ptr->next_path_block->pos.y)));
+  f1 = VEL_get_vel(ptr->pos_float_x + ptr->pos.w / 2, ptr->next_path_block->pos.x,
+                   ptr->pos_float_y + ptr->pos.w / 2, ptr->next_path_block->pos.y,
+                   ptr->move_speed, 'x');
+  f2 = VEL_get_vel(ptr->pos_float_x + ptr->pos.w / 2 + ptr->velx, ptr->next_path_block->pos.x,
+                  ptr->pos_float_y + ptr->pos.w / 2 + ptr->vely, ptr->next_path_block->pos.y,
+                  ptr->move_speed, 'x');
+  f3 = VEL_get_vel(ptr->pos_float_x + ptr->pos.w / 2, ptr->next_path_block->pos.x,
+                   ptr->pos_float_y + ptr->pos.w / 2, ptr->next_path_block->pos.y,
+                   ptr->move_speed, 'y');
+  f4 = VEL_get_vel(ptr->pos_float_x + ptr->pos.w / 2 + ptr->velx, ptr->next_path_block->pos.x,
+                  ptr->pos_float_y + ptr->pos.w / 2 + ptr->vely, ptr->next_path_block->pos.y,
+                  ptr->move_speed, 'y');
   if (compare_sign(f1, f2) == 0 || compare_sign(f3, f4) == 0) {
     if (ptr->next_path_block->next != NULL) {
       ptr->pos.x        = ptr->next_path_block->pos.x - ptr->pos.w / 2;
       ptr->pos_float_x  = ptr->next_path_block->pos.x - ptr->pos.w / 2;
-      ptr->velx         = (ptr->next_path_block->next->pos.x - ptr->next_path_block->pos.x) * ptr->move_speed / sqrt(
-                          (ptr->next_path_block->next->pos.x - ptr->next_path_block->pos.x) *
-                          (ptr->next_path_block->next->pos.x - ptr->next_path_block->pos.x) +
-                          (ptr->next_path_block->next->pos.y - ptr->next_path_block->pos.y) *
-                          (ptr->next_path_block->next->pos.y - ptr->next_path_block->pos.y));
+      ptr->velx         = VEL_get_vel(ptr->next_path_block->next->pos.x, ptr->next_path_block->pos.x,
+                                      ptr->next_path_block->next->pos.y, ptr->next_path_block->pos.y,
+                                      ptr->move_speed, 'x');
       ptr->pos.y        = ptr->next_path_block->pos.y - ptr->pos.w / 2;
       ptr->pos_float_y  = ptr->next_path_block->pos.y - ptr->pos.w / 2;
-      ptr->vely         = (ptr->next_path_block->next->pos.y - ptr->next_path_block->pos.y) * ptr->move_speed / sqrt(
-                          (ptr->next_path_block->next->pos.x - ptr->next_path_block->pos.x) *
-                          (ptr->next_path_block->next->pos.x - ptr->next_path_block->pos.x) +
-                          (ptr->next_path_block->next->pos.y - ptr->next_path_block->pos.y) *
-                          (ptr->next_path_block->next->pos.y - ptr->next_path_block->pos.y));
+      ptr->vely         = VEL_get_vel(ptr->next_path_block->next->pos.x, ptr->next_path_block->pos.x,
+                                      ptr->next_path_block->next->pos.y, ptr->next_path_block->pos.y,
+                                      ptr->move_speed, 'y');
     }
     if (ptr->next_path_block != NULL) {
       ptr->next_path_block = ptr->next_path_block->next;

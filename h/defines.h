@@ -19,7 +19,10 @@
 // PATH
 
 #define PATH_BLOCK_SIZE                 112
-#define PATH_BLOCK_SPEED                24
+#define PATH_BLOCK_HITBOX_SIZE          94
+#define PATH_BLOCK_SPEED                20
+
+#define TARGET_TYPE_SIMULATION          0
 
 // PLAY GUI BUTTONS
 
@@ -34,11 +37,11 @@
 
 // TARGET
 
-#define TARGET_TYPES                    3
+#define TARGET_TYPES                    4
 
-#define TARGET_TYPE_1                   0
-#define TARGET_TYPE_2                   1
-#define TARGET_TYPE_3                   2
+#define TARGET_TYPE_1                   1
+#define TARGET_TYPE_2                   2
+#define TARGET_TYPE_3                   3
 
 #define TARGET_1_SIZE                   76
 #define TARGET_2_SIZE                   76
