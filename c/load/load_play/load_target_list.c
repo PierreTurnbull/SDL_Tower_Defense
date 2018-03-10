@@ -4,7 +4,7 @@ void  load_target_list(void)
   game.play.target_list.target_tex[0]        = IMG_LoadTexture(game.rend, "img/play/targets/target1.png");
   game.play.target_list.target_tex[1]        = IMG_LoadTexture(game.rend, "img/play/targets/target1.png");
   game.play.target_list.target_tex[2]        = IMG_LoadTexture(game.rend, "img/play/targets/target2.png");
-  game.play.target_list.target_tex[2]        = IMG_LoadTexture(game.rend, "img/play/targets/target3.png");
+  game.play.target_list.target_tex[3]        = IMG_LoadTexture(game.rend, "img/play/targets/target3.png");
   game.play.target_list.target_size[0]       = PATH_BLOCK_SIZE;
   game.play.target_list.target_size[1]       = TARGET_1_SIZE;
   game.play.target_list.target_size[2]       = TARGET_2_SIZE;
