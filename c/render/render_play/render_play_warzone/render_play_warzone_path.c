@@ -9,16 +9,12 @@ void  fill_path_block_simulation(struct s_target *pbs, int size)
   pbs->pos_float_y      = pbs->pos.y;
   pbs->next_path_block  = game.play.warzone.path.first->next;
   pbs->move_speed       = PATH_BLOCK_SPEED;
-  pbs->velx             = (pbs->next_path_block->pos.x - game.play.warzone.path.first->pos.x) * pbs->move_speed / sqrt(
-                          (pbs->next_path_block->pos.x - game.play.warzone.path.first->pos.x) *
-                          (pbs->next_path_block->pos.x - game.play.warzone.path.first->pos.x) +
-                          (pbs->next_path_block->pos.y - game.play.warzone.path.first->pos.y) *
-                          (pbs->next_path_block->pos.y - game.play.warzone.path.first->pos.y));
-  pbs->vely             = (pbs->next_path_block->pos.y - game.play.warzone.path.first->pos.y) * pbs->move_speed / sqrt(
-                          (pbs->next_path_block->pos.x - game.play.warzone.path.first->pos.x) *
-                          (pbs->next_path_block->pos.x - game.play.warzone.path.first->pos.x) +
-                          (pbs->next_path_block->pos.y - game.play.warzone.path.first->pos.y) *
-                          (pbs->next_path_block->pos.y - game.play.warzone.path.first->pos.y));
+  pbs->velx             = VEL_get_vel(pbs->next_path_block->pos.x, game.play.warzone.path.first->pos.x,
+                                      pbs->next_path_block->pos.y, game.play.warzone.path.first->pos.y,
+                                      pbs->move_speed, 'x');
+  pbs->vely             = VEL_get_vel(pbs->next_path_block->pos.x, game.play.warzone.path.first->pos.x,
+                                      pbs->next_path_block->pos.y, game.play.warzone.path.first->pos.y,
+                                      pbs->move_speed, 'y');
 }
 
 void  render_play_warzone_path(void)

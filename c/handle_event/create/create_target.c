@@ -9,16 +9,16 @@ void  fill_target(struct s_target *new_target, int type)
   new_target->pos.h           = game.play.target_list.target_size[type];
   new_target->next_path_block = game.play.warzone.path.first->next;
   new_target->move_speed      = game.play.target_list.target_move_speed[type];
-  new_target->velx            = (new_target->next_path_block->pos.x - game.play.warzone.path.first->pos.x) * new_target->move_speed / sqrt(
-                                (new_target->next_path_block->pos.x - game.play.warzone.path.first->pos.x) *
-                                (new_target->next_path_block->pos.x - game.play.warzone.path.first->pos.x) +
-                                (new_target->next_path_block->pos.y - game.play.warzone.path.first->pos.y) *
-                                (new_target->next_path_block->pos.y - game.play.warzone.path.first->pos.y));
-  new_target->vely            = (new_target->next_path_block->pos.y - game.play.warzone.path.first->pos.y) * new_target->move_speed / sqrt(
-                                (new_target->next_path_block->pos.x - game.play.warzone.path.first->pos.x) *
-                                (new_target->next_path_block->pos.x - game.play.warzone.path.first->pos.x) +
-                                (new_target->next_path_block->pos.y - game.play.warzone.path.first->pos.y) *
-                                (new_target->next_path_block->pos.y - game.play.warzone.path.first->pos.y));
+  new_target->velx            = VEL_get_vel(new_target->next_path_block->pos.x,
+                                            game.play.warzone.path.first->pos.x,
+                                            new_target->next_path_block->pos.y,
+                                            game.play.warzone.path.first->pos.y,
+                                            new_target->move_speed, 'x');
+  new_target->vely            = VEL_get_vel(new_target->next_path_block->pos.x,
+                                            game.play.warzone.path.first->pos.x,
+                                            new_target->next_path_block->pos.y,
+                                            game.play.warzone.path.first->pos.y,
+                                            new_target->move_speed, 'y');
 }
 
 void  append_target(struct s_target *new_target)
