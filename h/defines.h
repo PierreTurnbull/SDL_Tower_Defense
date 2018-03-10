@@ -47,6 +47,10 @@
 #define TARGET_2_SIZE                   76
 #define TARGET_3_SIZE                   76
 
+#define TARGET_1_HP                     30
+#define TARGET_2_HP                     20
+#define TARGET_3_HP                     15
+
 #define TARGET_1_MOVE_SPEED             3
 #define TARGET_2_MOVE_SPEED             6
 #define TARGET_3_MOVE_SPEED             8
@@ -78,8 +82,8 @@
 #define TOWER_3_RANGE                   350
 
 #define TOWER_1_DAMAGE                  3
-#define TOWER_2_DAMAGE                  6
-#define TOWER_3_DAMAGE                  8
+#define TOWER_2_DAMAGE                  8
+#define TOWER_3_DAMAGE                  15
 
 #define TOWER_1_PROJ_SIZE               10
 #define TOWER_2_PROJ_SIZE               20
@@ -146,3 +150,4 @@
 #define PRINT_LOAD_PATH                 0 || PRINT_ALL
 #define PRINT_MAIN                      1 || PRINT_ALL
 #define PRINT_RENDER_GAME               1 || PRINT_ALL
+#define PRINT_TARGET_TAKES_DAMAGE       0 || PRINT_ALL
