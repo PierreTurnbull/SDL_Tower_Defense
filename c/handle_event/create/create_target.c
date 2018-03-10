@@ -53,5 +53,6 @@ void  create_target(int type)
 
   append_target(new_target);
   fill_target(new_target, type);
-  fprintf(stderr, "%s CREATE_TARGET\n%p\nindex           = %d\ntype            = %d\nmove_speed      = %f\npos             = x%d y%d\nvel             = x%f y%f\nnext_path_block = %p\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_target, new_target->index, new_target->type, new_target->move_speed, new_target->pos.x, new_target->pos.y, new_target->velx, new_target->vely, new_target->next_path_block, new_target->prev, new_target->next);
+  if (PRINT_CREATE_TARGET)
+    fprintf(stderr, "%s CREATE_TARGET\n%p\nindex           = %d\ntype            = %d\nmove_speed      = %f\npos             = x%d y%d\nvel             = x%f y%f\nnext_path_block = %p\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_target, new_target->index, new_target->type, new_target->move_speed, new_target->pos.x, new_target->pos.y, new_target->velx, new_target->vely, new_target->next_path_block, new_target->prev, new_target->next);
 }

@@ -41,5 +41,6 @@ void  create_proj(struct s_tower *tower_ptr, int destx, int desty)
 
   append_proj(tower_ptr, new_proj);
   fill_proj(tower_ptr, new_proj, destx, desty);
-  fprintf(stderr, "%s CREATE_PROJ\n%p\nindex           = %d\npos             = x%d y%d\nvelx            = %f\nvely            = %f\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_proj, new_proj->index, new_proj->pos.x, new_proj->pos.y, new_proj->velx, new_proj->vely, new_proj->prev, new_proj->next);
+  if (PRINT_CREATE_PROJ)
+    fprintf(stderr, "%s CREATE_PROJ\n%p\nindex           = %d\ntype            = %d\npos             = x%d y%d\nvelx            = %f\nvely            = %f\nprev            = %p\nnext            = %p\n\n", TIME_get_time(), new_proj, new_proj->index, tower_ptr->type, new_proj->pos.x, new_proj->pos.y, new_proj->velx, new_proj->vely, new_proj->prev, new_proj->next);
 }
