@@ -134,8 +134,9 @@
 #define PRINT_ALL                       0
 
 #define PRINT_TIME_WAIT                 0 || PRINT_ALL
+#define PRINT_CHECK_HITBOXES_PROJ_WALL  1 || PRINT_ALL
 #define PRINT_CLOSE_GAME                0 || PRINT_ALL
-#define PRINT_CLOSE_PLAY_PROJ_LIST      0 || PRINT_ALL
+#define PRINT_CLOSE_PLAY_PROJ_LIST      1 || PRINT_ALL
 #define PRINT_CLOSE_PLAY_TARGET         0 || PRINT_ALL
 #define PRINT_CLOSE_PLAY_TOWER          0 || PRINT_ALL
 #define PRINT_CLOSE_PATH                0 || PRINT_ALL

@@ -34,19 +34,19 @@ struct s_proj *close_play_proj(struct s_tower *tower_ptr, struct s_proj *ptr)
 
 void  close_play_proj_list(struct s_tower *tower_ptr)
 {
-  struct s_proj *ptr;
+  struct s_proj *proj_ptr;
 
-  ptr = tower_ptr->proj_list.first;
+  proj_ptr = tower_ptr->proj_list.first;
   if (PRINT_CLOSE_PLAY_PROJ_LIST)
-    fprintf(stderr, "%s CLOSE_PLAY_PROJ_LIST\nROOT: %p\n", TIME_get_time(), ptr);
-  while (ptr != NULL) {
+    fprintf(stderr, "%s CLOSE_PLAY_PROJ_LIST\nROOT: %p for tower %p\n", TIME_get_time(), proj_ptr, tower_ptr);
+  while (proj_ptr != NULL) {
     if (PRINT_CLOSE_PLAY_PROJ_LIST)
-      fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", ptr->index, ptr, ptr->pos.x, ptr->pos.y, ptr->prev, ptr->next);
-    ptr = ptr->next;
+      fprintf(stderr, "%d:    %p, x = %d, y = %d, prev = %p, next = %p\n", proj_ptr->index, proj_ptr, proj_ptr->pos.x, proj_ptr->pos.y, proj_ptr->prev, proj_ptr->next);
+    proj_ptr = proj_ptr->next;
   }
-  ptr = tower_ptr->proj_list.first;
-  while (ptr != NULL) {
-    ptr = close_play_proj(tower_ptr, ptr);
+  proj_ptr = tower_ptr->proj_list.first;
+  while (proj_ptr != NULL) {
+    proj_ptr = close_play_proj(tower_ptr, proj_ptr);
   }
   if (PRINT_CLOSE_PLAY_PROJ_LIST)
     fprintf(stderr, "DONE ROOT: %p\n\n", tower_ptr->proj_list.first);
