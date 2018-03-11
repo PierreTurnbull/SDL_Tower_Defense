@@ -2,6 +2,7 @@ void  close_sdl(void)
 {
   IMG_Quit();
   SDL_Quit();
+  TTF_Quit();
 }
 
 void  close_cursor(void)

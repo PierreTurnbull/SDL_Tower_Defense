@@ -26,6 +26,7 @@
 
 // PLAY GUI BUTTONS
 
+// TODO: wtf is this shit
 #define BTN_SELECTED_NONE                 -1
 #define BTN_SELECTED_CAT1                 0
 #define BTN_SELECTED_CAT2                 1
@@ -58,6 +59,10 @@
 #define TARGET_1_MOVE_SPEED               3
 #define TARGET_2_MOVE_SPEED               6
 #define TARGET_3_MOVE_SPEED               8
+
+#define TARGET_1_GOLD                     15
+#define TARGET_2_GOLD                     12
+#define TARGET_3_GOLD                     8
 
 // TOWER
 
@@ -100,6 +105,10 @@
 #define TOWER_1_RELOAD_TIME               30
 #define TOWER_2_RELOAD_TIME               50
 #define TOWER_3_RELOAD_TIME               75
+
+#define TOWER_1_PRICE                     50
+#define TOWER_2_PRICE                     60
+#define TOWER_3_PRICE                     75
 
 // BASE
 

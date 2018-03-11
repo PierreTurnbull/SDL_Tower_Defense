@@ -19,4 +19,7 @@ void  load_target_list(void)
   game.play.target_list.target_move_speed[1]  = TARGET_1_MOVE_SPEED;
   game.play.target_list.target_move_speed[2]  = TARGET_2_MOVE_SPEED;
   game.play.target_list.target_move_speed[3]  = TARGET_3_MOVE_SPEED;
+  game.play.target_list.target_gold[0]        = TARGET_1_GOLD;
+  game.play.target_list.target_gold[1]        = TARGET_2_GOLD;
+  game.play.target_list.target_gold[2]        = TARGET_3_GOLD;
 }
