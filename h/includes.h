@@ -14,6 +14,7 @@
 
 #include "SDL.h"
 #include "SDL_image.h"
+#include "SDL_ttf.h"
 
 /* GAME STRUCTURE (has to be defined before any function is read) */
 
