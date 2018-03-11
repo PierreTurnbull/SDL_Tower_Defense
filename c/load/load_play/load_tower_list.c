@@ -33,6 +33,9 @@ void  load_tower_list(void)
   game.play.tower_list.tower_proj_speed[0]  = TOWER_1_PROJ_SPEED;
   game.play.tower_list.tower_proj_speed[1]  = TOWER_2_PROJ_SPEED;
   game.play.tower_list.tower_proj_speed[2]  = TOWER_3_PROJ_SPEED;
+  game.play.tower_list.tower_price[0]       = TOWER_1_PRICE;
+  game.play.tower_list.tower_price[1]       = TOWER_2_PRICE;
+  game.play.tower_list.tower_price[2]       = TOWER_3_PRICE;
 
   // PROJECTILE
 

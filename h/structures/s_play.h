@@ -45,6 +45,7 @@ struct s_play
   struct s_gui          gui;
   struct s_target_list  target_list;
   struct s_tower_list   tower_list;
+  int                   gold;
 
   SDL_Rect              render_r;
 };

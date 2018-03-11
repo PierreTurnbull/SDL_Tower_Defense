@@ -40,6 +40,7 @@ struct s_tower_list {
   int                 tower_damage[TOWER_TYPES];
   int                 tower_proj_size[TOWER_TYPES];
   int                 tower_shoot_reload[TOWER_TYPES];
+  int                 tower_price[TOWER_TYPES];
 
   // PROJECTILE
 
