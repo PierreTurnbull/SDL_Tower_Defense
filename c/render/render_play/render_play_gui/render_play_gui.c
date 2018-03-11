@@ -1,3 +1,8 @@
+void  render_play_gui_text(void)
+{
+  SDL_RenderCopy(game.rend, game.play.gui.gold_text_tex, NULL, &game.play.gui.gold_text_pos);
+}
+
 void  render_play_gui(void)
 {
   int i;
@@ -16,4 +21,5 @@ void  render_play_gui(void)
   RENDER_btwn_2_tex(gui->menu_background,       gui->menu_background_hover,       &gui->pause_pos,                0);
   RENDER_btwn_2_tex(gui->menu_background,       gui->menu_background_hover,       &gui->options_pos,              0);
   RENDER_btwn_2_tex(gui->menu_background,       gui->menu_background_hover,       &gui->menu_pos,                 0);
+  render_play_gui_text();
 }

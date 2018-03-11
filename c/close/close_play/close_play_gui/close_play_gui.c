@@ -2,6 +2,8 @@ void  close_play_gui(void)
 {
   struct s_gui *gui = &game.play.gui;
 
+  TTF_CloseFont(gui->gold_text);
+
   SDL_DestroyTexture(gui->background);
   SDL_DestroyTexture(gui->items_background);
   SDL_DestroyTexture(gui->items_category);

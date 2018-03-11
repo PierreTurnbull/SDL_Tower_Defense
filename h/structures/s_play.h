@@ -9,6 +9,8 @@ struct s_warzone
 
 struct s_gui
 {
+  SDL_Color             text_color;
+
   TTF_Font              *gold_text;
 
   SDL_Texture           *background;
@@ -22,6 +24,8 @@ struct s_gui
   SDL_Texture           *menu_background;
   SDL_Texture           *menu_background_hover;
 
+  SDL_Texture           *gold_text_tex;
+
   SDL_Rect              background_pos;
   SDL_Rect              items_background_pos;
   SDL_Rect              items_category_pos[3];
@@ -31,6 +35,8 @@ struct s_gui
   SDL_Rect              pause_pos;
   SDL_Rect              options_pos;
   SDL_Rect              menu_pos;
+
+  SDL_Rect              gold_text_pos;
 
   int                   btn_selected;
 };

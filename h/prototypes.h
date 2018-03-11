@@ -120,6 +120,7 @@ void  play_game(void);
         void  render_play_warzone_path(void);
           void  fill_path_block_simulation(struct s_target *pbs, int size);
       void  render_play_gui(void);
+        void  render_play_gui_text(void);
       void  render_play_targets(void);
       void  render_play_towers(void);
       void  render_play_proj_all(void);

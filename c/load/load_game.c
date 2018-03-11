@@ -43,7 +43,7 @@ void  load_sdl(void)
 
 void  load_window(void)
 {
-  game.wind      = SDL_CreateWindow("TODO: give me a name", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1800, 1000, SDL_WINDOW_FULLSCREEN);
+  game.wind      = SDL_CreateWindow("TODO: give me a name", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1800, 1000, 0);
   game.rend      = SDL_CreateRenderer(game.wind, -1, 0);
   game.screen    = SCREEN_MAIN_MENU;
   game.game_time = SDL_GetTicks();
