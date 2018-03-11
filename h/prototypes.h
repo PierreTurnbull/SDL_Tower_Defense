@@ -97,10 +97,11 @@ void  play_game(void);
     void  move_tower_list(void);
     void  move_proj_all(void);
       void  move_proj_list(struct s_tower *tower_ptr);
-  // HANDLE HITBOXES
+  // CHECK HITBOXES
   void  check_hitboxes(void);
     void  check_hitboxes_proj_target(void);
     void  check_hitboxes_proj_wall(void);
+    void  check_hitboxes_target_base(void);
     int   check_hitboxes_tower_tower(struct s_tower *ptr);
     int   check_hitboxes_tower_path(struct s_tower *ptr);
   // RENDER

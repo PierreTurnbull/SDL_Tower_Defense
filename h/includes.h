@@ -77,6 +77,7 @@ struct s_game game;
 #include "../c/check_hitboxes/check_hitboxes.c"
 #include "../c/check_hitboxes/check_hitboxes_proj_target/check_hitboxes_proj_target.c"
 #include "../c/check_hitboxes/check_hitboxes_proj_wall/check_hitboxes_proj_wall.c"
+#include "../c/check_hitboxes/check_hitboxes_target_base/check_hitboxes_target_base.c"
 #include "../c/check_hitboxes/check_hitboxes_tower_path/check_hitboxes_tower_path.c"
 #include "../c/check_hitboxes/check_hitboxes_tower_tower/check_hitboxes_tower_tower.c"
 #include "../c/load/load_game.c"
