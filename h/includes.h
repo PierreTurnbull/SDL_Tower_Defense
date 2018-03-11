@@ -49,6 +49,7 @@ struct s_game game;
 
 /* C FILES */
 
+#include "../c/change_room/change_room.c"
 #include "../c/close/close_game.c"
 #include "../c/close/close_main_menu/close_main_menu.c"
 #include "../c/close/close_play/close_play.c"

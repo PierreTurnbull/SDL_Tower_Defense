@@ -1,12 +1,7 @@
 void  handle_event_play_keydown_escape(void)
 {
-  if (game.input.key_repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE) {
-    game.mouse_grab = NULL;
-    close_play_target_list();
-    close_play_tower_list();
-    close_path();
-    game.screen = SCREEN_MAIN_MENU;
-  }
+  if (game.input.key_repeat[SDL_SCANCODE_ESCAPE] == SDL_FALSE)
+    change_room_play_main_menu();
 }
 
 void  handle_event_play_keydown_return(void)

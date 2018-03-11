@@ -57,7 +57,7 @@
 
 #define TARGET_1_MOVE_SPEED               3
 #define TARGET_2_MOVE_SPEED               6
-#define TARGET_3_MOVE_SPEED               80
+#define TARGET_3_MOVE_SPEED               8
 
 // TOWER
 

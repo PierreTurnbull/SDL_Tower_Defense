@@ -24,6 +24,10 @@ double  VEL_get_vel(int x1, int x2, int y1, int y2, float speed, char axis);
 
 /* GAME BODY */
 
+// CHANGE ROOM
+void  change_room_main_menu_play(void);
+void  change_room_main_menu_options(void);
+void  change_room_play_main_menu(void);
 // LOAD GAME
 void  load_game(void);
   void  load_sdl(void);

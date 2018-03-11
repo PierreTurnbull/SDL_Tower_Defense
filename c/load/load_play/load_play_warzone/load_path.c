@@ -80,7 +80,7 @@ void  load_path(char *which)
 
   game.play.warzone.path.first = NULL;
   if (load_path_file(&stream, which) != 0) {
-    game.screen = SCREEN_MAIN_MENU;
+    change_room_play_main_menu();
     return;
   }
   load_path_coordinates(stream, coordinates);

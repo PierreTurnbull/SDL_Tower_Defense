@@ -8,12 +8,10 @@ void  handle_event_main_menu_keydown_return(void)
 {
   if (game.input.key_repeat[SDL_SCANCODE_RETURN] == SDL_TRUE)
     return;
-  if (game.main_menu.choice_selected == MAIN_MENU_BTN_PLAY) {
-    game.screen = SCREEN_PLAY;
-    load_path("1");
-  }
+  if (game.main_menu.choice_selected == MAIN_MENU_BTN_PLAY)
+    change_room_main_menu_play();
   if (game.main_menu.choice_selected == MAIN_MENU_BTN_OPTIONS)
-    game.screen = SCREEN_MAIN_OPTIONS;
+    change_room_main_menu_options();
   if (game.main_menu.choice_selected == MAIN_MENU_BTN_QUIT)
     game.input.quit = SDL_TRUE;
 }

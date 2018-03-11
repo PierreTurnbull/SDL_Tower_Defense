@@ -11,12 +11,7 @@ struct s_target *base_takes_damage(struct s_target *target_ptr)
   if (game.play.warzone.base_hp <= 0) {
     if (PRINT_BASE_TAKES_DAMAGE)
       fprintf(stderr, "Base dies\n\n");
-    game.play.warzone.base_hp = BASE_HP;
-    game.mouse_grab = NULL;
-    close_play_target_list();
-    close_play_tower_list();
-    close_path();
-    game.screen = SCREEN_MAIN_MENU;
+    change_room_play_main_menu();
     return NULL;
   }
   if (PRINT_BASE_TAKES_DAMAGE)

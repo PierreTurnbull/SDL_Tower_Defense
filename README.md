@@ -47,11 +47,16 @@ Error outputs in ``stderr``
     - time
       - time control currently set at 60fps
       - time displaying on stderr messages
+    - game over
+      - targets deal damage to the base when reaching the end of the path
+      - when base's hp are below 1, the game is finished and returns to the main menu
 - game closing
   - unique static closing for static elements
   - dynamic closing for dynamic elements
 - game informations
   - use of fprintf and stderr in order to print informations about various elements of the game, customizable via defines.h
+
+_(last update: 10/03/2018 - If you find any mistake or a feature that needs an update, please write an [issue](https://github.com/PierreTurnbull/SDL_Tower_Defense/issues))_
 
 **/!\ No responsive availabe yet! Nevertheless, game screen size can be changed at line 47 of `c/load/load_game.c` /!\\**
 
@@ -67,3 +72,4 @@ Error outputs in ``stderr``
 
 - If you found a bug, have a suggestion, or if you feel the need for any reason, please write an [issue!](https://github.com/PierreTurnbull/SDL_Tower_Defense/issues)
 - If you want to contribute, feel free to fork the project!
+- If you want to contribute in a graphical way, I am widely open!
