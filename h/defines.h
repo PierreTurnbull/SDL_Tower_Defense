@@ -26,6 +26,7 @@
 
 // PLAY GUI BUTTONS
 
+// TODO: wtf is this shit
 #define BTN_SELECTED_NONE                 -1
 #define BTN_SELECTED_CAT1                 0
 #define BTN_SELECTED_CAT2                 1

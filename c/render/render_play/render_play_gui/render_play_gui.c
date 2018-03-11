@@ -9,11 +9,11 @@ void  render_play_gui(void)
   for (i = 0; i < TOWER_TYPES; i++) {
     RENDER_btwn_2_tex(NULL,                     gui->item_tower[i],               &gui->item_tower_pos[i],        gui->btn_selected == BTN_SELECTED_CAT1);
   }
-  RENDER_btwn_2_tex(gui->items_category[0],     gui->items_category_hover[0],     &gui->items_category_pos[0],    gui->btn_selected == BTN_SELECTED_CAT1);
-  RENDER_btwn_2_tex(gui->items_category[1],     gui->items_category_hover[1],     &gui->items_category_pos[1],    gui->btn_selected == BTN_SELECTED_CAT2);
-  RENDER_btwn_2_tex(gui->items_category[2],     gui->items_category_hover[2],     &gui->items_category_pos[2],    gui->btn_selected == BTN_SELECTED_CAT3);
-  RENDER_btwn_2_tex(gui->next_wave_background,  gui->next_wave_background_hover,  &gui->next_wave_background_pos, gui->btn_selected == BTN_SELECTED_PAUSE);
-  RENDER_btwn_2_tex(gui->pause,                 gui->pause_hover,                 &gui->pause_pos,                gui->btn_selected == BTN_SELECTED_PAUSE);
-  RENDER_btwn_2_tex(gui->options,               gui->options_hover,               &gui->options_pos,              gui->btn_selected == BTN_SELECTED_OPTIONS);
-  RENDER_btwn_2_tex(gui->menu,                  gui->menu_hover,                  &gui->menu_pos,                 gui->btn_selected == BTN_SELECTED_MENU);
+  RENDER_btwn_2_tex(gui->items_category,        gui->items_category_selected,     &gui->items_category_pos[0],    1);
+  RENDER_btwn_2_tex(gui->items_category,        gui->items_category_selected,     &gui->items_category_pos[1],    0);
+  RENDER_btwn_2_tex(gui->items_category,        gui->items_category_selected,     &gui->items_category_pos[2],    0);
+  RENDER_btwn_2_tex(gui->next_wave_background,  gui->next_wave_background_hover,  &gui->next_wave_background_pos, 0);
+  RENDER_btwn_2_tex(gui->menu_background,       gui->menu_background_hover,       &gui->pause_pos,                0);
+  RENDER_btwn_2_tex(gui->menu_background,       gui->menu_background_hover,       &gui->options_pos,              0);
+  RENDER_btwn_2_tex(gui->menu_background,       gui->menu_background_hover,       &gui->menu_pos,                 0);
 }
