@@ -33,14 +33,13 @@ Error outputs in ``stderr``
     - main loop with SDL_PollEvent (+ event queue cleaning at the beginning)
     - rendering
       - 2 different zones: warzone and GUI. GUI is above warzone
-      - path rendered dynamically
-      - non unique elements such as targets, towers and projectiles rendered with a template
+      - non unique elements such as targets, towers and projectiles dynamically rendered with a template
     - moving
       - elements move at each frame, depending on movement-related data they hold
       - use of maths to calculate velocity on X and Y axis
     - shooting
       - target detection with a system of tower range
-      - target movement handling for towers to shoot where they will be, not where they are when the projectile is shot
+      - target movement prediction for towers to shoot where they will be when the projectile arrives, not where they are when the projectile is shot
     - hitboxes handling
       - any object that goes out of the screen is destroyed
       - projectiles hit targets and reduce their HP or kill them if their HP is under 1
