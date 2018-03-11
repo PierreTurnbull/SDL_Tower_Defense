@@ -4,3 +4,5 @@ TODO:
 - make functions for room transition
 - differenciate *_list from *_data. ex: game.play.target_list && game.play.target_data
 - make a data structure to control which fprintf are called
+- make a renderer with every path block so every frame needs 1 SDL_RenderCopy
+  call for the renderer instead of 1 for each path block

@@ -10,16 +10,16 @@ void  MENU_change_choice(int *index, int direction, int size);
   void  MENU_next_choice(int *index, int size);
   void  MENU_previous_choice(int *index, int size);
 
-int POS_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse);
-int POS_rect_in_rect(SDL_Rect r1, SDL_Rect r2);
-int POS_rect_in_rect_fully(SDL_Rect r1, SDL_Rect r2);
+int   POS_mouse_in_rect(SDL_Rect rect, SDL_Rect mouse);
+int   POS_rect_in_rect(SDL_Rect r1, SDL_Rect r2);
+int   POS_rect_in_rect_fully(SDL_Rect r1, SDL_Rect r2);
 
 void  RENDER_btwn_2_tex(SDL_Texture *tex1, SDL_Texture *tex2, SDL_Rect *pos, int is_true);
 
 char  *TIME_get_time(void);
 void  TIME_wait(int *time, int ms);
 
-int VEL_get_distance(int x1, int x2, int y1, int y2);
+int     VEL_get_distance(int x1, int x2, int y1, int y2);
 double  VEL_get_vel(int x1, int x2, int y1, int y2, float speed, char axis);
 
 /* GAME BODY */
@@ -97,11 +97,13 @@ void  play_game(void);
     void  move_tower_list(void);
     void  move_proj_all(void);
       void  move_proj_list(struct s_tower *tower_ptr);
-  // HANDLE HITBOXES
+  // CHECK HITBOXES
   void  check_hitboxes(void);
-  int check_hitboxes_tower_tower(struct s_tower *ptr);
-    int check_hitboxes_tower_tower_condition(struct s_tower *ptr, struct s_tower *ptr2);
-  int check_hitboxes_tower_path(struct s_tower *ptr);
+    void  check_hitboxes_proj_target(void);
+    void  check_hitboxes_proj_wall(void);
+    void  check_hitboxes_target_base(void);
+    int   check_hitboxes_tower_tower(struct s_tower *ptr);
+    int   check_hitboxes_tower_path(struct s_tower *ptr);
   // RENDER
   void  render_game(void);
     void  render_main_menu(void);

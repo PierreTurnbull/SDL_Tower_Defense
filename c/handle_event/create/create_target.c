@@ -8,6 +8,7 @@ void  fill_target(struct s_target *new_target, int type)
   new_target->pos.w           = game.play.target_list.target_size[type];
   new_target->pos.h           = game.play.target_list.target_size[type];
   new_target->next_path_block = game.play.warzone.path.first->next;
+  new_target->hp              = game.play.target_list.target_hp[type - 1]; // first type is not a virtual path block
   new_target->move_speed      = game.play.target_list.target_move_speed[type];
   new_target->velx            = VEL_get_vel(new_target->next_path_block->pos.x,
                                             game.play.warzone.path.first->pos.x,
