@@ -4,7 +4,7 @@ _(On progress)_
 
 ## Run program:
 
-``./*.exe``
+``./SDL_Tower_Defense``
 
 Error outputs in ``stderr``
 
@@ -13,6 +13,48 @@ Error outputs in ``stderr``
 - C
 - SDL 2.0.7
 - SDL_Image 2.0.2
+
+## Features
+
+- input
+  - input stored in a custom data structure
+  - input translated into ingame events
+- game loading
+  - libraries loading
+  - game's elements, values and textures loading
+  - custom cursor
+  - path loaded from a .txt file
+  - unique static loading for static elements
+  - dynamic loading for dynamic elements (malloc)
+- game playing
+  - main menu
+    - buttons for accessing different parts of the program
+  - play part
+    - main loop with SDL_PollEvent (+ event queue cleaning at the beginning)
+    - rendering
+      - 2 different zones: warzone and GUI. GUI is above warzone
+      - path rendered dynamically
+      - non unique elements such as targets, towers and projectiles rendered with a template
+    - moving
+      - elements move at each frame, depending on movement-related data they hold
+      - use of maths to calculate velocity on X and Y axis
+    - shooting
+      - target detection with a system of tower range
+      - target movement handling for towers to shoot where they will be, not where they are when the projectile is shot
+    - hitboxes handling
+      - any object that goes out of the screen is destroyed
+      - projectiles hit targets and reduce their HP or kill them if their HP is under 1
+      - towers cannot be placed on the path, other towers or the GUI
+    - time
+      - time control currently set at 60fps
+      - time displaying on stderr messages
+- game closing
+  - unique static closing for static elements
+  - dynamic closing for dynamic elements
+- game informations
+  - use of fprintf and stderr in order to print informations about various elements of the game, customizable via defines.h
+  
+**/!\ No responsive availabe yet! Nevertheless, resolution can be changed at line 47 of `c/load/load_game.c` /!\\**
 
 ## File organisation
 
