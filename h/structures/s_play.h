@@ -2,6 +2,7 @@ struct s_warzone
 {
   SDL_Texture           *background;
   struct s_path         path;
+  int                   base_hp;
 
   SDL_Rect              background_pos;
 };

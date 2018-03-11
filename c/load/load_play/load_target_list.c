@@ -12,6 +12,9 @@ void  load_target_list(void)
   game.play.target_list.target_hp[0]          = TARGET_1_HP;
   game.play.target_list.target_hp[1]          = TARGET_2_HP;
   game.play.target_list.target_hp[2]          = TARGET_3_HP;
+  game.play.target_list.target_damage[0]      = TARGET_1_DAMAGE;
+  game.play.target_list.target_damage[1]      = TARGET_2_DAMAGE;
+  game.play.target_list.target_damage[2]      = TARGET_3_DAMAGE;
   game.play.target_list.target_move_speed[0]  = PATH_BLOCK_SPEED;
   game.play.target_list.target_move_speed[1]  = TARGET_1_MOVE_SPEED;
   game.play.target_list.target_move_speed[2]  = TARGET_2_MOVE_SPEED;

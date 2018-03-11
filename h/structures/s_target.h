@@ -19,5 +19,6 @@ struct s_target_list {
   struct s_target     *first;
   int                 target_size[TARGET_TYPES];
   int                 target_hp[TARGET_TYPES];
+  int                 target_damage[TARGET_TYPES];
   int                 target_move_speed[TARGET_TYPES];
 };

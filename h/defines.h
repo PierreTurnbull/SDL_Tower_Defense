@@ -51,9 +51,13 @@
 #define TARGET_2_HP                       20
 #define TARGET_3_HP                       15
 
+#define TARGET_1_DAMAGE                   3
+#define TARGET_2_DAMAGE                   2
+#define TARGET_3_DAMAGE                   1
+
 #define TARGET_1_MOVE_SPEED               3
 #define TARGET_2_MOVE_SPEED               6
-#define TARGET_3_MOVE_SPEED               8
+#define TARGET_3_MOVE_SPEED               80
 
 // TOWER
 
@@ -97,6 +101,10 @@
 #define TOWER_2_RELOAD_TIME               50
 #define TOWER_3_RELOAD_TIME               75
 
+// BASE
+
+#define BASE_HP                           10
+
 // POSITIONS
 
 #define TARGET_X                          (target_ptr->pos.x + game.play.target_list.target_size[target_ptr->type] / 2)
@@ -133,6 +141,7 @@
 
 #define PRINT_ALL                         0
 
+#define PRINT_BASE_TAKES_DAMAGE           0 || PRINT_ALL
 #define PRINT_TIME_WAIT                   0 || PRINT_ALL
 #define PRINT_CHECK_HITBOXES_PROJ_WALL    0 || PRINT_ALL
 #define PRINT_CHECK_HITBOXES_TARGET_BASE  0 || PRINT_ALL

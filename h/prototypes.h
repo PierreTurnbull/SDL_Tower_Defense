@@ -100,8 +100,11 @@ void  play_game(void);
   // CHECK HITBOXES
   void  check_hitboxes(void);
     void  check_hitboxes_proj_target(void);
+      void  proj_hits_target(struct s_tower *tower_ptr, struct s_proj *proj_ptr, struct s_target *target_ptr);
+        int   target_takes_damage(struct s_target *target_ptr, struct s_tower *tower_ptr);
     void  check_hitboxes_proj_wall(void);
     void  check_hitboxes_target_base(void);
+      struct s_target *base_takes_damage(struct s_target *target_ptr);
     int   check_hitboxes_tower_tower(struct s_tower *ptr);
     int   check_hitboxes_tower_path(struct s_tower *ptr);
   // RENDER

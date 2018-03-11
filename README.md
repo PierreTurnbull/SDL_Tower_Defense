@@ -52,8 +52,8 @@ Error outputs in ``stderr``
   - dynamic closing for dynamic elements
 - game informations
   - use of fprintf and stderr in order to print informations about various elements of the game, customizable via defines.h
-  
-**/!\ No responsive availabe yet! Nevertheless, resolution can be changed at line 47 of `c/load/load_game.c` /!\\**
+
+**/!\ No responsive availabe yet! Nevertheless, game screen size can be changed at line 47 of `c/load/load_game.c` /!\\**
 
 ## File organisation
 
