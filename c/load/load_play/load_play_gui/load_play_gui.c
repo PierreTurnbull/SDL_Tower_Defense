@@ -1,10 +1,22 @@
-SDL_Rect  load_play_gui_text_pos(TTF_Font *font, char *str, int x, int y)
+SDL_Rect  load_play_gui_text_pos(TTF_Font *font, char *str, SDL_Rect *container, int posx, int posy)
 {
   SDL_Rect pos;
 
-  pos.x = x;
-  pos.y = y;
   TTF_SizeText(font, str, &pos.w, &pos.h);
+  if        (posx == TEXT_LEFT) {
+    pos.x = container->x;
+  } else if (posx == TEXT_CENTER) {
+    pos.x = container->x + (container->w - pos.w) / 2;
+  } else if (posx == TEXT_RIGHT) {
+    pos.x = container->x + (container->w - pos.w);
+  }
+  if        (posy == TEXT_TOP) {
+    pos.y = container->y;
+  } else if (posy == TEXT_CENTER) {
+    pos.y = container->y + (container->h - pos.h) / 2;
+  } else if (posy == TEXT_BOT) {
+    pos.y = container->y + (container->h - pos.h);
+  }
   return pos;
 }
 
@@ -72,8 +84,8 @@ void  load_play_gui(void)
   load_play_gui_text(&gui->items_category_text[1], gui->font_bold_16, gui->str_list[1]);
   load_play_gui_text(&gui->items_category_text[2], gui->font_bold_16, gui->str_list[2]);
   load_play_gui_text(&gui->gold_text, gui->font_bold_16, gui->str_list[3]);
-  load_play_gui_text(&gui->next_wave_text, gui->font_bold_16, gui->str_list[4]);
-  load_play_gui_text(&gui->next_wave_time_text, gui->font_bold_16, gui->str_list[5]);
+  load_play_gui_text(&gui->next_wave_text, gui->font_bold_28, gui->str_list[4]);
+  load_play_gui_text(&gui->next_wave_time_text, gui->font_bold_20, gui->str_list[5]);
   load_play_gui_text(&gui->menu_text[0], gui->font_bold_16, gui->str_list[6]);
   load_play_gui_text(&gui->menu_text[1], gui->font_bold_16, gui->str_list[7]);
   load_play_gui_text(&gui->menu_text[2], gui->font_bold_16, gui->str_list[8]);
@@ -92,15 +104,15 @@ void  load_play_gui(void)
   LOAD_rect(&gui->options_pos, 1700, 1030, 90, 25);
   LOAD_rect(&gui->menu_pos, 1805, 1030, 90, 25);
 
-  gui->items_category_text_pos[0] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[0], 1595, 42);
-  gui->items_category_text_pos[1] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[1], 1695, 42);
-  gui->items_category_text_pos[2] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[2], 1795, 42);
-  gui->gold_text_pos              = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[3], 1595, 925);
-  gui->next_wave_text_pos         = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[4], 1595, 925);
-  gui->next_wave_time_text_pos    = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[5], 1595, 965);
-  gui->menu_text_pos[0]           = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[6], 1595, 1030);
-  gui->menu_text_pos[1]           = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[7], 1700, 1030);
-  gui->menu_text_pos[2]           = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[8], 1805, 1030);
+  gui->items_category_text_pos[0] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[0], &gui->items_category_pos[0], TEXT_CENTER, TEXT_CENTER);
+  gui->items_category_text_pos[1] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[1], &gui->items_category_pos[1], TEXT_CENTER, TEXT_CENTER);
+  gui->items_category_text_pos[2] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[2], &gui->items_category_pos[2], TEXT_CENTER, TEXT_CENTER);
+  gui->gold_text_pos              = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[3], &gui->gold_background_pos, TEXT_CENTER, TEXT_CENTER);
+  gui->next_wave_text_pos         = load_play_gui_text_pos(gui->font_bold_28, gui->str_list[4], &gui->next_wave_background_pos, TEXT_CENTER, TEXT_TOP);
+  gui->next_wave_time_text_pos    = load_play_gui_text_pos(gui->font_bold_20, gui->str_list[5], &gui->next_wave_background_pos, TEXT_CENTER, TEXT_BOT);
+  gui->menu_text_pos[0]           = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[6], &gui->pause_pos, TEXT_CENTER, TEXT_CENTER);
+  gui->menu_text_pos[1]           = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[7], &gui->options_pos, TEXT_CENTER, TEXT_CENTER);
+  gui->menu_text_pos[2]           = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[8], &gui->menu_pos, TEXT_CENTER, TEXT_CENTER);
 
   gui->btn_selected = BTN_SELECTED_CAT1;
 }

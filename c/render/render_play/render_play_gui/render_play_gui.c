@@ -1,9 +1,7 @@
 void  render_play_gui_text(void)
 {
   struct s_gui  *gui = &game.play.gui;
-  fprintf(stderr, "x%d y%d w%d h%d\n", gui->items_category_text_pos[0].x, gui->items_category_text_pos[0].y, gui->items_category_text_pos[0].w, gui->items_category_text_pos[0].h);
   SDL_RenderCopy(game.rend, gui->items_category_text[0], NULL, &gui->items_category_text_pos[0]);
-  fprintf(stderr, "x%d y%d w%d h%d\n", gui->items_category_text_pos[1].x, gui->items_category_text_pos[1].y, gui->items_category_text_pos[1].w, gui->items_category_text_pos[1].h);
   SDL_RenderCopy(game.rend, gui->items_category_text[1], NULL, &gui->items_category_text_pos[1]);
   SDL_RenderCopy(game.rend, gui->items_category_text[2], NULL, &gui->items_category_text_pos[2]);
   SDL_RenderCopy(game.rend, gui->gold_text, NULL, &gui->gold_text_pos);
