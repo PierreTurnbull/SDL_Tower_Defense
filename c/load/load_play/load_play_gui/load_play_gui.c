@@ -31,20 +31,12 @@ void  load_play_gui_text(SDL_Texture **tex, TTF_Font *font, char *str)
 void  load_play_gui_str(void)
 {
   struct s_gui *gui;
-  int i;
-  int j;
 
   gui = &game.play.gui;
-  for (i = 0; i < 9; i++) {
-    gui->str_list[i] = malloc(16); // allocates 16 bytes of memory to store a string
-    for (j = 0; j < 16; j++) {
-      gui->str_list[i][j] = 0;
-    }
-  }
   gui->str_list[0] = "TURRET";
   gui->str_list[1] = "TRAPS";
   gui->str_list[2] = "CHARACTER";
-  gui->str_list[3] = "650 GOLD";
+  gui->str_list[3] = "0 GOLD";
   gui->str_list[4] = "NEXT WAVE";
   gui->str_list[5] = "00:00";
   gui->str_list[6] = "PAUSE";
@@ -58,15 +50,18 @@ void  load_play_gui(void)
 
   load_play_gui_str();
 
+  // load colors
   gui->text_color.r               = 30;
   gui->text_color.g               = 0;
   gui->text_color.b               = 0;
   gui->text_color.a               = 255;
 
+  // load fonts
   gui->font_bold_16               = TTF_OpenFont("fonts/oxygen/oxygen_bold.ttf", 16);
   gui->font_bold_20               = TTF_OpenFont("fonts/oxygen/oxygen_bold.ttf", 20);
   gui->font_bold_28               = TTF_OpenFont("fonts/oxygen/oxygen_bold.ttf", 28);
 
+  // load all blocks
   gui->background                 = IMG_LoadTexture(game.rend, "img/play/gui.png");
   gui->items_background           = IMG_LoadTexture(game.rend, "img/play/item_background.png");
   gui->items_category             = IMG_LoadTexture(game.rend, "img/play/item_category.png");
@@ -80,6 +75,7 @@ void  load_play_gui(void)
   gui->menu_background            = IMG_LoadTexture(game.rend, "img/play/menu_background.png");
   gui->menu_background_hover      = IMG_LoadTexture(game.rend, "img/play/menu_background_hover.png");
 
+  // load all texts
   load_play_gui_text(&gui->items_category_text[0], gui->font_bold_16, gui->str_list[0]);
   load_play_gui_text(&gui->items_category_text[1], gui->font_bold_16, gui->str_list[1]);
   load_play_gui_text(&gui->items_category_text[2], gui->font_bold_16, gui->str_list[2]);
@@ -90,6 +86,7 @@ void  load_play_gui(void)
   load_play_gui_text(&gui->menu_text[1], gui->font_bold_16, gui->str_list[7]);
   load_play_gui_text(&gui->menu_text[2], gui->font_bold_16, gui->str_list[8]);
 
+  // load the positions of all blocks
   LOAD_rect(&gui->background_pos, 0, 0, 1920, 1080);
   LOAD_rect(&gui->items_background_pos, 1595, 75, 300, 835);
   LOAD_rect(&gui->items_category_pos[0], 1595, 25, 100, 50);
@@ -104,6 +101,7 @@ void  load_play_gui(void)
   LOAD_rect(&gui->options_pos, 1700, 1030, 90, 25);
   LOAD_rect(&gui->menu_pos, 1805, 1030, 90, 25);
 
+  // load the positions of all texts
   gui->items_category_text_pos[0] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[0], &gui->items_category_pos[0], TEXT_CENTER, TEXT_CENTER);
   gui->items_category_text_pos[1] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[1], &gui->items_category_pos[1], TEXT_CENTER, TEXT_CENTER);
   gui->items_category_text_pos[2] = load_play_gui_text_pos(gui->font_bold_16, gui->str_list[2], &gui->items_category_pos[2], TEXT_CENTER, TEXT_CENTER);
