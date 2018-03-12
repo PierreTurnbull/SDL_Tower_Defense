@@ -1,6 +1,6 @@
 void  new_gold_value(void)
 {
-  char str[16] = {0};
+  char str[32] = {0};
 
   sprintf(str, "%d GOLD", game.play.gold);
   load_play_gui_text(&game.play.gui.gold_text, game.play.gui.font_bold_16, str);
