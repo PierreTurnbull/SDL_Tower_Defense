@@ -37,6 +37,7 @@ void  load_game(void);
   void  load_main_menu(void);
   void  load_play(void);
     void  load_play_gui(void);
+      void  load_play_gui_text(SDL_Texture **tex, TTF_Font *font, char *str);
     void  load_play_warzone(void);
       void  load_path(char *which);
         int   load_path_file(FILE **stream, char *which);

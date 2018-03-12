@@ -2,7 +2,9 @@ void  close_play_gui(void)
 {
   struct s_gui *gui = &game.play.gui;
 
-  TTF_CloseFont(gui->gold_text);
+  TTF_CloseFont(gui->font_bold_16);
+  TTF_CloseFont(gui->font_bold_20);
+  TTF_CloseFont(gui->font_bold_28);
 
   SDL_DestroyTexture(gui->background);
   SDL_DestroyTexture(gui->items_background);
@@ -16,4 +18,14 @@ void  close_play_gui(void)
   SDL_DestroyTexture(gui->next_wave_background_hover);
   SDL_DestroyTexture(gui->menu_background);
   SDL_DestroyTexture(gui->menu_background_hover);
+
+  SDL_DestroyTexture(gui->items_category_text[0]);
+  SDL_DestroyTexture(gui->items_category_text[1]);
+  SDL_DestroyTexture(gui->items_category_text[2]);
+  SDL_DestroyTexture(gui->gold_text);
+  SDL_DestroyTexture(gui->next_wave_text);
+  SDL_DestroyTexture(gui->next_wave_time_text);
+  SDL_DestroyTexture(gui->menu_text[0]);
+  SDL_DestroyTexture(gui->menu_text[1]);
+  SDL_DestroyTexture(gui->menu_text[2]);
 }

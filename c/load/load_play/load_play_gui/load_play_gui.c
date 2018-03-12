@@ -1,3 +1,12 @@
+void  load_play_gui_text(SDL_Texture **tex, TTF_Font *font, char *str)
+{
+  SDL_Surface *text_surface;
+  text_surface  = TTF_RenderText_Blended(font, str, game.play.gui.text_color);
+  *tex           = SDL_CreateTextureFromSurface(game.rend, text_surface);
+  fprintf(stderr, "%p\n", tex);
+  SDL_FreeSurface(text_surface);
+}
+
 void  load_play_gui(void)
 {
   struct s_gui *gui = &game.play.gui;
@@ -7,7 +16,9 @@ void  load_play_gui(void)
   gui->text_color.b               = 0;
   gui->text_color.a               = 255;
 
-  gui->gold_text                  = TTF_OpenFont("fonts/oxygen/oxygen_bold.ttf", 16);
+  gui->font_bold_16               = TTF_OpenFont("fonts/oxygen/oxygen_bold.ttf", 16);
+  gui->font_bold_20               = TTF_OpenFont("fonts/oxygen/oxygen_bold.ttf", 20);
+  gui->font_bold_28               = TTF_OpenFont("fonts/oxygen/oxygen_bold.ttf", 28);
 
   gui->background                 = IMG_LoadTexture(game.rend, "img/play/gui.png");
   gui->items_background           = IMG_LoadTexture(game.rend, "img/play/item_background.png");
@@ -22,9 +33,15 @@ void  load_play_gui(void)
   gui->menu_background            = IMG_LoadTexture(game.rend, "img/play/menu_background.png");
   gui->menu_background_hover      = IMG_LoadTexture(game.rend, "img/play/menu_background_hover.png");
 
-  SDL_Surface *gold_text_surface  = TTF_RenderText_Blended(gui->gold_text, "GOLD TeXt", gui->text_color);
-  gui->gold_text_tex              = SDL_CreateTextureFromSurface(game.rend, gold_text_surface);
-  SDL_FreeSurface(gold_text_surface);
+  load_play_gui_text(&gui->items_category_text[0], gui->font_bold_16, "TURRETS");
+  load_play_gui_text(&gui->items_category_text[1], gui->font_bold_16, "TRAPS");
+  load_play_gui_text(&gui->items_category_text[2], gui->font_bold_16, "CHARACTER");
+  load_play_gui_text(&gui->gold_text, gui->font_bold_16, "0 GOLD");
+  load_play_gui_text(&gui->next_wave_text, gui->font_bold_16, "NEXT_WAVE");
+  load_play_gui_text(&gui->next_wave_time_text, gui->font_bold_16, "00:00");
+  load_play_gui_text(&gui->menu_text[0], gui->font_bold_16, "PAUSE");
+  load_play_gui_text(&gui->menu_text[1], gui->font_bold_16, "OPTIONS");
+  load_play_gui_text(&gui->menu_text[2], gui->font_bold_16, "MENU");
 
   LOAD_rect(&gui->background_pos, 0, 0, 1920, 1080);
   LOAD_rect(&gui->items_background_pos, 1595, 75, 300, 835);
@@ -40,7 +57,15 @@ void  load_play_gui(void)
   LOAD_rect(&gui->options_pos, 1700, 1030, 90, 25);
   LOAD_rect(&gui->menu_pos, 1805, 1030, 90, 25);
 
-  LOAD_rect(&gui->gold_text_pos, 1595, 925, 82, 21);
+  LOAD_rect(&gui->items_category_text_pos[0], 1595, 25, 80, 40);
+  LOAD_rect(&gui->items_category_text_pos[1], 1696, 25, 80, 40);
+  LOAD_rect(&gui->items_category_text_pos[2], 1795, 25, 80, 40);
+  LOAD_rect(&gui->gold_text_pos, 1595, 925, 90, 25);
+  LOAD_rect(&gui->next_wave_text_pos, 1595, 925, 200, 40);
+  LOAD_rect(&gui->next_wave_time_text_pos, 1595, 965, 100, 15);
+  LOAD_rect(&gui->menu_text_pos[0], 1595, 1030, 90, 25);
+  LOAD_rect(&gui->menu_text_pos[1], 1700, 1030, 90, 25);
+  LOAD_rect(&gui->menu_text_pos[2], 1805, 1030, 90, 25);
 
   gui->btn_selected = BTN_SELECTED_CAT1;
 }
