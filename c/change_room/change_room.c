@@ -17,6 +17,8 @@ void  change_room_main_menu_options(void)
 void  change_room_play_main_menu(void)
 {
   game.play.warzone.base_hp = BASE_HP;
+  game.play.gold = 0;
+  new_gold_value();
   game.mouse_grab = NULL;
   close_play_target_list();
   close_play_tower_list();

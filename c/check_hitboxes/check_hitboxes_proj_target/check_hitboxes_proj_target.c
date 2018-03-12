@@ -13,6 +13,7 @@ int   target_takes_damage(struct s_target *target_ptr, struct s_tower *tower_ptr
   if (target_ptr->hp <= 0) {
     if (PRINT_TARGET_TAKES_DAMAGE)
       fprintf(stderr, "Target dies\n\n");
+      new_gold_value();
     close_play_target(target_ptr);
     return 1;
   }
