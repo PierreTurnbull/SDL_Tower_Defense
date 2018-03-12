@@ -1,3 +1,14 @@
+void  close_play_gui_str(void)
+{
+  struct s_gui *gui;
+  int i;
+
+  gui = &game.play.gui;
+  for (i = 0; i < 9; i++) {
+    free(gui->str_list[i]);
+  }
+}
+
 void  close_play_gui(void)
 {
   struct s_gui *gui = &game.play.gui;

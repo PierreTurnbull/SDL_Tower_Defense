@@ -11,6 +11,8 @@ struct s_gui
 {
   SDL_Color             text_color;
 
+  char                  *str_list[9];
+
   TTF_Font              *font_bold_16;
   TTF_Font              *font_bold_20;
   TTF_Font              *font_bold_28;
