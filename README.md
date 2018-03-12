@@ -58,7 +58,7 @@ Error outputs in ``stderr``
 
 _(last update: 10/03/2018 - If you find any mistake or a feature that needs an update, please write an [issue](https://github.com/PierreTurnbull/SDL_Tower_Defense/issues))_
 
-**/!\ No responsive availabe yet! Nevertheless, game screen size can be changed at line 47 of `c/load/load_game.c` /!\\**
+**/!\ No responsive availabe yet! Nevertheless, game screen size can be changed at line 46 of `c/load/load_game.c` /!\\**
 
 ## File organisation
 

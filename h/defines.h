@@ -24,6 +24,16 @@
 
 #define TARGET_TYPE_SIMULATION            0
 
+// TEXT ALIGNMENT
+
+#define TEXT_LEFT                         0
+#define TEXT_RIGHT                        2
+
+#define TEXT_TOP                          0
+#define TEXT_BOT                          2
+
+#define TEXT_CENTER                       1
+
 // PLAY GUI BUTTONS
 
 // TODO: wtf is this shit

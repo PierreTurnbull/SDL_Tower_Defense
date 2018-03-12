@@ -1,6 +1,15 @@
 void  render_play_gui_text(void)
 {
-  SDL_RenderCopy(game.rend, game.play.gui.gold_text_tex, NULL, &game.play.gui.gold_text_pos);
+  struct s_gui  *gui = &game.play.gui;
+  SDL_RenderCopy(game.rend, gui->items_category_text[0], NULL, &gui->items_category_text_pos[0]);
+  SDL_RenderCopy(game.rend, gui->items_category_text[1], NULL, &gui->items_category_text_pos[1]);
+  SDL_RenderCopy(game.rend, gui->items_category_text[2], NULL, &gui->items_category_text_pos[2]);
+  SDL_RenderCopy(game.rend, gui->gold_text, NULL, &gui->gold_text_pos);
+  SDL_RenderCopy(game.rend, gui->next_wave_text, NULL, &gui->next_wave_text_pos);
+  SDL_RenderCopy(game.rend, gui->next_wave_time_text, NULL, &gui->next_wave_time_text_pos);
+  SDL_RenderCopy(game.rend, gui->menu_text[0], NULL, &gui->menu_text_pos[0]);
+  SDL_RenderCopy(game.rend, gui->menu_text[1], NULL, &gui->menu_text_pos[1]);
+  SDL_RenderCopy(game.rend, gui->menu_text[2], NULL, &gui->menu_text_pos[2]);
 }
 
 void  render_play_gui(void)
