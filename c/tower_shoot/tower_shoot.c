@@ -38,8 +38,7 @@ void  check_tower_shoot(struct s_tower *tower_ptr)
   while (target_ptr != NULL) {
     if (!(VEL_get_distance(TARGET_X, TOWER_X, TARGET_Y, TOWER_Y) <=
         game.play.tower_list.tower_range[tower_ptr->type])) {
-    } else if (!check_tower_shoot_hits(tower_ptr, target_ptr, &aim)) {
-    } else {
+    } else if (check_tower_shoot_hits(tower_ptr, target_ptr, &aim)) {
       tower_shoot(tower_ptr,
                   target_ptr,
                   aim.x,

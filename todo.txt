@@ -6,3 +6,4 @@ TODO:
 - make a data structure to control which fprintf are called
 - make a renderer with every path block so every frame needs 1 SDL_RenderCopy
   call for the renderer instead of 1 for each path block
+- make VEL_get_vel 2 functions for velx and vely
